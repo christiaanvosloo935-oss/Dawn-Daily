@@ -157,64 +157,66 @@ summary:hover .headline { text-decoration: underline; text-decoration-thickness:
    previous EDITION's headlines into PREVIOUS. Everything below the
    END marker is the template and stays unchanged. */
 const EDITION = {
-  number: 2,
+  number: 3,
   dateLong: "Sunday, 8 November 2026",
-  compiled: "Compiled 05:46 SAST",
+  compiled: "Compiled 18:29 SAST",
   lead: {
-    section: "World Politics",
-    kicker: "Israel",
-    headline: "Herzog picks Eisenkot over Netanyahu to form Israel's next government",
-    dek: "Former army chief Gadi Eisenkot won 67 of 120 Knesset recommendations to Netanyahu's 46. He receives the mandate at 17:00 Israeli time today and has 28 days to build a coalition.",
+    section: "South African Politics",
+    kicker: "Elections 2026",
+    headline: "ANC heads into coalition talks at about 31%, its worst result, as the IEC declares the count",
+    dek: "Provisional figures put the ANC on roughly 31%, down about 14 points on 2021, the DA on about 25% and MK near 10%. The IEC's formal declaration, set for 18:00 on Sunday, starts a 14-day race to form councils.",
     body: [
-      "No camp won a majority in the 27 October election. Eisenkot's four-party alliance took 48 seats, Netanyahu's right-wing and religious bloc 53, and Arab-led parties a record 19. Those Arab-led parties helped push Eisenkot, leader of the Yashar party, well clear of Netanyahu in the consultations with President Isaac Herzog; United Torah Judaism recommended no one.",
-      "The arithmetic is still awkward. Eisenkot has ruled out governing with Arab-led parties, and his hawkish partners campaigned to keep the ultra-Orthodox out of power. Adding UTJ and Shas would give him roughly 61 seats, but he has made universal military service a condition. Yisrael Beytenu's Avigdor Liberman says he would accept painful compromises on Haredi enlistment to avoid another election, while Shas has publicly denied reports that it would let an Eisenkot government stand. A minority government that survives a confidence vote with outside support is another route.",
-      "Netanyahu warned in a video that a government reliant on Arab parties would harm the state, and has called for a national unity government with his former allies. If Eisenkot fails within 28 days plus a possible 14-day extension, another candidate gets a turn; if nobody succeeds, Israel faces a fresh election within 90 days with Netanyahu as caretaker."
+      "The Electoral Commission scheduled its formal declaration for 18:00 on Sunday at its results centre in Midrand, with President Cyril Ramaphosa due to speak. Coverage of the ceremony was not yet available when this edition closed, so the figures here are the last provisional numbers; declared results may differ slightly once upheld objections are applied. On African News Agency tallies of the provisional count, the ANC won outright control of only 53 of 213 councils, with 135 hung, and its council seats fell to about 3,236 from 4,545 in 2021.",
+      "With 99.7% of voting districts captured on Saturday night, the ANC had 30.7% of the ward vote, down roughly 14 points on 2021, the DA 24.5%, Jacob Zuma's MK Party 9.6%, the EFF 6.2%, ActionSA 5.3%, the IFP 4.7% and the Freedom Front Plus 3.0%. Turnout was about 52%. The ANC did not win an outright majority in any of the eight metros; in Johannesburg the DA leads with roughly 35% to the ANC's 20%.",
+      "Before the declaration the IEC had received 197 objections, dismissing 54 and upholding two that it judged could affect outcomes, and ordered recounts in a handful of wards, including in Tshwane and Mangaung. Chairperson Mosotho Moepya cautioned that declared results can still be amended if later objections succeed, with appeals going to the Electoral Court.",
+      "The declaration starts a 14-day clock for newly elected councils to sit and choose speakers, mayors and chief whips. More than 100 councils, including seven metros, are hung, so the fortnight will be dominated by coalition bargaining."
     ],
-    why: "A post-Netanyahu government would reshape Israel's approach to Gaza, the West Bank and the Iran war, and with it the diplomatic temperature around South Africa's genocide case at the International Court of Justice.",
+    why: "The deals struck in the next two weeks decide who runs Johannesburg, Tshwane and Ekurhuleni, and whether tensions between the ANC and DA in the councils spill into the national unity government.",
     sources: [
-      { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government" },
-      { name: "Times of Israel", url: "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/" },
-      { name: "Washington Post", url: "https://www.washingtonpost.com/world/2026/11/07/israeli-president-taps-ex-general-eisenkot-opponent-netanyahu-form-government/" }
+      { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/8/south-africas-anc-suffers-setback-in-local-elections" },
+      { name: "Mail & Guardian", url: "https://mg.co.za/news/south-africa/2026-11-07-iec-orders-recounts-in-five-wards-as-election-objections-mount/" },
+      { name: "African News Agency", url: "https://africannewsagency.com/death-of-the-anc-party-suffers-worst-municipal-result-since-1994-as-support-falls-to-30-81-percent/" }
     ]
   },
   numbers: [
-    { k: "ANC ward vote", v: "30.7%", n: "99.7% of districts counted" },
-    { k: "Eisenkot backers", v: "67 / 120", n: "Netanyahu 46" },
-    { k: "Ebola (Bundibugyo)", v: "10,500+", n: "Confirmed cases; 5,126 deaths" },
-    { k: "Rand", v: "R16.53/$", n: "Friday morning, 0.3% weaker" },
-    { k: "COP31 opens", v: "Mon 9 Nov", n: "Antalya, Türkiye" }
+    { k: "ANC ward vote", v: "30.7%", n: "DA 24.5% · MK 9.6% (provisional)" },
+    { k: "Brent crude", v: "$98.55", n: "Friday; about 16% down on the week" },
+    { k: "Petrol, December", v: "−R1.52/l", n: "93 inland, early CEF data; diesel +R1.49" },
+    { k: "Ebola (Bundibugyo)", v: "10,668", n: "Confirmed DRC cases; 5,198 deaths" },
+    { k: "Abu Dhabi talks", v: "Tue 10 Nov", n: "US-Russia-Ukraine round" }
   ],
   sections: [
     {
       id: "conflicts", name: "Wars & Conflicts",
       stories: [
         {
-          kicker: "Ukraine",
-          headline: "Russia fires 36 ballistic missiles at Kyiv ahead of Abu Dhabi talks",
-          dek: "An overnight barrage of 172 drones and 36 ballistic missiles hit energy sites and damaged Kyiv's Northern Bridge. Trilateral talks are set for 10 and 11 November.",
+          kicker: "Iran · Strait of Hormuz",
+          headline: "Iran says three tankers are ablaze in Hormuz as the US opens a land front in its blockade",
+          dek: "The Revolutionary Guards say the ships hit trouble on 'unauthorised routes' through the strait. US Central Command has launched a task force to choke Iran's overland supply routes.",
           body: [
-            "President Zelensky said every ballistic missile was aimed at Kyiv city and region. The Institute for the Study of War says Russia's jet-powered drones are getting through more often and that Ukraine's stock of interceptors is running low. Ukraine struck back at missile launchers in Bryansk, a missile plant in Oryol and the Saratov oil refinery.",
-            "Rustem Umerov will lead Ukraine's team in Abu Dhabi. Russia is sending Vladimir Medinsky, Yuri Ushakov and two deputy foreign ministers, and its officials have again rejected security guarantees for Ukraine. On the ground, ISW reports Russian assaults have dropped sharply since late October, which it links to manpower shortages."
+            "The IRGC navy said three tankers caught fire early on Sunday after trying to slip past Iran's blockade, and warned other ships of the same fate; Iran's military separately said two tankers had struck mines. Britain's UKMTO reported two tanker incidents late on Saturday and has confirmed eight attacks in the strait and three in the Gulf over the past week, with three vessels sunk. Few of Iran's mine claims have been independently confirmed, and analysts at the Institute for the Study of War say they are partly meant to frighten shippers. The US says it disabled a St Kitts-flagged ship in the Gulf of Oman that ignored warnings after visiting an Iranian port.",
+            "CENTCOM's new task force, named Iron Gate, aims to stop weapons, sanctioned goods and revenue reaching Iran by land or across the Caspian, extending a months-long naval blockade the US says has cost Iran more than $25 billion in oil revenue. Iranian state media reported explosions on Qeshm Island and in Jask, Sirik and Bandar Abbas, without a clear cause. In Riyadh, Saudi authorities said debris from an intercepted projectile hit a Saudi Aramco building.",
+            "Diplomacy continues in parallel: AP reports Iran is reviewing Qatari proposals on the nuclear dispute, though officials say Tehran still sets preconditions before talking to Washington."
           ],
-          why: "The Abu Dhabi round is the first real test of whether Washington's mediation can move beyond short local truces like the one that just lapsed in Oleshky.",
+          why: "Oil traders have been pricing in peace, so any sustained shipping war in Hormuz could quickly reverse the fuel-price relief now pencilled in for South Africa in December.",
           sources: [
-            { name: "ISW / Critical Threats", url: "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-7-2026-6aefc4cc503e5" },
-            { name: "Kyiv Post", url: "https://www.kyivpost.com/post/86409" }
+            { name: "The National", url: "https://www.thenationalnews.com/news/mena/2026/11/08/smoke-blanketing-the-strait-iran-steps-up-campaign-of-threats-to-shipping/" },
+            { name: "Al Jazeera live", url: "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes" },
+            { name: "ABC News (Australia)", url: "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730" }
           ]
         },
         {
-          kicker: "Iran",
-          headline: "Trump confirms 'minor' strikes on Iranian air defences as tanker war claims a sailor",
-          dek: "The US president says American forces hit an Iranian air-defence system, while a seafarer was killed when a Greek-managed tanker was struck in the Gulf.",
+          kicker: "Ukraine",
+          headline: "Russian drones black out 600,000 in Dnipropetrovsk two days before Abu Dhabi talks",
+          dek: "Overnight, Russia launched 164 drones and three guided missiles, hitting the power grid in the east. Zelensky reports widespread outages across the country.",
           body: [
-            "Trump's confirmation followed Iranian reports of explosions on Qeshm Island. The tanker Velos Sapphire was hit by a suspected missile en route to Bahrain, killing one crew member; Iran's Revolutionary Guards separately claim several tankers have struck mines near Hormuz, which Trump says Iran is fabricating. The US is offering up to $20 million for information on Iran's nuclear programme, and the Telegraph reports Iran is negotiating to buy Russian S-400 air defences.",
-            "Diplomacy is still alive. Trump spoke to Qatar's emir on Friday about ending the war, and Qatar says its mediation continues. Marco Rubio will face questions on Iran at a G7 foreign ministers' meeting in Paris on Monday and Tuesday. In Yemen, Houthi officials say a Saudi-led airstrike on a market in Taiz killed about 20 people; the coalition has not confirmed it."
+            "Ukraine's air force said it downed 137 of the drones, 112 of which were jet-powered. In Dnipro, hospitals switched to generators, electric public transport stopped and one civilian was killed; four people were injured in Poltava region. In Zhytomyr region, 140 apartment blocks lost heating. Russia says it hit a substation serving defence plants and a container ship carrying weapons in the Black Sea, claims that could not be verified.",
+            "Zelensky accuses Moscow of applying maximum pressure before the US-brokered talks in Abu Dhabi, the first such round since February, and says Ukraine is short of Patriot interceptors. Ukraine's emergency service now puts the toll from an earlier strike on an aid point in Komyshuvakha, Zaporizhzhia region, at least 50."
           ],
-          why: "Shipping risk around Hormuz is the swing factor for oil, and so for South Africa's December fuel-price adjustment.",
+          why: "Russia's winter campaign against power and heating is its main lever before the talks, and whether the grid holds will shape how much Kyiv can afford to concede.",
           sources: [
-            { name: "CBS News live", url: "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/" },
-            { name: "Times of Israel live", url: "https://www.timesofisrael.com/liveblog-november-07-2026/" },
-            { name: "Morning Star", url: "https://morningstaronline.co.uk/article/world-brief-november-7-2026" }
+            { name: "RFE/RL", url: "https://www.rferl.org/a/russia-strikes-ukraine-energy/33893219.html" },
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents" }
           ]
         }
       ]
@@ -223,30 +225,42 @@ const EDITION = {
       id: "politics", name: "World Politics",
       stories: [
         {
-          kicker: "United States",
-          headline: "Alaska and Mississippi Senate races stay too close to call",
-          dek: "Democrats lead both remaining contests by fewer than 1,200 votes. Alaska's ranked-choice tally will not be published until 18 November.",
+          kicker: "Israel",
+          headline: "Eisenkot formally receives the mandate as his 28-day coalition clock starts",
+          dek: "President Herzog handed Gadi Eisenkot the task of forming a government at a ceremony in Jerusalem on Sunday evening. He meets Avigdor Liberman on Monday.",
           body: [
-            "In Mississippi, Democrat Scott Colom led Republican senator Cindy Hyde-Smith by about 1,100 votes at midweek with thousands of mail-in and affidavit ballots still to count; counties must certify by 13 November. In Alaska, Democrat Mary Peltola led senator Dan Sullivan by a few hundred votes with many ballots outstanding, complicated by a second, unrelated Dan Sullivan on the ballot.",
-            "Wins in both would take Democrats to 56 seats in the new Senate."
+            "Eisenkot has 28 days, extendable by 14, to build a majority. His bloc holds 48 seats to 53 for Netanyahu's camp, with Arab-led parties holding 19. Liberman says he is willing to compromise on a Haredi conscription law without giving up principles, and Arab-party MK Ahmad Tibi confirmed direct contacts with Eisenkot's Yashar and did not rule out joining. Shas has denied reports that it will join an Eisenkot-led coalition.",
+            "If Eisenkot fails, Herzog can pick a second candidate, who gets 28 days with no extension, after which 61 MKs could jointly nominate someone. If all attempts fail, the Knesset dissolves and Israel goes back to the polls, with Netanyahu as caretaker in the meantime."
           ],
-          why: "The size of the Democratic majority will shape how far Congress can check the White House on trade, including measures like the AGOA suspension.",
+          why: "A government without Netanyahu would change Israel's handling of Gaza and the Iran war, and the tone of its dispute with South Africa at the International Court of Justice.",
           sources: [
-            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/5/whats-delaying-us-midterm-election-calls-in-mississippi-and-alaska" },
-            { name: "Fox News", url: "https://www.foxnews.com/politics/alaska-mississippi-senate-races-separate-razor-thin-vote-margins.amp" }
+            { name: "Jerusalem Post live", url: "https://www.jpost.com/israel-election-2026/2026-11-08/live-updates-914159" },
+            { name: "Jerusalem Post", url: "https://www.jpost.com/israel-election-2026/article-914151" }
           ]
         },
         {
-          kicker: "France",
-          headline: "Hundreds of thousands march as France's national strike day hits Macron",
-          dek: "Unions reported around 1,500 walkouts and 250 marches against spending cuts and falling living standards.",
+          kicker: "Paraguay",
+          headline: "Judge orders impeached Paraguayan ex-president Peña held over bank collapse",
+          dek: "Santiago Peña will be detained at a military facility while prosecutors pursue charges that he steered state money to the failed lender ueno. His vice-president has been sworn in.",
           body: [
-            "The strike day widened a protest movement that began with student blockades in October and now draws in unions and yellow-vest activists angry about fuel and living costs.",
-            "With public finances stretched, the government has little room for the kind of concessions Macron made during the 2018-19 yellow-vest crisis."
+            "Peña is charged with breach of trust and administration for personal gain, each carrying up to 10 years; he was a shareholder in ueno's holding company until March 2025. The bank's collapse left millions unable to reach their accounts, and the central bank says about $160 million has been paid to nearly 1.2 million savers under the deposit guarantee. Former central bank chief Carlos Carvallo also faces charges.",
+            "Peña's lawyer says he pleads not guilty and will cooperate. Vice-President Pedro Alliana of the ruling Colorado Party will serve out the term to August 2028."
           ],
-          why: "Cost-of-living politics in France and across the EU, one of South Africa's biggest trading partners, is squeezing budgets and demand.",
+          why: "It is a stark example of how a single bank failure tied to political insiders can topple a government, a reminder of why independent banking supervision matters.",
           sources: [
-            { name: "Morning Star", url: "https://morningstaronline.co.uk/article/world-brief-november-7-2026" }
+            { name: "Reuters via Spokesman-Review", url: "https://www.spokesman.com/stories/2026/nov/07/judge-orders-paraguays-ex-president-pena-held-befo/" }
+          ]
+        },
+        {
+          kicker: "United States",
+          headline: "Democrat Colom's lead in Mississippi grows to about 2,500 votes",
+          dek: "Scott Colom leads Senator Cindy Hyde-Smith by 2,574 votes, with about 3,000 mail-in ballots and an unknown number of provisional ballots still to process.",
+          body: [
+            "Mail ballots postmarked by election day can arrive until 10 November. Colom's campaign estimates up to 15,000 provisional ballots; Hyde-Smith says the race is not over and her team is monitoring the count. Alaska's ranked-choice result is not due until 18 November. Wins in both would give Democrats 56 Senate seats."
+          ],
+          why: "The size of the Democratic Senate majority will shape how hard Congress pushes back on White House trade measures such as the AGOA suspension.",
+          sources: [
+            { name: "Fox News live", url: "https://www.foxnews.com/live-news/mississippi-senate-race-too-close-to-call-colom-leads-11-07-26" }
           ]
         }
       ]
@@ -255,33 +269,17 @@ const EDITION = {
       id: "sa-politics", name: "South African Politics",
       stories: [
         {
-          kicker: "Elections 2026",
-          headline: "IEC set to declare results today with the ANC near 31% and MK on top in KZN",
-          dek: "With 99.7% of voting districts in, the ANC has 30.7% of the ward vote, the DA 24.5% and MK 9.6%. Turnout is about 52%.",
+          kicker: "Coalitions",
+          headline: "Parties set out red lines as the scramble for Gauteng's metros begins",
+          dek: "ActionSA wants an end to revolving-door mayors and is wary of MK; the DA calls an EFF deal unworkable; MK and the EFF rule out working with the DA.",
           body: [
-            "The ANC still leads six provinces, but the DA leads Gauteng and the Western Cape and Zuma's MK Party leads KwaZulu-Natal with about 34%, where the ANC has slumped to roughly 20% from 41% in 2021. The EFF has fallen to about 6%.",
-            "The DA leads the vote in Johannesburg, Tshwane, Ekurhuleni, Cape Town and Nelson Mandela Bay, but only Cape Town is a clear majority; MK leads eThekwini, the ANC holds Buffalo City and Mangaung is tight. More than 100 councils, including seven metros, face coalition talks. Once results are declared, councils must sit within 14 days to elect speakers and mayors."
+            "The DA, with Helen Zille as its Johannesburg candidate, says it is already talking to several parties, including the ANC, and demands merit appointments and zero tolerance for corruption. ActionSA's Herman Mashaba will talk to anyone who signs up to service delivery, anti-corruption and action on illegal immigration, but questions MK's staying power. The ANC wants stability and its manifesto priorities; Fikile Mbalula says it may prefer opposition to bad deals.",
+            "The EFF wants a socialist programme and calls the DA the enemy. MK says it will only work with ideologically aligned parties and wants land reform including changes to section 25 of the Constitution. The Freedom Front Plus will decide after the results, ruling out parties it sees as hostile to the rule of law."
           ],
-          why: "The 14-day clock that starts with today's declaration will decide who runs Johannesburg, Tshwane and Ekurhuleni, and how stable those metros are.",
+          why: "Johannesburg, Tshwane and Ekurhuleni have cycled through mayors since 2021; whether these red lines produce stable majorities will determine basic service delivery in Gauteng.",
           sources: [
-            { name: "ESP (IEC data)", url: "https://esp.info/elections/local/2026" },
-            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-07-anc-faces-coalition-scramble-after-electoral-rout-as-control-of-key-metros-slips-away/" },
-            { name: "Jacaranda FM", url: "https://www.jacarandafm.com/news/news/seven-metros--100-councils-face-coalition-negotiations/" }
-          ]
-        },
-        {
-          kicker: "ANC",
-          headline: "Mbalula calls the result catastrophic and says the ANC will not beg for mayorships",
-          dek: "The secretary-general says the party saw the defeat coming, may choose opposition over bad deals, and wants to discuss the DA's place in the GNU.",
-          body: [
-            "Fikile Mbalula said internal polling had pointed to at least 34%, admitted the middle class has turned away, and said the party had feared being wiped out in KZN. The ANC is weighing full coalitions, confidence-and-supply deals or opposition, council by council, and has asked for a recount in Gauteng.",
-            "The ANC's top seven meet on Monday and its NEC on Thursday 12 November. Mbalula also said the party must discuss the DA's continued role in the national unity government after the DA opposed the ANC's court bid over candidates left off the ballot. Elsewhere, the EFF wants an ANC-MK-EFF-SACP front, and ActionSA says it will talk to anyone, with reservations about MK."
-          ],
-          why: "A falling-out over local deals could spill into the national GNU, the arrangement that has steadied markets and policy since 2024.",
-          sources: [
-            { name: "Business Day", url: "https://www.businessday.co.za/politics/2026-11-07-we-will-not-beg-for-mayorship-mbalula-says-anc-performance-in-polls-catastrophic/" },
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/south-africa/elections/mbalula-we-knew-this-disaster-was-coming-we-thought-we-would-be-totally-wiped-out-in-kzn/" },
-            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-07-anc-faces-coalition-scramble-after-electoral-rout-as-control-of-key-metros-slips-away/" }
+            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-06-from-actionsa-to-mk-what-gautengs-top-parties-will-demand-in-coalition-talks/" },
+            { name: "Business Day", url: "https://www.businessday.co.za/politics/2026-11-07-we-will-not-beg-for-mayorship-mbalula-says-anc-performance-in-polls-catastrophic/" }
           ]
         }
       ]
@@ -291,16 +289,16 @@ const EDITION = {
       stories: [
         {
           kicker: "COP31",
-          headline: "COP31 starts tomorrow with current pledges pointing to about 2.6°C",
-          dek: "UNEP's Emissions Gap Report says 2024 was the first calendar year above 1.5°C, and full delivery of today's national plans still leaves the world far off course.",
+          headline: "COP31 opens in Antalya with an electrification push and a fight over adaptation money",
+          dek: "Türkiye and Australia want the summit to back raising electricity's share of global energy from about 20% to 35% by 2035. Around 85 leaders are expected for the 11-12 November summit.",
           body: [
-            "Türkiye holds the presidency and runs the action agenda, but Australia has unusual exclusive control over the negotiations and draft texts. Key fights include whether the mitigation work programme continues beyond 2026, how to turn the Belém just-transition mechanism into something concrete, and the IPCC's failure in October to agree a timetable for its next assessment.",
-            "Money is the main fault line. COP30 promised to triple adaptation finance by 2035 without fixing a baseline, and the EU wants China and rich oil exporters to join the contributor base, which the G-77 resists."
+            "The EU wants the text to say 'clean' electrification, which reopens the fossil-fuel language that COP30 avoided. African negotiators want a pledge to triple adaptation finance, while budget-strapped rich countries are reluctant. The Trump administration is not taking part in the negotiations, though a US congressional delegation will attend.",
+            "The talks start with the energy shock from the Middle East war weighing on governments, and with UNEP projecting about 2.6°C of warming even if current national plans are fully delivered. Australia's climate minister Chris Bowen has warned that consensus among nearly 200 countries will not be easy."
           ],
-          why: "The African Group's priority is delivery of adaptation finance, which matters for drought- and fire-exposed provinces like the Western Cape.",
+          why: "South Africa sits in both camps: it wants adaptation finance through the African Group, while its coal-heavy grid makes electrification and fossil-fuel language directly relevant to its just-transition deals.",
           sources: [
-            { name: "Clyde & Co briefing", url: "https://www.clydeco.com/en/insights/2026/11/cop31-briefing-paper" },
-            { name: "UN", url: "https://www.un.org/en/climatechange/cop31" }
+            { name: "Türkiye Today", url: "https://www.turkiyetoday.com/nation/what-to-watch-as-cop31-climate-talks-begin-in-antalya-3231859" },
+            { name: "Anadolu Agency", url: "https://www.aa.com.tr/en/turkiye/cop31-climate-summit-to-kick-off-in-turkiyes-antalya-on-monday/4115777" }
           ]
         }
       ]
@@ -309,28 +307,16 @@ const EDITION = {
       id: "science", name: "Science",
       stories: [
         {
-          kicker: "Astronomy",
-          headline: "Rubin Observatory finds two hidden companions of the Milky Way",
-          dek: "Using preview data from just 7% of the sky, astronomers found a faint dwarf galaxy, Aquarius IV, and a dust-shrouded star cluster on the far side of the galaxy.",
+          kicker: "Ecology",
+          headline: "Europe's 'primeval forest' was mostly open woodland for 20 million years, review finds",
+          dek: "Aarhus University researchers combined pollen, charcoal, fossil and ancient-DNA evidence and concluded that grazed mosaics of woodland and meadow, not closed forest, were the norm.",
           body: [
-            "Aquarius IV lies about 355,000 light-years away; Rubin-GC1 was hidden behind thick dust. About 65 Milky Way satellites are known and models predict hundreds more, which Rubin's ten-year survey, begun in June, is expected to find.",
-            "Faint satellites like these are mostly dark matter, which makes them useful probes of what dark matter is."
+            "The review in Biological Conservation argues that big herbivores such as elephants, rhinos, aurochs and bison kept landscapes open through warm and cold periods alike, and that many 'farmland' species, from larks to wild poppies, evolved in these habitats. Dense forest, on this reading, is a recent feature.",
+            "The authors say policies that only reward dense tree planting may harm biodiversity, and argue for restoring open mosaics and large wild grazers. The findings come from a synthesis of earlier studies rather than new field data."
           ],
-          why: "A fuller count of dark-matter-dominated dwarf galaxies is one of the cleanest tests of how galaxies like ours were assembled.",
+          why: "It feeds a live debate, familiar from South Africa's grassland and fynbos biomes, over whether tree-planting targets suit ecosystems that evolved with grazing and fire.",
           sources: [
-            { name: "ScienceDaily", url: "https://www.sciencedaily.com/releases/2026/11/261104012252.htm" }
-          ]
-        },
-        {
-          kicker: "Space",
-          headline: "NASA's Swift observatory burns up over Sumatra after 22 years",
-          dek: "Built for a two-year mission to chase gamma-ray bursts, the telescope re-entered the atmosphere over North Sumatra on Wednesday.",
-          body: [
-            "Launched in 2004, Swift could swing its three telescopes to a sudden cosmic event within minutes and alert observatories worldwide. It went on to study supernovae, flaring stars, black-hole-powered galaxies, comets and asteroids. NASA expected most of it to burn up."
-          ],
-          why: "Swift's rapid-alert model became the template for today's multi-observatory hunts for cosmic explosions.",
-          sources: [
-            { name: "ScienceDaily", url: "https://www.sciencedaily.com/releases/2026/11/261105224545.htm" }
+            { name: "ScienceDaily (Aarhus University)", url: "https://www.sciencedaily.com/releases/2026/11/261104012333.htm" }
           ]
         }
       ]
@@ -339,33 +325,31 @@ const EDITION = {
       id: "health", name: "Health & Medicine",
       stories: [
         {
-          kicker: "AHA 2026 · Cardiology",
-          headline: "Lp(a) and IL-6 drugs both fail outcomes trials despite hitting their targets",
-          dek: "Pelacarsen cut lipoprotein(a) by 78% but did not reduce MACE (HR 1.02). Ziltivekimab cut hs-CRP by 64% with no fall in events. Both were published in NEJM.",
+          kicker: "AHA 2026 · NEJM",
+          headline: "Stopping statins in multimorbid over-70s meets non-inferiority, but events rise",
+          dek: "In STREAM, 1,880 older adults without ASCVD were randomised to stop or continue primary-prevention statins. Discontinuation was non-inferior on the prespecified measure, yet the hazard of MI, stroke or death was 38% higher.",
           body: [
-            "Lp(a)HORIZON randomised 8,323 secondary-prevention patients with Lp(a) of at least 70 mg/dL (median 109) to monthly pelacarsen 80 mg or placebo. Over a median 4.7 years, MACE occurred in 12.3% versus 12.1% (HR 1.02, 95% CI 0.90-1.15), with no benefit in the subgroup at 90 mg/dL or above. Drug-related adverse events (56.8% vs 18.0%) and discontinuations were higher, with 19 cases of anaphylaxis. Novartis has dropped the programme; the result does not settle the question for siRNA agents still in trials.",
-            "ZEUS gave 6,376 patients with ASCVD, CKD and hs-CRP of at least 2 mg/L monthly ziltivekimab 15 mg or placebo. IL-6 fell 76%, but MACE counts were almost identical (561 vs 565) over a median 29 months, and serious infections were slightly more common (20% vs 18%). Novo Nordisk has halted its heart-failure trials of the drug."
+            "The open-label trial at 24 sites in Switzerland, the Netherlands and France enrolled people aged 70 or older (mean 77.5) with at least two chronic conditions and at least a year on a statin. Over two years, restricted mean event-free survival was 96.5 weeks with discontinuation versus 98.5 weeks with continuation (difference −2.0 weeks, 95% CI −3.7 to −0.3), inside the −5.2-week margin.",
+            "Over a median 103 weeks, the composite occurred in 12.7% versus 9.2% (HR 1.38, 95% CI 1.05-1.81), roughly one extra event per 40 people who stopped. MI (1.4% vs 0.6%) and ischaemic stroke (1.9% vs 0.8%) were both higher, and LDL-C rose to about 176 mg/dL versus 99 mg/dL. Quality of life, pain, falls and sarcopenia did not differ.",
+            "Crossover was substantial, and the monitoring board advised the discontinuation arm to discuss restarting. Cardiologist Rita Redberg, quoted by HCPLive, says the small rise in risk rules out a general recommendation to stop, and that the decision should be shared with the patient."
           ],
-          why: "For now, statins, ezetimibe and PCSK9 inhibitors remain the evidence base; Lp(a) testing identifies risk but there is still no proven way to treat it.",
+          why: "For deprescribing in frail, multimorbid patients, STREAM gives a concrete number to discuss: modest pill-burden relief against about one extra major event per 40 patients over two years.",
           sources: [
-            { name: "TCTMD", url: "https://www.tctmd.com/news/full-lpahorizon-results-affirm-lack-pelacarsen-benefit-secondary-prevention" },
-            { name: "AHA newsroom (ZEUS)", url: "https://newsroom.heart.org/news/researchers-say-inflammation-as-a-treatment-target-still-important-despite-neutral-results-of-zeus-trial" },
-            { name: "STAT", url: "https://www.statnews.com/2026/11/07/aha-2026-conference-novo-nordisk-zeus-trial-ziltivekimab-results/" }
+            { name: "HCPLive", url: "https://www.hcplive.com/view/stream-statin-discontinuation-noninferior-in-older-adults-without-cvd" },
+            { name: "NEJM", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2606634" }
           ]
         },
         {
           kicker: "Ebola · DRC",
-          headline: "Two Bundibugyo-specific vaccines join the DRC Ebola trial as cases pass 10,500",
-          dek: "WHO backed adding candidates from Oxford/Serum Institute and Moderna. The outbreak, the largest in the DRC's history, has killed more than 5,100 people.",
+          headline: "New WHO count puts DRC's Bundibugyo outbreak at 10,668 cases and 5,198 deaths",
+          dek: "WHO's latest outbreak report adds 964 cases in a fortnight and says two in three recent deaths are happening in the community, outside care.",
           body: [
-            "There is no licensed vaccine or specific therapy for Bundibugyo virus, and Ervebo targets the Zaire strain. The trial, led by the DRC's national biomedical research institute, already tests Ervebo in contacts; the new candidates still need national approval, and results are expected in early 2027. Case fatality is about 50%.",
-            "Kenya has reported nine cases and two deaths, and Nigeria one case. A British health worker infected in the DRC is being evacuated to the UK."
+            "Transmission is active in 51 of 67 affected health zones across eight provinces, with 1,463 cases in the last 21 days and a case fatality ratio of 48.7% (54.8% in North Kivu). Contact follow-up averages 86% against a 95% target. Yakoma in Nord-Ubangi is the newest affected zone.",
+            "Kenya has had no new cases since 19 October and no new country has reported cases. WHO still rates the risk as very high in the DRC, high for neighbouring states and low elsewhere in Africa, and is revising its assessment. The Tumaini vaccine trial began in Bunia on 23 October."
           ],
-          why: "Spread to Kenya and Nigeria raises the stakes for SA port-of-entry screening and for clinicians taking travel histories in febrile patients.",
+          why: "Community deaths signal missed cases, which keeps the risk of further exported infections alive; travel history remains essential in febrile patients presenting in South Africa.",
           sources: [
-            { name: "WHO", url: "https://www.who.int/news/item/04-11-2026-two-new-candidate-vaccines-to-join-ebola-trial-as-treatment-research-advances" },
-            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/4/who-approves-trials-for-two-new-ebola-vaccines" },
-            { name: "allAfrica", url: "https://allafrica.com/stories/202611060129.html" }
+            { name: "WHO Disease Outbreak News", url: "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625" }
           ]
         }
       ]
@@ -374,17 +358,17 @@ const EDITION = {
       id: "economy", name: "Economy & Markets",
       stories: [
         {
-          kicker: "Markets",
-          headline: "AI rout wipes about $3 trillion off Wall Street before a strong jobs report steadies it",
-          dek: "The S&P 500 fell more than 4% on Thursday and Nvidia 9%. On Friday the Nasdaq rose 1.1% after US payrolls grew by 165,000.",
+          kicker: "Fuel prices",
+          headline: "Early data point to a petrol cut of about R1.50 a litre in December, but dearer diesel",
+          dek: "Central Energy Fund figures show over-recoveries of R2.02 on 93 and R2.32 on 95, offset partly by the smaller fuel-levy relief the Treasury has scheduled for December.",
           body: [
-            "Investors fear that Democratic gains in the midterms will slow data-centre construction; Goldman Sachs estimates about 45% of planned US capacity could face limits from newly elected governors. The S&P 500 closed Friday at 7,376.86, up 0.3%, but tech and energy shares lost about 7% and 11% on the week.",
-            "October's payroll gain was more than double forecasts, and unemployment fell to 4.1%. Emerging markets felt the risk-off mood: the rand weakened to about R16.53 to the dollar on Friday morning and SA's 2035 bond yield rose to 8.33%."
+            "The Treasury's temporary levy relief shrinks in December to R1.00 a litre for petrol and R1.50 for diesel, adding back about 50c and R1.50. That leaves projected changes of about −R1.52 for 93 and −R1.82 for 95, but increases of about R1.49 for 0.05% diesel and R1.15 for 0.005% diesel. These are first-week figures and will move with oil and the rand; the official change takes effect on Wednesday 2 December.",
+            "The main driver is oil: Reuters reported Brent heading for a weekly fall of about 16% on Friday, at around $98.55, its steepest since the start of the pandemic, as Democratic midterm gains raised hopes of de-escalation with Iran. The rand is near R16.50 to the dollar."
           ],
-          why: "A stronger dollar and nervy global markets work against the rand, even as lower oil prices offer some relief at the pump.",
+          why: "A petrol cut would ease household costs before the holidays, but dearer diesel feeds into food and freight prices.",
           sources: [
-            { name: "Yahoo Finance", url: "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html" },
-            { name: "CNBC Africa", url: "https://www.cnbcafrica.com/2026/south-african-rand-slips-on-stronger-dollar-local-election-vote-count-advances" }
+            { name: "BusinessTech", url: "https://businesstech.co.za/news/energy/882938/great-news-for-petrol-prices-in-south-africa-3/" },
+            { name: "Reuters via RTÉ", url: "https://www.rte.ie/news/business/2026/1106/1598252-world-oil-prices/" }
           ]
         }
       ]
@@ -393,17 +377,16 @@ const EDITION = {
       id: "tech", name: "Technology & AI",
       stories: [
         {
-          kicker: "AI funding",
-          headline: "OpenAI raises $11 billion at a $1.25 trillion valuation, below its first ask",
-          dek: "The first close of the round landed on Friday, with SoftBank and Abu Dhabi's MGX among investors. Reports had put OpenAI's initial target at $1.4 trillion.",
+          kicker: "Crypto",
+          headline: "US Treasury moves to cut crypto exchange MEXC off from American finance",
+          dek: "FinCEN alleges the exchange handled at least $16 billion linked to sanctions evasion and cybercrime involving Iran, North Korea and Russia.",
           body: [
-            "CFO Sarah Friar confirmed the pre-money valuation and disputed reports of a higher original ask. Up to about $9 billion more could follow. In March OpenAI raised $122 billion at $852 billion.",
-            "The AI sell-off is also weighing on Anthropic's planned mid-November Nasdaq listing, where some investors are reported to be pushing the valuation towards $1.5 trillion, down from earlier talk of about $2 trillion."
+            "The order, which takes effect 30 days after publication in the Federal Register, would bar US financial institutions from moving money or crypto to or from MEXC. FinCEN alleges about $1.5 billion tied to Russian sanctions evasion, $1 billion sent directly to more than 40 Iranian exchanges, and about $22 million linked to Iran's central bank and the Revolutionary Guards.",
+            "MEXC, among the world's 20 largest exchanges, says it is reviewing the order, still operating normally, and has commissioned an independent review of its controls."
           ],
-          why: "Cooler pricing for the biggest AI labs is an early sign of how much the infrastructure boom depends on investor appetite.",
+          why: "It shows Washington using financial plumbing, not just strikes and blockades, to squeeze Iran, and raises compliance stakes for any exchange serving African users.",
           sources: [
-            { name: "Yahoo Finance / 24/7 Wall St.", url: "https://finance.yahoo.com/technology/ai/articles/openai-just-raised-11-billion-133842228.html" },
-            { name: "Investing.com", url: "https://ng.investing.com/news/stock-market-news/openai-closes-11-billion-funding-at-125-trillion-valuation--report-2791256" }
+            { name: "CoinDesk", url: "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows" }
           ]
         }
       ]
@@ -413,24 +396,22 @@ const EDITION = {
 
 /* Headlines from the previous edition (only one day is kept). */
 const PREVIOUS = {
-  dateLong: "Saturday, 7 November 2026",
+  dateLong: "Sunday, 8 November 2026 (morning)",
   items: [
-    { section: "South Africa", headline: "ANC slumps to about 31% as the local-election count nears its end" },
-    { section: "Wars & Conflicts", headline: "Missiles strike Iran's Qeshm Island as Qatar keeps talks alive" },
-    { section: "Wars & Conflicts", headline: "Oleshky truce lapses as Washington pushes for something sturdier" },
-    { section: "World Politics", headline: "Democrats sweep both houses of Congress in a rebuke of Trump" },
-    { section: "World Politics", headline: "Paraguay's president impeached and placed under house arrest" },
-    { section: "World Politics", headline: "France's cost-of-living protests grind into a second month" },
-    { section: "South African Politics", headline: "Coalition talks begin as hung councils pile up" },
-    { section: "South African Politics", headline: "MK Party dominates KZN, pushing the ANC to third" },
-    { section: "Climate & Environment", headline: "COP31 opens on Monday in Antalya as the world heads past 1.5°C" },
-    { section: "Science", headline: "Traces of blood survive in 115-million-year-old dinosaur bones" },
-    { section: "Science", headline: "Asteroid Ryugu samples contain all five DNA and RNA bases" },
-    { section: "Health & Medicine", headline: "Calcium scans match risk scores for statin decisions with far fewer prescriptions" },
-    { section: "Economy & Markets", headline: "Oil has its steepest weekly fall since COVID on Iran-deal hopes" },
-    { section: "Economy & Markets", headline: "South Africa to lose AGOA duty-free access from 1 January" },
-    { section: "Technology & AI", headline: "AI shares slide as investors question the infrastructure boom" },
-    { section: "Technology & AI", headline: "OpenAI's GPT-6 Cyber and a new US 'Super Intelligence Task Force'" }
+    { section: "World Politics", headline: "Herzog picks Eisenkot over Netanyahu to form Israel's next government" },
+    { section: "Wars & Conflicts", headline: "Russia fires 36 ballistic missiles at Kyiv ahead of Abu Dhabi talks" },
+    { section: "Wars & Conflicts", headline: "Trump confirms 'minor' strikes on Iranian air defences as tanker war claims a sailor" },
+    { section: "World Politics", headline: "Alaska and Mississippi Senate races stay too close to call" },
+    { section: "World Politics", headline: "Hundreds of thousands march as France's national strike day hits Macron" },
+    { section: "South African Politics", headline: "IEC set to declare results today with the ANC near 31% and MK on top in KZN" },
+    { section: "South African Politics", headline: "Mbalula calls the result catastrophic and says the ANC will not beg for mayorships" },
+    { section: "Climate & Environment", headline: "COP31 starts tomorrow with current pledges pointing to about 2.6°C" },
+    { section: "Science", headline: "Rubin Observatory finds two hidden companions of the Milky Way" },
+    { section: "Science", headline: "NASA's Swift observatory burns up over Sumatra after 22 years" },
+    { section: "Health & Medicine", headline: "Lp(a) and IL-6 drugs both fail outcomes trials despite hitting their targets" },
+    { section: "Health & Medicine", headline: "Two Bundibugyo-specific vaccines join the DRC Ebola trial as cases pass 10,500" },
+    { section: "Economy & Markets", headline: "AI rout wipes about $3 trillion off Wall Street before a strong jobs report steadies it" },
+    { section: "Technology & AI", headline: "OpenAI raises $11 billion at a $1.25 trillion valuation, below its first ask" }
   ]
 };
 /* ====================== EDITION DATA: END ====================== */
