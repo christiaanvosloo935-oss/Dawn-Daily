@@ -130,6 +130,23 @@ body.in-topic .index::-webkit-scrollbar { display: none; }
 .index a.back { color: var(--accent); position: sticky; left: 0; background: var(--paper); padding-right: 12px; box-shadow: 8px 0 8px -4px var(--paper); }
 .index a.on { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
+/* Source-lean bar */
+.lean { margin: 14px 0 4px; padding-top: 12px; border-top: 1px solid var(--hair); max-width: 68ch; font-family: var(--label); }
+.lean-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.lean-head .verdict { color: var(--accent); }
+.lean-head .rated { font-weight: 600; letter-spacing: .04em; color: var(--muted); text-transform: none; font-size: 11.5px; }
+.lean-bar { display: flex; height: 12px; margin: 7px 0 6px; border: 1px solid var(--rule); background: var(--wash); }
+.lean-bar i { display: block; height: 100%; }
+.lean-bar i + i { border-left: 1px solid var(--paper); }
+.lean-bar .c0 { background: #1f3f73; }
+.lean-bar .c1 { background: #7c97c4; }
+.lean-bar .c2 { background: #b9b6aa; }
+.lean-bar .c3 { background: #d98a8d; }
+.lean-bar .c4 { background: #a3161d; }
+.lean-key { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.lean-key span:nth-child(2) { color: var(--muted); }
+.lean-note { margin-top: 6px; font-size: 11px; color: var(--muted); line-height: 1.35; }
+
 /* Archive */
 .archive { margin-top: 28px; border-top: 3px double var(--rule); padding-top: 12px; }
 .archive h2 { font-family: var(--label); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 8px; }
@@ -453,6 +470,53 @@ const PREVIOUS = {
   $("ear-right").textContent = "Pretoria · Cape Town · The World";
   $("dateline-text").textContent = EDITION.dateLong + " · " + EDITION.compiled + " · " + count + " stories";
 
+
+  /* ---------- Source lean ----------
+     Approximate political lean of the outlets cited, from general knowledge of public
+     media-bias ratings (AllSides / Ad Fontes / MBFC style). It is a rough guide, not a
+     verdict: edit the table below to taste. Scale: 0 left, 1 lean left, 2 centre,
+     3 lean right, 4 right. Wire services, journals and official bodies count as centre.
+     Domains not listed are shown as "not rated" and left out of the ratio. */
+  const LEAN = {
+    "reuters.com": 2, "apnews.com": 2, "afp.com": 2, "bbc.com": 2, "bbc.co.uk": 2, "ft.com": 2,
+    "bloomberg.com": 2, "dw.com": 2, "france24.com": 2, "sky.com": 2, "news.sky.com": 2,
+    "economist.com": 2, "pbs.org": 2, "cbsnews.com": 2, "theglobeandmail.com": 2, "japantimes.co.jp": 2,
+    "scmp.com": 2, "wsj.com": 2, "rte.ie": 2, "abc.net.au": 2, "rferl.org": 2, "kyivpost.com": 2,
+    "timesofisrael.com": 2, "criticalthreats.org": 2, "understandingwar.org": 2,
+    "africannewsagency.com": 2, "ewn.co.za": 2, "timeslive.co.za": 2, "sabcnews.com": 2,
+    "businessday.co.za": 2, "news24.com": 2, "businesstech.co.za": 2,
+    "who.int": 2, "un.org": 2, "nejm.org": 2, "thelancet.com": 2, "jamanetwork.com": 2, "bmj.com": 2,
+    "nature.com": 2, "sciencedaily.com": 2, "hcplive.com": 2, "nicd.ac.za": 2, "africacdc.org": 2,
+    "nytimes.com": 1, "washingtonpost.com": 1, "aljazeera.com": 1, "npr.org": 1, "nbcnews.com": 1,
+    "abcnews.go.com": 1, "cbc.ca": 1, "independent.co.uk": 1, "dailymaverick.co.za": 1, "mg.co.za": 1,
+    "thecitizen.co.za": 2, "cnn.com": 1, "politico.com": 1,
+    "theguardian.com": 0, "morningstaronline.co.uk": 0, "msnbc.com": 0, "huffpost.com": 0,
+    "thetimes.co.uk": 3, "jpost.com": 3, "telegraph.co.uk": 3, "nypost.com": 3, "spectator.co.uk": 3,
+    "foxnews.com": 4, "breitbart.com": 4, "dailywire.com": 4
+  };
+  const LEAN_NAMES = ["Left", "Lean left", "Centre", "Lean right", "Right"];
+  const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, "").toLowerCase(); } catch (e) { return ""; } };
+  const leanOf = (u) => { let h = host(u); while (h) { if (h in LEAN) return LEAN[h]; const i = h.indexOf("."); if (i < 0) break; h = h.slice(i + 1); } return null; };
+
+  function leanHTML(sources) {
+    const list = sources || [];
+    const n = [0, 0, 0, 0, 0];
+    list.forEach((x) => { const v = leanOf(x.url); if (v !== null) n[v]++; });
+    const rated = n.reduce((a, b) => a + b, 0);
+    const head = (verdict, extra) => '<div class="lean-head"><span>Source lean' + (verdict ? ' · <span class="verdict">' + verdict + "</span>" : "") + '</span><span class="rated">' + extra + "</span></div>";
+    if (!rated) return '<div class="lean">' + head("", "Sources not rated") + "</div>";
+    const pct = (k) => Math.round((k / rated) * 100);
+    const left = n[0] + n[1], mid = n[2], right = n[3] + n[4];
+    const mean = (n[1] + 2 * n[2] + 3 * n[3] + 4 * n[4]) / rated;
+    const verdict = mean < 1.5 ? "Leans left" : mean < 1.85 ? "Slightly left of centre" : mean <= 2.15 ? "Balanced" : mean <= 2.5 ? "Slightly right of centre" : "Leans right";
+    const bar = n.map((k, i) => (k ? '<i class="c' + i + '" style="width:' + (k / rated) * 100 + '%" title="' + LEAN_NAMES[i] + ": " + k + '"></i>' : "")).join("");
+    const label = "Source lean: " + pct(left) + "% left, " + pct(mid) + "% centre, " + pct(right) + "% right";
+    return '<div class="lean">' + head(verdict, rated + " of " + list.length + " sources rated") +
+      '<div class="lean-bar" role="img" aria-label="' + label + '">' + bar + "</div>" +
+      '<div class="lean-key"><span>Left ' + pct(left) + "%</span><span>Centre " + pct(mid) + "%</span><span>Right " + pct(right) + "%</span></div>" +
+      '<div class="lean-note">Approximate outlet ratings, one vote per source. Wire services and journals count as centre.</div></div>';
+  }
+
   function storyHTML(s, isLead) {
     const body = s.body.map((p) => "<p>" + esc(p) + "</p>").join("");
     const why = s.why ? '<div class="why"><b>Why it matters</b>' + esc(s.why) + "</div>" : "";
@@ -465,7 +529,7 @@ const PREVIOUS = {
       "<" + H + ' class="headline">' + esc(s.headline) + "</" + H + ">" +
       '<p class="dek">' + esc(s.dek) + "</p>" +
       '<span class="more"><span class="closed-label">Read more</span><span class="open-label">Close</span></span>' +
-      '</summary><div class="body">' + body + why + src + "</div></details>";
+      '</summary><div class="body">' + body + why + src + leanHTML(s.sources) + "</div></details>";
   }
 
   $("lead").innerHTML = storyHTML(EDITION.lead, true);
