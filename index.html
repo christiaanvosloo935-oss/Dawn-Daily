@@ -106,6 +106,30 @@ summary:hover .headline { text-decoration: underline; text-decoration-thickness:
 .section .headline { font-size: 21px; }
 .section .dek { font-size: 16.5px; }
 
+/* Topic grid (home) and single-topic view */
+.topics-title { font-family: var(--label); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin: 22px 0 10px; padding-bottom: 4px; border-bottom: 2px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline; }
+.topics-title span { font-size: 11px; font-weight: 600; letter-spacing: .06em; color: var(--muted); }
+.topics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.topic { display: flex; flex-direction: column; gap: 6px; min-height: 168px; padding: 12px 14px 14px; color: var(--ink); text-decoration: none; background: var(--wash); border: 1px solid var(--hair); border-top: 3px solid var(--rule); }
+.topic:hover, .topic:focus-visible { border-top-color: var(--accent); background: #e4e3da; }
+.topic .t-name { font-family: var(--label); font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.topic .t-count { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.topic .t-count small { font-family: var(--label); font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-left: 6px; }
+.topic .t-top { font-family: var(--display); font-weight: 600; font-size: 14.5px; line-height: 1.25; color: #2b2b29; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.topic .t-open { margin-top: auto; font-family: var(--label); font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.topic .t-open::after { content: " \2192"; }
+.topic:hover .t-open { color: var(--accent); }
+.sections { display: none; }
+.section { display: none; }
+body.in-topic .sections { display: block; max-width: 820px; margin: 0 auto; }
+body.in-topic .section.active { display: block; }
+body.in-topic .lead, body.in-topic .numbers, body.in-topic .topics-title, body.in-topic .topics, body.in-topic .archive { display: none; }
+.index { display: none; }
+body.in-topic .index { display: flex; position: sticky; top: 0; z-index: 5; background: var(--paper); flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+body.in-topic .index::-webkit-scrollbar { display: none; }
+.index a.back { color: var(--accent); position: sticky; left: 0; background: var(--paper); padding-right: 12px; box-shadow: 8px 0 8px -4px var(--paper); }
+.index a.on { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+
 /* Archive */
 .archive { margin-top: 28px; border-top: 3px double var(--rule); padding-top: 12px; }
 .archive h2 { font-family: var(--label); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 8px; }
@@ -117,7 +141,9 @@ summary:hover .headline { text-decoration: underline; text-decoration-thickness:
 
 @media (max-width: 760px) {
   .page { padding: 14px 16px 48px; }
-  .sections { grid-template-columns: 1fr; }
+  .topics { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .topic { min-height: 150px; padding: 10px 11px 12px; }
+  .topic .t-top { font-size: 13.5px; -webkit-line-clamp: 4; }
   .ears { font-size: 10px; }
   .ears span:last-child { display: none; }
 }
@@ -145,6 +171,8 @@ summary:hover .headline { text-decoration: underline; text-decoration-thickness:
   <div class="numbers" id="numbers"></div>
   <main>
     <article class="lead" id="lead"></article>
+    <div class="topics-title" id="topics-title">Choose a topic<span>Tap to read only that field</span></div>
+    <nav class="topics" id="topics" aria-label="Topics"></nav>
     <div class="sections" id="sections"></div>
   </main>
   <section class="archive" id="archive" aria-labelledby="archive-title"></section>
@@ -442,8 +470,16 @@ const PREVIOUS = {
 
   $("lead").innerHTML = storyHTML(EDITION.lead, true);
 
-  $("index").innerHTML = '<a href="#lead">Top story</a>' +
-    EDITION.sections.map((s) => '<a href="#' + s.id + '">' + esc(s.name) + "</a>").join("");
+  $("index").innerHTML = '<a href="#top" class="back">\u2190 All topics</a>' +
+    EDITION.sections.map((s) => '<a href="#' + s.id + '" data-id="' + s.id + '">' + esc(s.name) + "</a>").join("");
+
+  $("topics").innerHTML = EDITION.sections.map((s) => {
+    const top = s.stories[0];
+    return '<a class="topic" href="#' + s.id + '"><span class="t-name">' + esc(s.name) + "</span>" +
+      '<span class="t-count">' + s.stories.length + "<small>" + (s.stories.length === 1 ? "story" : "stories") + "</small></span>" +
+      (top ? '<span class="t-top">' + esc(top.headline) + "</span>" : "") +
+      '<span class="t-open">Read</span></a>';
+  }).join("");
 
   $("numbers").innerHTML = (EDITION.numbers || []).map((n) =>
     '<div class="num"><div class="k">' + esc(n.k) + '</div><div class="v">' + esc(n.v) + '</div><div class="n">' + esc(n.n) + "</div></div>").join("");
@@ -463,6 +499,22 @@ const PREVIOUS = {
   $("archive").innerHTML = arch;
 
   $("colophon").textContent = "Edition " + EDITION.number + " · Refreshed daily at 06:00 SAST · Click any headline to read more";
+
+  // Home shows the lead and the topic grid; #<section-id> shows just that topic.
+  function route() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const sec = id && document.querySelector('.section[id="' + id + '"]');
+    document.body.classList.toggle("in-topic", !!sec);
+    document.querySelectorAll(".section").forEach((el) => el.classList.toggle("active", el === sec));
+    document.querySelectorAll("#index a[data-id]").forEach((a) => {
+      const on = a.dataset.id === id;
+      a.classList.toggle("on", on);
+      if (on) a.scrollIntoView({ block: "nearest", inline: "center" });
+    });
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", route);
+  route();
 
   const all = () => document.querySelectorAll("details.story");
   $("expand-all").addEventListener("click", () => all().forEach((d) => (d.open = true)));
