@@ -217,77 +217,93 @@ body.in-topic .filter { display: block; max-width: 820px; margin: 14px auto 0; f
    previous EDITION's headlines into PREVIOUS. Everything below the
    END marker is the template and stays unchanged. */
 const EDITION = {
-  number: 7,
-  dateLong: "Wednesday, 11 November 2026",
-  compiled: "Compiled 03:53 SAST",
+  number: 8,
+  dateLong: "Thursday, 12 November 2026",
+  compiled: "Compiled 03:57 SAST",
   lead: {
     section: "Wars & Conflicts",
     kicker: "Ukraine · Abu Dhabi talks",
-    headline: "Abu Dhabi talks open with a prisoner-swap plan as Russia pounds Ukraine's grid",
-    dek: "The first US-brokered three-way talks in nine months ran for about four hours on Tuesday, with a second day due today. Hours earlier, Russian missiles and drones knocked out power in several regions.",
+    headline: "Abu Dhabi talks end with a deal on a big prisoner swap, but no breakthrough on territory",
+    dek: "Russia and Ukraine agreed in principle on what both sides call a large-scale exchange of prisoners. US envoys Steve Witkoff and Jared Kushner are due to brief Putin in Moscow today before seeing Zelensky in Dublin.",
     body: [
-      "Russian, Ukrainian and American delegations met in Abu Dhabi on Tuesday. Kremlin aide Vladimir Medinsky led Russia's side and Rustem Umerov led Ukraine's; Jared Kushner, envoy Steve Witkoff and Nato's supreme commander, Gen. Alexus Grynkewich, represented Washington. President Zelensky called the session 'constructive and quite substantive', saying it dealt mainly with humanitarian issues, such as prisoner exchanges and the return of deported children, and with security guarantees. A senior Ukrainian official said a large-scale prisoner swap was discussed. Marco Rubio, speaking in Paris, called the talks 'very productive' but warned a solution was not imminent.",
-      "Fox News reported beforehand that Washington had asked Moscow to accept a Nato-style, 'Article Five-like' security guarantee for Ukraine. Territory remains the main obstacle: Russia demands all of Donetsk, while Kyiv wants the war frozen on the current front line. Foreign minister Sergei Lavrov said Moscow would not accept an immediate ceasefire without knowing what would follow.",
-      "Overnight, Russia launched 162 drones and a ballistic missile, according to Ukraine's air force. Reuters reported that five major substations were hit and homes lost power in six regions, including Kyiv; two people were killed in Vinnytsia region."
+      "The second and final day of the US-brokered talks on Wednesday was brief, under two hours according to Russian state media. Ukraine's chief negotiator, Rustem Umerov, called agreement on a large-scale prisoner exchange the main result and said teams were now working out the details. Russia's lead negotiator, Vladimir Medinsky, spoke of a 'fundamental agreement' with details to follow. Neither side gave numbers; Zelensky had said formats of 1,000-for-1,000 or 1,500-for-1,500 were discussed, and a Russian general quoted by TASS said it would be the largest swap yet.",
+      "On the core issues there was little movement. Medinsky said understanding had been reached in some areas but not in others, and repeated that Russia intends to take all the land it claims. Kyiv refuses to give up territory it holds, and Zelensky says that question can only be settled in a meeting with Putin. Kushner said he saw 'some openings', noting that deals such as the Abraham Accords took years.",
+      "Washington wants European governments brought into the format and is trying to settle Ukraine together with wider European security arrangements; Sergei Lavrov dismissed a European role and rejected calls for an immediate ceasefire. Witkoff and Kushner are expected in Moscow today, then in Dublin to debrief Zelensky ahead of an informal EU leaders' meeting on 13 November."
     ],
-    why: "This is the most serious attempt at a settlement this year, and Europe's winter energy security and the stability of Black Sea grain routes, which matter to African food prices, depend on how it ends.",
+    why: "A large swap would be the first concrete result of this round, but without movement on territory the war, and its pressure on European energy and the Black Sea grain routes that matter to African food prices, looks set to run into winter.",
     sources: [
-      { name: "AP via PBS NewsHour", url: "https://www.pbs.org/newshour/world/russia-and-ukraine-hold-nearly-4-hours-of-u-s-mediated-talks-in-abu-dhabi" },
-      { name: "Fox News", url: "https://www.foxnews.com/politics/kushner-enters-ukraine-peace-talks-trump-eyes-securing-safeguards-against-another-russian-invasion" },
-      { name: "Reuters via The Business Standard", url: "https://www.tbsnews.net/world/russia-pounds-ukraines-power-grid-talks-open-abu-dhabi-1598631" }
+      { name: "Kyiv Independent", url: "https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/" },
+      { name: "The Moscow Times", url: "https://www.themoscowtimes.com/2026/11/11/abu-dhabi-talks-end-with-prisoner-exchange-but-no-peace-breakthrough-a94227" },
+      { name: "Denver Gazette", url: "https://www.denvergazette.com/2026/11/11/russia-and-ukraine-settle-on-large-prisoner-swap/" }
     ]
   },
   numbers: [
-    { k: "Brent crude", v: "$91.49", n: "Tuesday settlement, down another 1.2% (Reuters)" },
-    { k: "Rand/dollar", v: "R16.36", n: "Tuesday morning, before the US inflation data lifted the dollar (Reuters)" },
-    { k: "US October CPI", v: "+0.4% m/m", n: "Above the 0.3% forecast; core +0.3%. A December Fed hike is now fully priced (BLS, Reuters)" },
-    { k: "SA unemployment", v: "33.7%", n: "Q3, up from 33.6%; expanded rate 44.0% (Stats SA)" },
-    { k: "DRC Ebola cases", v: "10,668", n: "Confirmed Bundibugyo cases and 5,198 deaths, as of 3 Nov (WHO)" }
+    { k: "Brent crude", v: "$92.76", n: "Wednesday settlement, up 1.4% from a two-month low (Reuters)" },
+    { k: "Rand/dollar", v: "R16.53", n: "Wednesday morning, flat as markets fully price a December Fed hike (Reuters)" },
+    { k: "S&P 500", v: "7,619", n: "Up 1.3% on Wednesday as AI stocks rebounded; Nasdaq +1.6% (TheStreet)" },
+    { k: "Mississippi Senate", v: "+4,585", n: "Colom's unofficial lead over Hyde-Smith; counties certify by Friday (WLOX)" },
+    { k: "DRC Ebola cases", v: "10,990", n: "Confirmed Bundibugyo cases and 5,354 deaths, to 8 Nov (ECDC)" }
   ],
   sections: [
     {
       id: "conflicts", name: "Wars & Conflicts",
       stories: [
         {
-          kicker: "Iran war",
-          headline: "Rubio rules out more major combat against Iran as tanker attacks continue in Hormuz",
-          dek: "America's top diplomat said the economic blockade is doing the job for now. Iran's Revolutionary Guard kept striking ships using routes it has not approved.",
+          kicker: "Iran war · Hormuz",
+          headline: "Iran says Hormuz will never return to its pre-war status as more tankers hit mines",
+          dek: "Parliament speaker and chief negotiator Mohammad Bagher Ghalibaf said Iran and Oman will oversee the strait, and that the US must meet Tehran's conditions before any talks begin.",
           body: [
-            "After G7 foreign ministers met in Paris on Tuesday, Marco Rubio said economic pressure on Iran was so damaging that major combat operations were not needed for now, but warned Tehran would pay a 'terrible price' if it crossed US red lines. He called Iran's conditions for a deal, which include lifting sanctions and the blockade, unfreezing assets and war compensation, 'absurd'. France's foreign minister said renewed escalation could not be ruled out, and Britain called for Hormuz to be fully reopened.",
-            "UKMTO reported another tanker struck north-east of Lima, Oman, without naming who was responsible. Iran's IRGC Navy said two tankers caught fire after hitting mines on an 'unauthorised route'. The International Maritime Organization counts 130 incidents in the region since late February, with at least 25 seafarers killed. Iranian state TV showed an underground 'missile city', and a Guard spokesman claimed Iran had dropped its self-imposed 2,000km missile range limit; that claim has not been independently verified."
+            "In an interview with Al Jazeera, Ghalibaf rejected the idea that Hormuz is international water and said Iran's seven conditions, including lifting the US naval blockade and sanctions, releasing frozen funds and a formal end to the war, had been sent to Washington through a Qatari mediator. He named distrust of the US as the main obstacle and claimed US officials had asked Vladimir Putin to broker direct talks; Washington has not confirmed that.",
+            "Iran's Revolutionary Guard said a tanker caught fire early on Wednesday after striking a mine on what it called an unauthorised route, and Britain's UKMTO reported a tanker incident without naming the ship; it is unclear whether these were the same vessel. Iran's security chief, Mohsen Rezaei, said enriched nuclear material would not be allowed to leave the country, while the US insists nuclear issues must be part of any first round of talks."
           ],
-          why: "Hormuz remains the main swing factor for oil prices, and so for the fuel prices South Africans pay.",
+          why: "Tehran is treating control of Hormuz as a gain of the war, which keeps a risk premium in oil and therefore in South African fuel prices.",
           sources: [
-            { name: "AFP via Yahoo News", url: "https://www.yahoo.com/news/politics/articles/rubio-sees-no-major-combat-150112029.html" },
-            { name: "Jerusalem Post (Reuters reporting)", url: "https://www.jpost.com/middle-east/article-914514" },
-            { name: "AP via Click2Houston", url: "https://www.click2houston.com/news/world/2026/11/10/overnight-strikes-in-yemen-kill-at-least-1-person-and-wound-9-and-other-mideast-news/" }
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf" },
+            { name: "AP via WSLS", url: "https://www.wsls.com/news/world/2026/11/11/netanyahu-says-israel-is-not-to-blame-for-the-flood-crisis-in-gaza-and-other-mideast-news/" },
+            { name: "Reuters via Investing.com", url: "https://www.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-5017512" }
+          ]
+        },
+        {
+          kicker: "Iran war · Terror plots",
+          headline: "US charges three over Iran-backed attack plots, including a bid to hit RAF Fairford",
+          dek: "A superseding indictment in Manhattan accuses a jailed Kataib Hezbollah commander of directing attacks on Jewish targets in Europe and a planned strike on a British base used by US bombers.",
+          body: [
+            "Prosecutors say Mohammad Baqer Saad Dawood al-Saadi, held in New York, worked with Iranian national Mohsen Mohajeri and Iraqi national Mohammad Ali al-Hassani, neither of whom is in custody. The network is accused of involvement in nearly 20 attacks and attempted attacks since the Iran war began, including a near-fatal stabbing of two Jewish men and a synagogue firebombing in London and an attempted synagogue bombing in New York. Al-Saadi allegedly kept directing operations from jail through coded messages.",
+            "In the Fairford case, vans disguised as fuel-delivery and pool-supply vehicles, loaded with fuel barrels and metal for shrapnel, were allegedly sent towards the base in late September; two were stopped at checkpoints and the drivers arrested. Iran denied involvement in the Fairford incident."
+          ],
+          why: "It is the most detailed US legal account yet of an Iranian-linked campaign against Jewish communities and Western bases far from the Gulf.",
+          sources: [
+            { name: "CBS News", url: "https://www.cbsnews.com/news/3-iran-operatives-indicted-terror-plots/" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/us-charges-3-iran-backed-operatives-over-attacks-against-jews-plot-targeting-uk-airbase/" }
           ]
         },
         {
           kicker: "Gaza",
-          headline: "Israeli strikes kill at least six in Gaza as winter floods swamp tent camps",
-          dek: "Local health officials reported a father and his 13-year-old son among the dead on Tuesday. The first winter storm has left thousands of families without shelter.",
+          headline: "Netanyahu blames Hamas for Gaza's flood misery as strikes kill at least nine",
+          dek: "Israel says it has let in more than 91,000 tents and 8,200 trucks of winter goods; the UN and the US-created Board of Peace say delays have made the crisis worse.",
           body: [
-            "Gaza health sources said at least six Palestinians were killed by Israeli fire on Tuesday, including three in an air strike on a family home in Gaza City's Daraj area and a father and son in a tent in Zeitoun. The Hamas-run health ministry says more than 1,600 people have been killed since the US-brokered truce. Talks on Hamas disarmament and an Israeli withdrawal remain stalled.",
-            "The UN humanitarian office says the storm destroyed more than 6,000 family shelters and damaged 17,400. Five people, three of them children, died when a sand dune collapsed onto tents near Deir al-Balah. The UN says more than 150,000 tents are waiting outside Gaza for Israeli clearance."
+            "Netanyahu rejected accusations that Israel is holding up winter supplies, saying Hamas alone is responsible because it refuses to disarm and diverts aid. Aid groups say mobile homes remain barred, and the UN aid chief, Tom Fletcher, rejected suggestions that supplies should wait for a new Israeli government. Gaza's media office says about 70,000 tents flooded at the weekend; UNICEF says at least 106,000 people were directly affected.",
+            "Gaza's civil defence reported at least nine Palestinians killed in Israeli strikes and shootings on Wednesday and early Thursday, including four in Khan Younis near Nasser hospital. The Hamas-run health ministry says more than 1,600 people have been killed since the October 2025 ceasefire; it does not distinguish civilians from fighters."
           ],
-          why: "About 1.4 million Gazans are living in tents as winter starts, raising the risk of exposure deaths and waterborne disease.",
+          why: "With the truce stalled over Hamas disarmament and Israel between governments, winter aid has become the main test of the ceasefire.",
           sources: [
-            { name: "Al Jazeera (with Reuters)", url: "https://www.aljazeera.com/news/2026/11/10/israeli-attacks-kill-at-least-six-in-gaza-including-father-and-son" },
-            { name: "UN News", url: "https://news.un.org/en/story/2026/11/1168766" }
+            { name: "AP via WSLS", url: "https://www.wsls.com/news/world/2026/11/11/netanyahu-says-israel-is-not-to-blame-for-the-flood-crisis-in-gaza-and-other-mideast-news/" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog-november-11-2026/" },
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza" }
           ]
         },
         {
-          kicker: "Yemen",
-          headline: "New overnight strikes hit Sanaa fuel sites as Houthi-Saudi fighting escalates",
-          dek: "Houthi officials said a petrol station and an oil facility were struck, killing one person and wounding nine, and blamed Saudi Arabia.",
+          kicker: "Russia · Espionage",
+          headline: "Senior US Army officer at a Nato corps headquarters in England arrested on suspicion of spying for Russia",
+          dek: "Counter-terrorism police detained the 41-year-old near Gloucester under Britain's National Security Act. He has not been charged.",
           body: [
-            "A Houthi-run health ministry spokesman said a strike on a petrol station in Sanaa killed one person and wounded three, and a second strike on an oil company wounded at least six. AP could not independently verify the account, and Riyadh did not confirm any strikes. The Saudi-led coalition said it intercepted a drone over the Eastern Province.",
-            "The strikes follow a Houthi claim of 44 deaths near Sanaa at the weekend. The Houthis are targeting Saudi energy sites and airports to press Riyadh to lift its blockade of Yemen."
+            "The officer, who has not been named, served at Imjin Barracks, home of Nato's Allied Rapid Reaction Corps. Police, working with the FBI and the US military, said the suspected offences, obtaining or disclosing protected information and assisting a foreign intelligence service, relate to Russia. He is being held in London while two Gloucestershire addresses are searched; the Kremlin said Russia had nothing to do with it.",
+            "Police said the case is not linked to the Fairford investigation. It is not yet known whether any Nato material was compromised; the most serious offence carries a maximum of life imprisonment in Britain."
           ],
-          why: "A renewed Saudi-Houthi war on top of the Iran conflict puts more Gulf energy infrastructure and shipping at risk.",
+          why: "If confirmed, it would be a serious breach at a headquarters that plans Nato's rapid-reaction operations in Europe.",
           sources: [
-            { name: "AP via Click2Houston", url: "https://www.click2houston.com/news/world/2026/11/10/overnight-strikes-in-yemen-kill-at-least-1-person-and-wound-9-and-other-mideast-news/" }
+            { name: "Military.com", url: "https://www.military.com/senior-us-soldier-based-at-a-nato-headquarters-is-arrested-on-suspicion-of-helping-russia" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog-november-11-2026/" }
           ]
         }
       ]
@@ -296,70 +312,56 @@ const EDITION = {
       id: "politics", name: "World Politics",
       stories: [
         {
-          kicker: "Israel",
-          headline: "Eisenkot walks out of Likud talks as Israel's new Knesset is sworn in",
-          dek: "The former army chief cancelled a planned coalition meeting with Netanyahu's party after what he called a 'divisive' speech, and his bloc filed bills to reverse key Netanyahu-era policies.",
-          body: [
-            "Israel's 26th Knesset was sworn in on Tuesday. Gadi Eisenkot, whose Yashar party leads the anti-Netanyahu camp, has 28 days (extendable by 14) to form a government. His bloc introduced bills for a state inquiry into the 7 October attacks, prime-ministerial term limits and a rollback of the judicial changes. A majority of MKs signed a request to replace Speaker Amir Ohana with Yashar's Matan Kahana, and a vote could come this week.",
-            "Caretaker prime minister Benjamin Netanyahu urged a unity government to confront Iran and attacked any coalition role for Arab parties; Eisenkot then cancelled Wednesday's meeting with Likud. President Herzog urged concessions to avoid another election. Eisenkot has not ruled out working with Arab parties, but only if they accept Israel as a Jewish state and call Hamas a terrorist group."
-          ],
-          why: "Whoever governs Israel will shape the Gaza ceasefire, the Lebanon front and any Iran settlement, and the tone of relations with South Africa over its ICJ case.",
-          sources: [
-            { name: "AP via KRCG", url: "https://krcgtv.com/news/nation-world/eisenkot-unveils-plan-to-reverse-netanyahus-policies-as-israels-new-parliament-sworn-in" },
-            { name: "Jerusalem Post", url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502" },
-            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/10/israeli-president-warns-against-repeat-election-in-new-knesset-session" }
-          ]
-        },
-        {
           kicker: "United States",
-          headline: "House Republicans shelve Massie's bid to impeach Hegseth by 211 votes to 204",
-          dek: "The House sent the eight articles to the Judiciary Committee, which effectively kills them, at least until Democrats take control in January.",
+          headline: "Jim Jordan beats Steve Scalise to lead House Republicans into the minority",
+          dek: "The Judiciary Committee chairman won a secret ballot 106-73 and will be Trump's chief defender as Democrats take the House in January.",
           body: [
-            "Tuesday's vote cancelled a floor vote on the merits that could have come today. Thomas Massie was the only Republican to side with every Democrat present. The articles accused Defence Secretary Pete Hegseth of starting the Iran war without congressional approval, of strikes on alleged drug boats in the Caribbean and of retaliating against Senator Mark Kelly, among other charges.",
-            "Hegseth called the effort a 'political spectacle'. Massie, who leaves Congress in January after losing his primary, said he would not try again; Democrats could revive the issue once they control both chambers."
+            "Jordan, a co-founder of the Freedom Caucus, replaces Speaker Mike Johnson, who is stepping aside after the midterm losses. Tom Emmer was elected whip over August Pfluger, and Lisa McClain kept her post as conference chair.",
+            "Jordan is expected to lead the response to the investigations Democrats plan into Trump's Cabinet, family and businesses. Democrats hold their own leadership elections next week, with Hakeem Jeffries expected to become speaker."
           ],
-          why: "Republicans are still holding together in the lame-duck Congress, but the Iran war faces much tougher oversight from January.",
+          why: "A more combative Republican minority sets the tone for two years of divided government and oversight fights over the Iran war.",
           sources: [
-            { name: "CBS News", url: "https://www.cbsnews.com/news/massie-hegseth-impeachment/" },
-            { name: "Fox News", url: "https://www.foxnews.com/politics/house-gop-leaders-block-massie-hegseth-impeachment-push" }
+            { name: "Fox News", url: "https://www.foxnews.com/politics/jim-jordan-becomes-new-house-gop-leader-after-closed-door-vote-defeating-steve-scalise" },
+            { name: "AP via OPB", url: "https://www.opb.org/article/2026/11/10/rep-jim-jordan-of-ohio-elected-to-lead-house-republicans-in-the-minority/" }
           ]
         },
         {
-          kicker: "Media and law",
-          headline: "US judge lets Trump's $10bn defamation suit against the BBC go ahead",
-          dek: "A Florida federal judge refused to dismiss the claim over the Panorama edit of Trump's 6 January speech, though he threw out a separate claim.",
+          kicker: "Spain",
+          headline: "Millions join Spain's first general strike in 14 years over housing, and the day ends in clashes",
+          dek: "Unions say about four million workers stopped work. Police reported at least 73 arrests as evening protests in Madrid and Barcelona turned violent.",
           body: [
-            "District Judge Jeffrey Kuntz found that Trump had plausibly alleged reputational harm and that the BBC knew, or should have known, that the spliced clip was misleading. He dismissed an unfair trade practices claim, and the ruling does not decide the case. The BBC has apologised for the edit but denies defaming Trump."
+            "Unions reported 90% participation at ports and in the car industry, and electricity demand fell by up to 15.5% in the morning. Riot police used foam bullets and tear gas in Madrid, and furniture was set alight in Barcelona; unions plan a complaint over what they called a disproportionate police response. BBVA Research estimates the strike could shave 0.1-0.2% off annual GDP.",
+            "Spain has a shortfall of about 750,000 homes, and average rent is close to a young person's average monthly salary. Prime Minister Pedro Sánchez has called a snap election for 29 November after parliament rejected decrees to curb evictions and rents; his Socialists trail in the polls, and the CEOE business lobby called the strike counterproductive."
           ],
-          why: "The case is a costly test of a public broadcaster's exposure to US libel law, with implications for the BBC's finances and editorial independence.",
+          why: "Housing is now driving European politics, and the result of Spain's 29 November election will test whether it can save a centre-left government.",
           sources: [
-            { name: "Reuters via CP24", url: "https://www.cp24.com/news/world/2026/11/11/us-judge-says-trumps-us10-billion-bbc-defamation-case-can-proceed/" }
-          ]
-        },
-        {
-          kicker: "France",
-          headline: "Macron condemns attacks on teachers as student protests turn violent",
-          dek: "A councillor was hit by a petrol-filled bottle and a school was set alight. The government says nearly 300 education staff have been hurt in two months.",
-          body: [
-            "Protests that began in September over run-down schools, teacher shortages and university reforms have grown into wider cost-of-living demonstrations. On Tuesday a regional councillor was struck outside a school in Chelles, near Paris; a day earlier a principal near Bordeaux was hit by a projectile, and a school in Aix-en-Provence was set on fire overnight.",
-            "Macron said violence has no place in a democracy. Police say criminal elements have infiltrated the movement, while some protesters accuse officers of heavy-handedness. Student unions left talks with Prime Minister Sébastien Lecornu unsatisfied and promised more protests; 49 of 3,700 high schools were blockaded on Tuesday."
-          ],
-          why: "The unrest adds pressure on an already fragile French government.",
-          sources: [
-            { name: "Reuters via Internazionale", url: "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/french-authorities-condemn-violent-incidents-as-students-vow-to-keep-up-protest-pressure" }
+            { name: "Reuters via Investing.com", url: "https://www.investing.com/news/economy-news/millions-of-spaniards-stage-first-general-strike-in-14-years-as-anger-over-housing-leads-to-clashes-5020109" }
           ]
         },
         {
           kicker: "US midterms",
-          headline: "Mississippi's ballot deadline passes with Colom still about 2,500 votes ahead",
-          dek: "Tuesday was the last day for mail ballots to arrive and for voters to fix affidavit ballots; counties must certify results by Friday 13 November.",
+          headline: "Colom's Mississippi lead grows to about 4,600 votes as his campaign says Hyde-Smith has no path",
+          dek: "With roughly 7,100 ballots left, the Democrat's campaign says the Republican senator would need nearly 90% of them to catch up. Counties must certify by Friday.",
           body: [
-            "Democrat Scott Colom led Republican Senator Cindy Hyde-Smith by 2,536 votes (49.1% to 48.8%) on Tuesday morning, according to WLOX. Of 15,547 affidavit ballots processed, 76% had been accepted. Mississippi has no recount law, and Hyde-Smith's lawyers have asked for all affidavit ballots to be preserved, suggesting a court challenge is possible. Democrats already have a Senate majority from January; Mississippi and Alaska will decide its size."
+            "By Wednesday afternoon Scott Colom had 49.2% to Cindy Hyde-Smith's 48.7%, according to WLOX. Most outstanding ballots are affidavit ballots, many of which are usually rejected. Mississippi has no recount law, and Hyde-Smith's lawyers have asked officials to preserve all affidavit ballots, pointing to a possible court challenge after certification."
           ],
-          why: "A Democratic win in Mississippi would be a striking upset and would widen the Senate majority Trump must work with.",
+          why: "A Democratic win in a state Trump carried by 23 points would widen the Senate majority he faces in his final two years.",
           sources: [
-            { name: "WLOX (Gray TV)", url: "https://www.wlox.com/2026/11/10/colom-leads-hyde-smith-ballot-deadline-arrives/" },
-            { name: "CBS News", url: "https://www.cbsnews.com/news/mississippi-senate-race-results-2026-midterms/" }
+            { name: "WLOX (Gray TV)", url: "https://www.wlox.com/2026/11/11/colom-campaign-hyde-smith-has-no-path-victory-mississippi-senate-race/" },
+            { name: "Yahoo News", url: "https://www.yahoo.com/news/politics/article/mississippi-senate-latest-scott-coloms-lead-over-cindy-hyde-smith-tops-2500-votes-as-key-deadlines-loom-183943706.html" }
+          ]
+        },
+        {
+          kicker: "Israel",
+          headline: "Knesset will vote on replacing Speaker Ohana next Tuesday after 67 MKs demand it",
+          dek: "Gadi Eisenkot's bloc wants Yashar's Matan Kahana in the chair and has agreed on who will run key committees.",
+          body: [
+            "Amir Ohana confirmed the vote for 17 November, saying he strongly opposes the anti-Netanyahu bloc's agenda but will respect the majority. United Torah Judaism says it will not vote to replace him. Eisenkot and fellow leaders Bennett, Golan, Liberman and Lapid have agreed that Liberman will chair the Foreign Affairs and Defence Committee during the coalition-building period."
+          ],
+          why: "Control of the Knesset's agenda would let Eisenkot's camp advance its bills before a government is formed.",
+          sources: [
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog_entry/ohana-says-vote-to-elect-new-knesset-speaker-to-be-held-next-tuesday-after-majority-of-mks-demand-it" },
+            { name: "JNS", url: "https://www.jns.org/news/israel-news/yashar-seeks-vote-to-replace-knesset-speaker-ohana" }
           ]
         }
       ]
@@ -369,82 +371,71 @@ const EDITION = {
       stories: [
         {
           kicker: "Coalitions · Gauteng",
-          headline: "Mashaba offers to drop his Joburg mayoral bid if Zille steps aside too",
-          dek: "A leaked ActionSA letter proposes that the DA keeps the Johannesburg mayoralty under a new candidate while ActionSA keeps Tshwane under Nasiphi Moya. The two parties are due to meet on Thursday.",
+          headline: "ANC's NEC meets today on coalitions as the DA and ActionSA sit down over Johannesburg and Tshwane",
+          dek: "Parties have about two weeks to form governments in the hung Gauteng metros. A Sunday Times report says Ramaphosa urged ANC leaders to explore Johannesburg without the DA; the ANC says only the NEC can decide.",
           body: [
-            "Herman Mashaba wrote to DA federal leader Geordin Hill-Lewis on 7 November proposing that both he and Helen Zille withdraw in Johannesburg, with the DA nominating a replacement ActionSA can support and ActionSA taking the deputy mayor post. In Tshwane the letter asks Cilliers Brink to give up his council seat and the DA to back Moya; in Ekurhuleni ActionSA would support a DA mayor.",
-            "ActionSA chair Michael Beaumont confirmed the letter and said the party's problem in Johannesburg is Zille, not the DA. Unnamed DA leaders told Business Day they think Mashaba is negotiating in bad faith; the DA has not responded on the record. EWN reports formal talks are scheduled for Thursday."
+            "Daily Maverick, citing News24, reports the ANC is weighing a formal coalition with the DA, a wider arrangement with ActionSA, the EFF and smaller parties, or a looser pact in which each party governs where it leads and backs the other's mayors. Gauteng Premier Panyaza Lesufi and the ANC Youth League oppose working with the DA. According to unnamed insiders quoted by the Sunday Times, Ramaphosa raised the idea at Monday's National Working Committee; spokesperson Mahlengi Bhengu denied he had stated a preference.",
+            "In Johannesburg the DA won 34.79%, the ANC 20.25% and ActionSA 16.27%, so the DA can reach a majority with either. ActionSA's proposal that both Helen Zille and Herman Mashaba step aside, with ActionSA keeping Tshwane under Nasiphi Moya, is on the table at today's DA-ActionSA meeting; DA-ANC talks are expected after the NEC. Ramaphosa also answers questions in the NCOP this afternoon, including on AGOA and the 30% US tariff on SA exports."
           ],
-          why: "A DA-ActionSA deal would largely settle who runs all three Gauteng metros; without one, ActionSA may turn to the ANC.",
+          why: "Today's decisions will shape who runs Johannesburg, Tshwane and Ekurhuleni, and whether the ANC-DA partnership in the GNU survives the local fight.",
           sources: [
-            { name: "Business Day", url: "https://www.businessday.co.za/politics/elections-2026/2026-11-10-mashaba-offers-da-johannesburg-mayoralty-to-break-coalition-deadlock/" },
-            { name: "EWN", url: "https://www.ewn.co.za/2026/11/10/mashaba-offers-to-drop-joburg-mayoral-bid-on-condition-zille-steps-aside" }
+            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-11-anc-nec-to-decide-gauteng-coalition-strategy-as-da-to-meet-actionsa/" },
+            { name: "Sunday Times", url: "https://www.sundaytimes.timeslive.co.za/politics/2026-11-11-ramaphosa-urges-anc-to-avoid-da-in-johannesburg-coalition/" },
+            { name: "Parliament of South Africa", url: "https://www.parliament.gov.za/press-releases/happening-parliament-week_08_11_2026" }
           ]
         },
         {
           kicker: "Madlanga commission",
-          headline: "Matlala now admits paying Sibiya R550,000 and concedes he misled Parliament",
-          dek: "A day after denying a R500,000 bribe, the tenderpreneur changed or qualified several things he had told Parliament's ad hoc committee, including about impalas.",
+          headline: "Matlala claims Cele sought cash and a R6m retirement home, but says Idac inflated the sums",
+          dek: "The tenderpreneur told the commission he paid the former police minister, while accusing investigators of pressuring him to exaggerate the evidence against Cele.",
           body: [
-            "On Tuesday 'Cat' Matlala confirmed he gave former deputy national police commissioner Shadrack Sibiya R500,000 in the basement of Pretoria's State Theatre, saying it was a contribution to Sibiya's child's wedding, plus a further R50,000 at a SAPS event in KwaZulu-Natal. He had previously told Parliament he never gave Sibiya money. He also accepted that impalas he had dismissed as 'rumours' were delivered to Sibiya.",
-            "Co-commissioner Sesi Baloyi accused him of being obstructive after he repeatedly declined to answer, citing self-incrimination. Matlala claims Idac officials inserted false statements into his collapsed plea-deal statement, including claims implicating national commissioner Fannie Masemola; these allegations are untested."
+            "Testifying on Wednesday, 'Cat' Matlala said he first paid Bheki Cele R200,000 in early 2025 after Cele offered to help recover firearms seized in a police raid, and that Cele later asked him to buy a R6m property on the KwaZulu-Natal South Coast and for R300,000 for vehicle repairs. After first denying it, he conceded that Cele had at one point asked for R1 million.",
+            "Matlala also said Idac investigators inserted a paragraph into his plea-deal statement tying Cele to organised crime and exaggerated the payments, as part of a plan to arrest the former minister, and sought evidence against other senior police officers. None of these claims has been tested, and the reports carried no response from Cele or Idac."
           ],
-          why: "The admissions sharpen questions about corruption at the top of SAPS and whether Matlala misled Parliament under oath.",
+          why: "The testimony implicates a former police minister while also undermining the anti-corruption directorate's handling of the case, which could complicate any prosecution.",
           sources: [
-            { name: "EWN", url: "https://www.ewn.co.za/cat-matlala-admits-to-handing-r500k-to-former-deputy-police-commissioner-shadrack-sibiya-at-madlanga-commission" },
-            { name: "Sowetan", url: "https://www.sowetan.co.za/news/2026-11-10-inconsistencies-in-matlala-testimony-laid-bare-at-madlanga-commission/" },
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/cat-matlala-testimony-suggests-idac-sought-to-implicate-masemola-in-more-crimes/" }
+            { name: "The Citizen", url: "https://www.citizen.co.za/news/bheki-cele-wanted-money-from-cat-matlala-idac-sought-his-arrest/" },
+            { name: "Sowetan", url: "https://www.sowetan.co.za/news/2026-11-12-matlala-alleges-cele-sought-r6m-property-and-money-for-saps-access/" },
+            { name: "Mail & Guardian", url: "https://mg.co.za/news/south-africa/2026-11-11-idac-investigators-forced-me-to-lie-about-bheki-cele-matlala-says/" }
+          ]
+        },
+        {
+          kicker: "Elections · Voters' roll",
+          headline: "ANC heads for the Electoral Court over voters registered at a hospital and a supermarket",
+          dek: "The party says more than 3,000 voters in Sedibeng and Lenasia used wrong addresses, including a district hospital and a Usave store.",
+          body: [
+            "The ANC in Gauteng has lodged about 35 objections with the IEC, and its Sedibeng region says it will take unresolved discrepancies in Emfuleni, Midvaal and Lesedi to the Electoral Court. It says one Sebokeng property was listed as home to 1,582 voters, a Usave supermarket to 635 and Lenasia South District Hospital to 785; the store manager and the hospital's CEO said they knew nothing of it. The DA objected to some of the same addresses in August.",
+            "IEC spokesperson David Mandaha said the commission had not been served with court papers, that the objection window closed on 6 November, and that the addresses in the DA's objection had already been dealt with."
+          ],
+          why: "Roll disputes could unsettle results in tightly fought Gauteng councils where a few seats decide who governs.",
+          sources: [
+            { name: "TimesLIVE", url: "https://www.timeslive.co.za/politics/2026-11-11-anc-livid-after-hospital-rdp-usave-addresses-used-for-voting/" }
+          ]
+        },
+        {
+          kicker: "Local government",
+          headline: "Hlabisa issues 'coalition-resilient' guidelines as 138 councils end up hung",
+          dek: "CoGTA published a template coalition agreement and urged councils to curb abuse of no-confidence motions. The IFP says it wants one deal covering all hung councils.",
+          body: [
+            "About 65% of metropolitan and local municipalities produced no outright majority and need a coalition, minority government or other arrangement. The guidelines encourage written agreements setting out shared priorities, say deals may not override decisions the law reserves for councils, and ask councils to review their rules on motions of no confidence.",
+            "The IFP, represented in all 44 KwaZulu-Natal councils, won five outright and came first in 14 hung ones. Spokesperson Mkhuleko Hlengwa said the party wants national consistency rather than one-off local arrangements."
+          ],
+          why: "Unstable coalitions have paralysed several metros since 2016, so whether parties follow these voluntary rules matters for basic services such as water and electricity.",
+          sources: [
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/11/cogta-publishes-new-guidelines-to-make-municipalities-coalition-resilient" },
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/11/ifp-pushes-for-countrywide-coalition-partnerships" }
           ]
         },
         {
           kicker: "ANC",
-          headline: "Mbeki says Ramaphosa would be right to offer to quit, ahead of Thursday's NEC",
-          dek: "The former president said leaders responsible for a 'catastrophe' should take responsibility. The ANC has meanwhile allowed its structures to begin exploratory coalition talks.",
+          headline: "Youth League leader hits back at Mbeki: 'Why did you not resign?'",
+          dek: "Collen Malatji said the ANC's decline began long before the current leaders, pointing to the arms-deal era.",
           body: [
-            "Speaking on a podcast on Monday, Thabo Mbeki said that if reports Ramaphosa had offered to step down were true, he was taking the correct position, while noting he had not read the original report himself. Ramaphosa and Fikile Mbalula have both denied the president plans to leave.",
-            "In a circular, Mbalula has allowed provincial and regional structures to hold 'exploratory' talks with possible partners, starting in hung Eastern Cape councils such as Buffalo City, with final decisions kept at national level. The NEC is expected to discuss coalition strategy on Thursday."
+            "Responding to Thabo Mbeki's call for the national leadership to take responsibility for the election losses, Malatji told a Luthuli House briefing that the habit of recruiting people without public confidence predates the 2007 Polokwane conference. He still said the NEC must be held accountable, called for ministers and MPs who did not campaign to be reconsidered, and told Mbeki to raise his concerns inside the party. A special NEC on the results is expected in December."
           ],
-          why: "Open criticism from a former leader adds pressure on Ramaphosa before the ANC's most important post-election meeting.",
+          why: "The public row shows how much pressure Ramaphosa's leadership is under going into today's NEC.",
           sources: [
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/south-africa/politics/mbeki-if-reports-are-true-ramaphosa-is-correct-to-offer-his-resignation/" },
-            { name: "EWN", url: "https://www.ewn.co.za/2026/11/10/anc-structures-to-hold-exploratory-talks-with-possible-coalition-partners" }
-          ]
-        },
-        {
-          kicker: "Coalitions · National",
-          headline: "ANC snubs today's 'Council of the Left' meeting as parties enter a 14-day scramble",
-          dek: "Mbalula says the ANC will not attend the meeting of the SACP, EFF, MK and other left-leaning parties. Senior figures say opposition or minority governments remain options.",
-          body: [
-            "The ANC has centralised coalition decisions in a team led by Mbalula, with Parks Tau, Enoch Godongwana and Gwede Mantashe, and will skip the Council of the Left even though MK and the EFF say they are willing to work with it. The IFP says it is open to all parties, and MK negotiator Dali Mpofu expects 'hardcore talks' later this week.",
-            "Every metro except Cape Town, where the DA won 56.42%, now needs a coalition. Analysts quoted by TimesLIVE say councils have roughly 14 days to produce stable administrations."
-          ],
-          why: "Staying away from a left-wing bloc suggests the ANC is keeping its options open with GNU partners rather than aligning with MK and the EFF.",
-          sources: [
-            { name: "TimesLIVE", url: "https://www.timeslive.co.za/politics/2026-11-10-anc-to-skip-council-of-the-left-meeting-as-coalition-talks-warm-up/" }
-          ]
-        },
-        {
-          kicker: "Public office-bearers",
-          headline: "Ramaphosa approves a 3.5% pay rise for ministers and MPs as unemployment rises",
-          dek: "The increase is backdated to 1 April 2026; judges, magistrates and traditional leaders get 4%.",
-          body: [
-            "The Presidency said on Tuesday that the increases follow recommendations from the Independent Commission for the Remuneration of Public Office-Bearers and cover ministers, MPs, premiers, MECs and provincial legislators. Saftu called the rise indefensible and demanded it be reversed. The announcement came on the same day Stats SA reported unemployment edging up to 33.7%."
-          ],
-          why: "The timing, straight after an election setback and alongside weak jobs data, is likely to fuel public anger at the political class.",
-          sources: [
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/saftu-rejects-ramaphosas-3-5-salary-hike-for-ministers-mps-premiers-and-mecs/" }
-          ]
-        },
-        {
-          kicker: "Johannesburg",
-          headline: "Zille refuses Malema's demand for an apology as his legal deadline falls today",
-          dek: "The EFF leader's lawyers have threatened a damages claim and an interdict over Zille's claims that he steered Mashaba-era decisions in Johannesburg.",
-          body: [
-            "In an eNCA interview, Helen Zille alleged that Malema influenced decisions during Mashaba's term as mayor, including City Power matters, a fleet tender and Shadrack Sibiya's appointment to head the city's anti-corruption unit. Malema's lawyers called the remarks defamatory and demanded a retraction and public apology by today; Zille replied 'no'. Her claims have not been tested."
-          ],
-          why: "The dispute ties the Joburg coalition fight to the Sibiya scandal and further sours relations between Zille and ActionSA.",
-          sources: [
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/south-africa/elections/malema-threatens-to-sue-zille-over-joburg-tender-allegations/" }
+            { name: "TimesLIVE", url: "https://www.timeslive.co.za/politics/2026-11-11-ancyl-president-collen-malatji-challenges-thabo-mbeki-why-did-you-not-resign/" }
           ]
         }
       ]
@@ -453,57 +444,30 @@ const EDITION = {
       id: "climate", name: "Climate & Environment",
       stories: [
         {
-          kicker: "Global Carbon Budget",
-          headline: "Fossil CO2 emissions set to dip in 2026, but the energy crisis gets most of the credit",
-          dek: "The annual Global Carbon Budget projects a 0.4% fall in fossil emissions this year. Total CO2 still rises, and the 1.5°C budget is almost spent.",
+          kicker: "COP31 · Leaders' summit",
+          headline: "Guterres tells COP31 fossil fuels must 'go the way of the dinosaurs' as most G7 leaders stay away",
+          dek: "Leaders began speaking in Antalya on Wednesday. The US is skipping the talks for a second year, and Britain's prime minister is the only G7 leader attending.",
           body: [
-            "The Global Carbon Project projects fossil CO2 emissions of about 38.2 billion tonnes in 2026, down 0.4%, with oil emissions down about 1.9%. China (-0.9%), the US (-1.3%), the EU (-1.5%) and Japan (-1%) fall, while India rises 4.4%. Including land-use change, total emissions still climb to about 43.3 billion tonnes.",
-            "About 150 billion tonnes of CO2 remain for a 50:50 chance of holding 1.5°C, less than four years at current rates. The researchers attribute the dip mainly to high oil and gas prices after the Iran war disrupted Hormuz shipping rather than to clean energy, so it may not last."
+            "The UN Secretary-General said emissions hit a record in 2025, accused the fossil-fuel lobby of delaying action and urged clear national timelines for moving off coal, oil and gas. Erdoğan, Lula, Qatar's emir, Iran's President Pezeshkian and the EU's Ursula von der Leyen are attending; Macron, Merz, Meloni, Carney and Takaichi are not, and Britain's Andy Burnham speaks today.",
+            "Host Türkiye wants electricity's share of global energy use raised from just over a fifth to 35% by 2035, but the pledge does not require the new power to be clean, and the EU insists it must be. Brazil's COP30 roadmap asks countries to assess their energy systems by 2028 and to start cutting fossil-fuel supply from 2031."
           ],
-          why: "Landing mid-COP31, the figures undercut claims of a structural peak in emissions, an argument that bears on coal-heavy economies such as South Africa.",
+          why: "Whether electrification targets count coal-fired power matters directly for South Africa, and thin attendance lowers hopes of new money for developing countries.",
           sources: [
-            { name: "Euronews", url: "https://www.euronews.com/2026/11/10/fossil-fuel-emissions-are-expected-to-fall-in-2026-why-arent-climate-experts-celebrating" },
-            { name: "Science News", url: "https://www.sciencenews.org/article/fossil-fuel-emissions-down-2026-gas" },
-            { name: "Future Earth", url: "https://futureearth.org/global-carbon-budget-foss-fuel-co%E2%82%82-emissions-projected-to-fall-slightly-in-2026/" }
+            { name: "Reuters via Yahoo News", url: "https://www.yahoo.com/news/science/articles/world-leaders-address-cop31-turkey-030244709.html" },
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/11/climate-crisis-is-outrunning-us-un-chief-guterres-says-at-cop31" }
           ]
         },
         {
-          kicker: "COP31 · Day 2",
-          headline: "Türkiye pushes its '35 by 35' electrification goal as energy day exposes the fossil-fuel split",
-          dek: "The presidency wants electricity's share of final energy raised to 35% by 2035. Critics say the draft wording does not require the power to be clean.",
+          kicker: "Wildfires · Global report",
+          headline: "World's burned area near record lows, yet climate change drove extreme fires in Canada, Europe and Chile",
+          dek: "The State of Wildfires 2025-26 report finds fire carbon emissions 20-31% below average, mainly because fewer savannah fires burned in Africa.",
           body: [
-            "On energy and transport day in Antalya, COP31 President Murat Kurum presented the pledge as an answer to this year's energy-security crisis; the IEA will track progress. Climate Action Tracker estimates current policies would reach only about 28% by 2035, and some fossil-fuel producers are expected to resist clean-power language in the cover decision.",
-            "Brazil's COP30 presidency presented its voluntary roadmap for moving away from fossil fuels, and UN Secretary-General António Guterres urged countries to produce national transition plans before the 2028 Global Stocktake. An Australia-led declaration aims to double rooftop-solar households to 300 million by 2030."
+            "Covering March 2025 to February 2026 and published on 11 November in Earth System Science Data, the assessment found global burned area 18% below the 2002-2024 average. Even so, Canada had its third extreme year in a row, Spain, Portugal and the UK recorded high or record burned areas, and fires in Chile and north-west Argentina killed 23 people.",
+            "Attribution analyses found climate change made August 2025's extreme fire weather in north-west Iberia more than three times as likely and roughly doubled burned area in Chile's temperate forests. Under a high-emissions scenario, similar extreme fires could burn about 78% more area by 2100."
           ],
-          why: "How the pledge treats coal-fired electricity matters directly for South Africa, where most power still comes from coal.",
+          why: "With a strong El Niño forecast to bring heat and drought to South Africa this summer, the report shows fire risk increasingly depends on extreme weather rather than average burning.",
           sources: [
-            { name: "Climate Home News", url: "https://www.climatechangenews.com/2026/11/10/cop31-bulletin-day-2-energy-day-off-to-slow-start-amid-transport-chaos/" },
-            { name: "UN News", url: "https://news.un.org/en/story/2026/11/1168775" }
-          ]
-        },
-        {
-          kicker: "COP31 · Coal",
-          headline: "New coal-exit finance scheme names South Africa among its targets",
-          dek: "The Powering Past Coal Alliance launched partnerships meant to unlock more than $23bn for developing countries' first coal phase-out plans.",
-          body: [
-            "The Coal Transition Partnerships, backed by the Asian Development Bank, the Climate Investment Funds, the EBRD, RMI and TransitionZero, aim to support ten coal-dependent countries by 2028, including South Africa, Indonesia, Vietnam and India.",
-            "The record so far is slow: South Africa's $8.5bn Just Energy Transition Partnership, announced at COP26, had only about $3.8bn allocated by 2025."
-          ],
-          why: "It is a possible new source of money for SA's stalled coal transition, though JETP shows pledges can be slow to become spending.",
-          sources: [
-            { name: "Climate Home News", url: "https://www.climatechangenews.com/2026/11/10/cop31-bulletin-day-2-energy-day-off-to-slow-start-amid-transport-chaos/" }
-          ]
-        },
-        {
-          kicker: "SA weather",
-          headline: "Heatwave moves inland as SAWS warns of extremely high fire danger",
-          dek: "Persistent high temperatures are forecast until Friday over North West, the Free State, southern Gauteng and the north-eastern Northern Cape.",
-          body: [
-            "The SA Weather Service's heatwave advisory runs until Friday for most of North West and the Free State, southern Gauteng and the north-eastern Northern Cape. It also warns of extremely high fire danger in the Northern Cape, eastern North West and Free State, the north-eastern Western Cape, parts of Limpopo's Bushveld and several Eastern Cape municipalities. The UV index will be very high in Gauteng today."
-          ],
-          why: "Expect more heat illness and dehydration this week, particularly in older patients and those on diuretics or antihypertensives in Gauteng, North West and Free State facilities.",
-          sources: [
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/south-africa/weather/weather-forecast-11-november-2026/" }
+            { name: "Earth System Science Data", url: "https://essd.copernicus.org/articles/18/8037/2026/" }
           ]
         }
       ]
@@ -512,28 +476,30 @@ const EDITION = {
       id: "science", name: "Science",
       stories: [
         {
-          kicker: "Earth science",
-          headline: "Vanishing chemical fingerprint dates the start of plate tectonics to about 2.5 billion years ago",
-          dek: "A Curtin University study of rocks spanning almost four billion years finds that a signature of primordial crust disappears abruptly.",
+          kicker: "Human origins · Cell",
+          headline: "Tooth proteins suggest Homo naledi's Dinaledi Chamber may have held only females",
+          dek: "No male-specific protein turned up in enamel from at least 20 individuals at the Rising Star cave site, though the researchers offer another explanation too.",
           body: [
-            "Researchers led by Janne Liebmann and Chris Kirkland screened thousands of rock analyses and found a consistent chemical signature in rocks older than about 2.5 billion years, traced to crust formed about four billion years ago. After that point it never reappears.",
-            "They read this as Earth switching from reworking crust in place to large-scale recycling like modern plate tectonics. The paper is in Proceedings of the Royal Society A; other recent work argues for crustal movement as early as 3.5 billion years ago."
+            "A team led by the universities of York and Copenhagen, with first author Palesa Madupe, extracted ancient proteins from 23 teeth, the first time this has been done for Homo naledi, which lived roughly 335,000 to 241,000 years ago in what is now the Cradle of Humankind. They found no trace of amelogenin-Y, a protein coded on the Y chromosome, and amino-acid tests confirmed the proteins were ancient rather than modern contamination.",
+            "If the chamber was a deliberate burial place reserved for females, it would be the oldest known sex-specific burial and the first by a non-Homo sapiens relative. The authors caution that an isolated population might have lost or altered the gene, so males cannot be ruled out, and the burial interpretation remains unproven."
           ],
-          why: "When plate tectonics began matters for how continents and ore deposits formed, including the ancient cratons beneath southern Africa.",
+          why: "It applies a new technique to one of South Africa's most important fossil sites and could reshape debate about social behaviour in a small-brained human relative.",
           sources: [
-            { name: "Curtin University", url: "https://www.curtin.edu.au/news/media-release/ancient-rocks-reveal-when-earths-tectonic-engine-switched-on/" }
+            { name: "ScienceDaily (University of York)", url: "https://www.sciencedaily.com/releases/2026/11/261110042558.htm" },
+            { name: "Courthouse News", url: "https://courthousenews.com/fossil-site-of-extinct-human-cousin-may-have-been-all-female/" }
           ]
         },
         {
           kicker: "Astronomy · Nature",
-          headline: "Telescope 'digital twin' pulls a hidden giant planet out of old Webb images",
-          dek: "A physics-based software method improved sensitivity to faint planets two- to 15-fold without touching the telescope's hardware.",
+          headline: "Independent analysis confirms the ring-shaped shadow of the M87 black hole",
+          dek: "A calibration-proof method combined with an AI image model recovered the ring first seen by the Event Horizon Telescope, answering sceptics who questioned it.",
           body: [
-            "Northwestern University astronomers built FLIP, which simulates how starlight travels through Webb's optics, including small time-varying imperfections, and subtracts residual glare more precisely. Applied to two-year-old data, it recovered the giant exoplanet 51 Eridani b, which standard processing could not separate from starlight. The work was published in Nature on 4 November."
+            "The team, led by Samuel Lai with co-authors at Australia's CSIRO, reanalysed EHT data from 2017, 2018 and 2021 using closure invariants, measurements unaffected by instrument calibration errors, and a generative diffusion model that needs no hand-picked starting image. They recovered a ring 42.2 ± 1.5 microarcseconds across, stable over the years; a separate geometric fit gave 42.3 ± 1.1.",
+            "That size implies a black hole of about 6.5 billion solar masses viewed roughly 20° from its jet, consistent with stellar-dynamics estimates. The paper, published in Nature on 11 November, is not an EHT collaboration product, which makes it a genuinely independent check, though it cannot constrain the black hole's spin."
           ],
-          why: "Better processing can find planets in existing archives without new instruments, which matters for budget-limited observatories.",
+          why: "Independent confirmation strengthens one of the most direct tests of gravity near a black hole and shows how calibration-free methods can check high-profile results.",
           sources: [
-            { name: "Northwestern University CIERA", url: "https://ciera.northwestern.edu/2026/11/10/hidden-planet-emerges-from-the-glare/" }
+            { name: "Nature", url: "https://www.nature.com/articles/s41586-026-11241-9" }
           ]
         }
       ]
@@ -542,41 +508,56 @@ const EDITION = {
       id: "health", name: "Health & Medicine",
       stories: [
         {
-          kicker: "Occupational health · SA",
-          headline: "Motsoaledi's miners' compensation bill would bar lung-disease class actions",
-          dek: "A draft law to replace the 1973 occupational diseases act brings in no-fault payouts but stops workers suing mine owners for damages.",
-          body: [
-            "The Compensation for Occupational Diseases in Controlled Mines and Controlled Works Bill, approved by Cabinet in September, is out for three months of public comment. It covers mines, smelters, refineries and beneficiation plants, and would create a compensation authority to run medical examinations and decide eligibility, a new fund and a 13-member board appointed by the health minister.",
-            "Section 35 would bar current and former workers and their dependants from suing owners for occupational disease. Richard Spoor, who won the silicosis class action, says it shifts liability onto workers; former compensation commissioner Barry Kistnasamy, who helped draft it, says the no-fault model gives better redress. Cosatu will examine it at Nedlac."
-          ],
-          why: "Clinicians who certify silicosis and other occupational lung disease in former mineworkers will work within whatever system this bill creates.",
-          sources: [
-            { name: "TimesLIVE", url: "https://www.timeslive.co.za/news/south-africa/2026-11-10-proposed-law-could-end-class-action-suits-by-miners-with-lung-disease/" }
-          ]
-        },
-        {
           kicker: "Outbreaks · Ebola",
-          headline: "Kenya's Ebola contact monitoring ends today as DRC passes 10,000 cases",
-          dek: "WHO's latest update counts 10,668 confirmed Bundibugyo cases and 5,198 deaths in the DRC, the largest Ebola outbreak the country has recorded.",
+          headline: "DRC Ebola cases near 11,000 as IOM warns most spread runs along informal routes",
+          dek: "ECDC's latest figures put the Bundibugyo outbreak at 10,990 confirmed cases and 5,354 deaths, with fewer than four in five contacts under follow-up.",
           body: [
-            "As of 3 November the DRC had 10,668 confirmed cases and 5,198 deaths (crude CFR 48.7%) across 67 health zones in eight provinces, with 1,463 new cases in the previous 21 days. Ituri accounts for about 7,500 cases; North Kivu has the highest CFR, 54.8%. Only 86% of contacts were followed daily, against a 95% target.",
-            "Kenya has had nine confirmed cases and two deaths and none since 19 October; follow-up of its last 52 contacts is due to end today. No vaccine or specific treatment is yet approved for Bundibugyo virus."
+            "As of 8 November, Ituri had 7,654 cases and North Kivu 2,720, with eight provinces and 67 health zones affected; 966 patients were in isolation and 2,951 had recovered. ECDC says the true size is probably larger because of data gaps. Kenya's nine cases include six recoveries and no new case since 20 October, and Nigeria is following contacts of a case evacuated to Switzerland.",
+            "The International Organization for Migration says about 95% of the 71 cases it detected along transit routes were on informal paths that bypass border posts, and 258 bodies being moved have been intercepted. It is nearly $60m short of the $110m it needs for regional work through March 2027."
           ],
-          why: "WHO rates the risk for the DRC's neighbours as high; ask febrile patients about travel to East or Central Africa and isolate early if Ebola is possible.",
+          why: "Movement through informal crossings keeps regional risk high; for South African clinicians, recent travel from East or Central Africa remains the key screening question in febrile patients.",
           sources: [
-            { name: "WHO Disease Outbreak News", url: "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625" }
+            { name: "ECDC", url: "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-10" },
+            { name: "UN News", url: "https://news.un.org/en/story/2026/11/1168781" }
           ]
         },
         {
-          kicker: "Tuberculosis · WHO",
-          headline: "WHO publishes its third catalogue of TB drug-resistance mutations, with more data on pretomanid",
-          dek: "Built from more than 71,000 isolates from over 75 countries, the update aims to make sequencing-based susceptibility testing more consistent.",
+          kicker: "Climate and health · KZN",
+          headline: "El Niño heat threatens HIV care in KwaZulu-Natal's stretched clinics, researchers warn",
+          dek: "A Daily Maverick investigation finds patchy weather-emergency planning in KZN health facilities as SAWS forecasts a hotter, drier summer.",
           body: [
-            "The third edition, published on 10 November, uses 37% more data than the 2023 version and adds evidence for newer and repurposed drugs including pretomanid and cycloserine. It updates the statistical methods for grading mutations and adds guidance on applying the graded list in practice, to support targeted next-generation sequencing, molecular diagnostics and resistance surveillance."
+            "AHRI data from 17 clinics and more than 40,000 people (2010-2018) linked drought to poorer ART adherence and retention in care, with only partial recovery afterwards; causation is not proven. Interviews from the 2015-16 drought describe patients skipping pills rather than take them on an empty stomach and missing visits to fetch water. A rural KZN cohort also linked maternal heat exposure in the month before conception to miscarriage.",
+            "A 2026 study at a KZN tertiary hospital found no specific weather-emergency plans, and only 4 of 47 planned roof, gutter and drainage repairs are complete. A preliminary national readiness assessment scored the health sector 61% overall but 28% for coordination. About 1.6 million people in KZN are on ART."
           ],
-          why: "SA's DR-TB regimens rely on bedaquiline, pretomanid and linezolid, so this catalogue underpins how genotypic resistance reports are read here.",
+          why: "Expect more heat illness and treatment interruption this summer; multi-month ART dispensing and community pick-up points are the main existing tools to protect adherence.",
           sources: [
-            { name: "WHO", url: "https://www.who.int/news/item/10-11-2026-who-updates-global-catalogue-for-interpreting-tuberculosis-drug-resistance-mutations" }
+            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-11-el-nino-is-here-are-kwazulu-natal-clinics-ready/" }
+          ]
+        },
+        {
+          kicker: "Measles · Americas",
+          headline: "US likely to lose measles elimination status as a PAHO panel reviews the Americas this week",
+          dek: "The expert commission is meeting in Washington; the decision, expected early next week, turns on whether transmission has continued for 12 months.",
+          body: [
+            "The panel is reviewing all 35 PAHO member states, with Director Jarbas Barbosa making the final call; Mexico and Bolivia are also under scrutiny. The chair of an independent US advisory panel says the Arizona-Utah outbreak, running since June 2025, probably meets the threshold. The US has reported nearly 7,500 cases and 11 deaths since early 2025; of this year's more than 5,100, 96% were unvaccinated or of unknown status and 11% were hospitalised.",
+            "CDC director Erica Schwartz said the agency's response would not change if the status is lost. Canada, Spain and the UK have recently lost their elimination status."
+          ],
+          why: "Measles travels with people, so resurgence in North America and Europe raises importation risk; check MMR status and isolate early in febrile rash with a travel history.",
+          sources: [
+            { name: "RTÉ News", url: "https://www.rte.ie/news/world/2026/1111/1598821-us-measles-status/" },
+            { name: "CIDRAP", url: "https://www.cidrap.umn.edu/measles/us-measles-total-2026-tops-5100-cases" }
+          ]
+        },
+        {
+          kicker: "Workforce · UK",
+          headline: "England's consultants pause their 25-26 November strike to hold pay talks",
+          dek: "The BMA says the government has put no limits on the talks; ministers have offered 2.4% for 2027/28.",
+          body: [
+            "The BMA consultants committee said it had been assured that both pay and working conditions are on the table. The union says consultants' pay has fallen 25% in real terms over 17 years and that the offer is below inflation."
+          ],
+          why: "NHS pay and conditions weigh on the choices of many South African graduates considering work in the UK.",
+          sources: [
+            { name: "Reuters via TimesLIVE", url: "https://www.timeslive.co.za/news/world/2026-11-11-doctors-in-england-put-strike-on-hold-after-union-secures-talks/" }
           ]
         }
       ]
@@ -585,57 +566,55 @@ const EDITION = {
       id: "economy", name: "Economy & Markets",
       stories: [
         {
-          kicker: "Jobs",
-          headline: "Unemployment edges up to 33.7% despite 101,000 new jobs",
-          dek: "Stats SA's third-quarter survey shows the labour force growing faster than employment.",
+          kicker: "Oil",
+          headline: "Brent rebounds 1.4% to $92.76 as Hormuz attacks cool hopes of a truce",
+          dek: "Crude recovered from two-month lows after further tanker incidents and Iran's refusal to send its enriched uranium abroad.",
           body: [
-            "Employment grew by 101,000 to 16.8 million, but the labour force grew by 198,000, so the number of unemployed rose by 97,000 to 8.6 million. The expanded rate, which includes discouraged work-seekers, rose to 44.0% from 43.8%.",
-            "Finance, manufacturing and mining added jobs, while private households, agriculture and construction shed them. Reuters noted the figures came a week after the ANC's heavy losses in the municipal elections, in which joblessness was a major source of voter anger."
+            "US crude rose 0.6% to $86.53. Both benchmarks remain about 21% and 17% lower for November as traders bet on diplomacy. The Washington Institute counted 37 ship attacks in October, the most in any month of the war, and analysts say even a deal would not quickly restore Hormuz flows, which depend on mine clearance, insurance and shipowners' willingness.",
+            "Middle East outages have eased to about 3.8 million barrels a day, with Saudi and Iraqi output back to pre-war levels, according to Kpler. Official US stock data is due today, delayed by the Veterans Day holiday."
           ],
-          why: "Unemployment has stayed above 30% for six years and remains the biggest test for the coalition government before 2029.",
+          why: "The fall in crude this month underpins the expected December petrol cut in South Africa; a sustained rebound would shrink it.",
           sources: [
-            { name: "EWN", url: "https://www.ewn.co.za/2026/11/10/stats-sa-unemployment-rate-ticks-up-by-01-in-q3" },
-            { name: "Reuters via CNBC Africa", url: "https://www.cnbcafrica.com/2026/south-africas-unemployment-rate-edges-up-in-third-quarter" }
+            { name: "Reuters via Investing.com", url: "https://www.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-5017512" }
+,
+            { name: "Reuters via TimesLIVE", url: "https://www.timeslive.co.za/news/world/2026-11-11-oil-rebounds-as-hormuz-shipping-attacks-blunt-hopes-for-iran-truce/" }
           ]
         },
         {
-          kicker: "Global markets · Fed",
-          headline: "Hot US inflation makes a December Fed hike a near-certainty",
-          dek: "US consumer prices rose 0.4% in October, beating forecasts. Wall Street fell, Treasury yields jumped and gold dropped more than 2%.",
+          kicker: "Retail",
+          headline: "Woolworths shares suffer their worst day since 2020 as food growth stalls",
+          dek: "The stock fell 8.5% to R37.78 after a trading update showed group sales up just 0.2% over 19 weeks.",
           body: [
-            "Headline CPI rose 0.4% against expectations of 0.3%, and core 0.3% against 0.2%. The BLS could not publish the usual annual rates because October 2025 data were never collected during last year's shutdown. Markets now fully price at least a quarter-point hike at the 8-9 December meeting, with about 12% odds of a half-point move; Governor Christopher Waller backed a December hike.",
-            "The S&P 500 fell 0.38%, the Nasdaq 0.74% and the Dow 0.30%. The two-year Treasury yield jumped about 18 basis points to roughly 4.73% and spot gold fell about 2.6% to around $4,031 an ounce."
+            "Food sales rose 1.9% but comparable-store sales only 0.1% with prices up about 3%, meaning volumes fell; online food sales grew 24%. Fashion, beauty and home sales slipped 0.3%, and Country Road Group sales in Australia fell 9.5%, with its concession partner David Jones now in administration. The credit book's impairment rate rose to 7.3%.",
+            "New chief executive Sam Ngumeni is reviewing every division, and the shares have lost more than a quarter of their value in a year."
           ],
-          why: "Higher US rates and a firmer dollar tend to pull money from emerging markets, pressuring the rand and SA bonds and complicating the Reserve Bank's decisions.",
+          why: "Falling food volumes at a premium grocer point to stretched middle-income household budgets ahead of the festive season.",
           sources: [
-            { name: "Reuters via GV Wire", url: "https://gvwire.com/2026/11/10/wall-st-ends-lower-as-hot-inflation-data-fed-comments-heighten-rate-worries/" },
-            { name: "US Bureau of Labor Statistics", url: "https://www.bls.gov/news.release/archives/cpi_11102026.htm" }
+            { name: "Business Day", url: "https://www.businessday.co.za/companies/2026-11-11-woolworths-shares-suffer-worst-day-since-2020-as-food-growth-stalls/" }
           ]
         },
         {
-          kicker: "Fuel",
-          headline: "Oil keeps sliding as petrol heads for a December cut",
-          dek: "Brent fell another 1.2% on Tuesday to $91.49 a barrel. Early Central Energy Fund data points to cheaper petrol next month, though diesel may rise.",
+          kicker: "Rand · Fed",
+          headline: "Rand steady at about R16.53 as traders fully price a December US rate hike",
+          dek: "The currency held its ground despite a firmer dollar after hot US inflation data; the 2035 bond yielded 8.365%.",
           body: [
-            "Traders are betting on a diplomatic end to the Iran war, and Middle East oil shipments are close to pre-war levels. US crude fell 0.9% to $86.04.",
-            "Preliminary CEF data reported by EWN shows 95 unleaded could fall by about R1.82 a litre once the temporary fuel-levy relief is scaled back (up to R2.53 before levy changes), and 93 by about R1.52, while diesel could rise by R1.15 to R1.49. Final adjustments depend on oil and the rand for the rest of November."
+            "CME FedWatch put the chance of a US rate rise at the 9 December meeting at 100%, up from 84% before Tuesday's inflation figures, and the odds of a half-point move have risen. A TreasuryONE analyst told Reuters the Fed inflation debate will drive the rand until that meeting, while cheaper oil offers some support."
           ],
-          why: "A petrol cut before the holidays would ease household budgets and inflation, but dearer diesel would hurt farmers, hauliers and manufacturers.",
+          why: "A hawkish Fed tends to pull money out of emerging markets, which could weaken the rand and push up SA borrowing costs.",
           sources: [
-            { name: "Reuters via Free Malaysia Today", url: "https://www.freemalaysiatoday.com/category/business/2026/11/11/us-stocks-fall-as-inflation-data-boosts-bets-on-larger-fed-rate-hike" },
-            { name: "EWN", url: "https://www.ewn.co.za/petrol-prices-could-drop-by-more-than-r150-a-litre-in-december" }
+            { name: "Reuters via CNBC Africa", url: "https://www.cnbcafrica.com/2026/south-african-rand-steady-despite-hawkish-fed-signals" }
           ]
         },
         {
-          kicker: "Manufacturing",
-          headline: "Factory output falls 3.5% as fuel costs squeeze producers",
-          dek: "September manufacturing was flat on the month, and a 0.9% quarterly rise should keep the sector from dragging on third-quarter GDP.",
+          kicker: "Global markets",
+          headline: "Wall Street rebounds as the AI trade revives and Apple tops $5 trillion",
+          dek: "The S&P 500 rose 1.3% and the Nasdaq 1.6% on Wednesday, recovering from Tuesday's inflation scare.",
           body: [
-            "Output fell 3.5% year on year in September, a smaller drop than August's but worse than the roughly 2% decline analysts expected. Motor vehicles and transport equipment, down 15%, did the most damage. Economists blamed fuel costs linked to the Middle East conflict, weak demand and slow progress at ports and on rail."
+            "The Dow gained 0.5% to 52,486. CoreWeave's results lifted AI and chip stocks, and Apple set a record above $355 a share during the session, valuing it at about $5.16 trillion. Nvidia gained ground during regular trading before new reports about its chief executive hit the shares after the close (see Technology)."
           ],
-          why: "The motor industry's weakness puts jobs at risk in the Eastern Cape and Gauteng.",
+          why: "Global risk appetite drives flows into emerging markets such as South Africa, and Nvidia's turmoil shows how quickly it can turn.",
           sources: [
-            { name: "Business Day", url: "https://www.businessday.co.za/economy/2026-11-10-manufacturing-output-falls-35-as-input-costs-keep-stranglehold-on-producers/" }
+            { name: "TheStreet", url: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026" }
           ]
         }
       ]
@@ -644,68 +623,43 @@ const EDITION = {
       id: "tech", name: "Technology & AI",
       stories: [
         {
-          kicker: "Anthropic · IPO",
-          headline: "Anthropic sets an IPO price range valuing it at up to $1.4 trillion",
-          dek: "The Claude maker aims to raise up to about $64bn on Nasdaq under the ticker ANT, with trading expected around 19 November.",
-          body: [
-            "Anthropic has set a range of $70 to $78 a share for 825 million Class A shares, raising $57.75bn to $64.35bn and implying a fully diluted value of up to $1.404 trillion. Up to 20% is set aside for retail investors. Separately, AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC are buying $26bn of non-voting stock at the IPO price.",
-            "The filing shows run-rate revenue of $81bn at the end of October, a $104bn net loss for the first nine months and about $901bn in compute and infrastructure commitments. (Disclosure: this paper is compiled by Claude, which is made by Anthropic.)"
-          ],
-          why: "It will be the biggest test yet of public-market appetite for AI, at a time when investors are nervous about the sector's spending and debts.",
-          sources: [
-            { name: "TechCrunch", url: "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/" }
-          ]
-        },
-        {
           kicker: "Nvidia",
-          headline: "Nvidia hires a former prosecutor to investigate Huang as its shares fall again",
-          dek: "The board has brought in Wachtell Lipton to examine whether its chief executive was targeted by Chinese intelligence; the stock fell 5.4% on Tuesday.",
+          headline: "Nvidia board weighs ousting Jensen Huang after a report of a second affair",
+          dek: "The Wall Street Journal reported the board was preparing to remove its founder and chief executive, and Reuters said directors met on Wednesday. The shares fell nearly 8% after hours.",
           body: [
-            "The inquiry will be led by Joon Kim, a former acting US attorney for Manhattan. It follows Huang's admission of an affair with a businesswoman whom US officials reportedly believe spied for China, which Beijing denies. Trump says the FBI is 'looking into' the matter, and shareholders have filed a fraud lawsuit. The shares are down 9.6% over two sessions.",
-            "In Congress, Hakeem Jeffries said Democrats would fight to keep three China chip-export bills in the final defence bill."
+            "The New York Times reported that Huang, 63, had a relationship with Kimberly Powell, Nvidia's vice-president of healthcare, who reports to him; Nvidia declined to comment. It follows Huang's admission of an affair with a businesswoman whom US officials reportedly believe spied for China, which Beijing denies. Bloomberg reported the company is working with an outside firm on possible successors. No decision had been announced at the time of writing.",
+            "Nvidia says it has no reason to believe trade secrets or national-security information were compromised. The stock had risen 2.9% in regular trading on Wednesday; Axios says the company has lost about $1 trillion in market value since the spy allegations surfaced on 29 October."
           ],
-          why: "Nvidia is the bellwether of the AI trade, and turmoil at the top moves global tech stocks and the funds that hold them.",
+          why: "Nvidia's chips underpin the AI build-out, and a leadership crisis there moves global indices and the retirement and unit-trust funds that hold them.",
           sources: [
-            { name: "Fortune", url: "https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/" },
-            { name: "Business Insider via Yahoo Finance", url: "https://uk.finance.yahoo.com/news/know-joon-h-kim-wachtell-001928234.html" },
-            { name: "Reuters via GV Wire", url: "https://gvwire.com/2026/11/10/wall-st-ends-lower-as-hot-inflation-data-fed-comments-heighten-rate-worries/" }
+            { name: "Reuters via BNN Bloomberg", url: "https://www.bnnbloomberg.ca/business/2026/11/12/nvidia-board-meets-to-decide-ceo-huangs-future-source-says/" },
+            { name: "Axios via Yahoo Finance", url: "https://finance.yahoo.com/markets/stocks/articles/nvidia-sinks-report-implicates-ceo-223106763.html" },
+            { name: "Investing.com via Yahoo Finance", url: "https://sg.finance.yahoo.com/news/nvidia-expected-oust-jensen-huang-231004453.html" }
           ]
         },
         {
-          kicker: "AI models",
-          headline: "Google releases Gemini 4 Carbon, its most powerful model, to the public",
-          dek: "First given only to cybersecurity firms, the model now reaches developers and top-tier subscribers, along with a tool that splits work across teams of AI agents.",
+          kicker: "Anthropic · IPO",
+          headline: "Anthropic's IPO is drawing far more orders than shares on offer, Bloomberg reports",
+          dek: "The roadshow for what could be the largest first-time share sale ever began on Tuesday; with a private placement, the company is seeking up to $90.4bn.",
           body: [
-            "Gemini 4 Carbon is now available through AI Studio, Gemini for business and, for AI Ultra subscribers, the Gemini app, AI Mode in Search and the Antigravity coding platform. Introductory API pricing is $2 per million input tokens and $10 per million output tokens, doubling from 30 November. Google pitches it at long-running work such as complex coding, research and finding software vulnerabilities."
+            "An amended filing sets a range of $70-$78 for about 801 million new shares, plus 23.6 million sold by existing holders, alongside $26bn of non-voting shares for seven chip and cloud firms at the IPO price. At the top of the range the fully diluted value is about $1.4 trillion, below earlier talk of nearly $2 trillion. The demand figures come from people familiar with the matter cited by Bloomberg; the final price and trading date on Nasdaq, under the ticker ANT, have not been set. (Disclosure: this paper is compiled by Claude, which is made by Anthropic.)"
           ],
-          why: "The frontier-model race keeps raising capability, and South African developers can use these tools through Google's cloud.",
+          why: "Strong demand would show investors are still willing to fund AI at enormous scale despite this month's sell-off.",
           sources: [
-            { name: "Google", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" },
-            { name: "Engadget", url: "https://www.engadget.com/2311855/gemini-4-carbon-now-available-worldwide/" }
+            { name: "Yahoo Finance", url: "https://finance.yahoo.com/technology/ai/articles/anthropic-seeking-raise-over-90-153907895.html" }
           ]
         },
         {
           kicker: "AI infrastructure",
-          headline: "CoreWeave beats forecasts and raises its outlook despite debt worries",
-          dek: "The AI cloud company's quarterly revenue rose almost 170% to $3.66bn and its order backlog reached $132.5bn.",
+          headline: "CoreWeave shares jump about 20% as it targets profit in 2028 and steps back from new unsecured debt",
+          dek: "The AI cloud provider, whose stock had fallen more than 40% in a month, raised its guidance and said it will not tap unsecured debt markets at current yields.",
           body: [
-            "CoreWeave raised its 2026 revenue guidance to $13.0bn-$13.3bn and its contracted backlog rose from $104bn in June. The shares, which had fallen more than 40% in a month over its roughly $46.9bn of debt, swung in volatile after-hours trading."
+            "CoreWeave expects to turn an adjusted profit in the first half of 2028 and to raise less than $5bn of additional capital through 2027, against total debt of about $46.9bn. It lifted 2026 revenue guidance to $13.0bn-$13.3bn after third-quarter revenue rose nearly 170% to $3.66bn; its backlog stands at $132.5bn."
           ],
-          why: "CoreWeave is a test of whether the AI building boom is turning into real revenue.",
+          why: "Investors are treating CoreWeave as a test of whether the debt-funded AI building boom can pay its way.",
           sources: [
-            { name: "Reuters via The Star", url: "https://www.thestar.com.my/tech/tech-news/2026/11/11/coreweave-beats-quarterly-revenue-estimates-as-ai-demand-defies-growing-doubts" }
-          ]
-        },
-        {
-          kicker: "Platforms",
-          headline: "OpenAI lets businesses claim profiles and run sales agents inside ChatGPT",
-          dek: "Companies can now manage how they appear in ChatGPT and, in the US, deploy AI agents that answer customers' questions.",
-          body: [
-            "In a beta called Businesses in ChatGPT, firms can claim a profile, list products with prices and availability and see aggregated data on mentions and clicks. Eligible US firms can set up Business Agents and pay to make them the destination for ChatGPT ads. OpenAI says it does not share users' conversations with businesses and labels sponsored placements."
-          ],
-          why: "It pushes ChatGPT further into search and shopping, which matters for any South African business that relies on being found online.",
-          sources: [
-            { name: "Reuters via Investing.com", url: "https://investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475" }
+            { name: "Reuters via Business Day", url: "https://www.businessday.co.za/world/international-companies/2026-11-11-investors-regain-confidence-as-coreweave-targets-2028-profitability/" },
+            { name: "TheStreet", url: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026" }
           ]
         }
       ]
@@ -715,42 +669,41 @@ const EDITION = {
 
 /* Headlines from the previous edition (only one day is kept). */
 const PREVIOUS = {
-  dateLong: "Tuesday, 10 November 2026 (Edition 6)",
+  dateLong: "Wednesday, 11 November 2026 (Edition 7)",
   items: [
-    { section: "Wars & Conflicts", headline: "Trump calls the Iran war 'effectively over' after talks with Qatar's prime minister" },
-    { section: "Wars & Conflicts", headline: "US-Russia-Ukraine talks open in Abu Dhabi today, with European envoys kept to side meetings" },
-    { section: "Wars & Conflicts", headline: "Houthis say the toll from airstrikes near Sanaa has risen to 44 as government forces claim gains" },
-    { section: "Wars & Conflicts", headline: "France blames Iran's Revolutionary Guard for hacking supermarket fridges" },
-    { section: "World Politics", headline: "Massie forces a House vote on impeaching Hegseth, possibly by Wednesday" },
-    { section: "World Politics", headline: "Trump questions whether the midterms were honest, days after saying he would accept the result" },
-    { section: "World Politics", headline: "New Knesset is sworn in today as Eisenkot's bid to unseat the Likud speaker stalls" },
-    { section: "South African Politics", headline: "ActionSA opens talks with the ANC and EFF and sets steep terms for any deal with the DA" },
-    { section: "South African Politics", headline: "Matlala tells the commission that Sibiya threatened his family, and denies a R500,000 bribe" },
-    { section: "South African Politics", headline: "Ramaphosa calls reports that he wants to quit 'preposterous' ahead of Thursday's NEC" },
-    { section: "South African Politics", headline: "DA promises written, public coalition deals as it weighs invoking GNU terms in Johannesburg" },
-    { section: "South African Politics", headline: "MK names a coalition team for eThekwini while still alleging the vote was rigged" },
-    { section: "South African Politics", headline: "DA needs eight more seats in Nelson Mandela Bay as the killing of a UDM councillor halts talks" },
-    { section: "Climate & Environment", headline: "COP31 settles its agenda overnight, but rich and poor nations split over money from the start" },
-    { section: "Climate & Environment", headline: "WMO says 2023-26 will be the four hottest years on record, with El Niño set to peak in December" },
-    { section: "Climate & Environment", headline: "African negotiators tell COP31 their climate plans are stalled for lack of money" },
-    { section: "Climate & Environment", headline: "Heat of up to 40°C and extreme fire danger hit the Northern and Western Cape" },
-    { section: "Science", headline: "SpaceX sets Friday for Starship's first attempt to catch both stages" },
-    { section: "Science", headline: "DNA shows a 1,600-year-old Nazca infant with cyclopia had trisomy 13" },
-    { section: "Science", headline: "Study finds every IPCC region is already close to its local Paris warming limits" },
-    { section: "Health & Medicine", headline: "Left bundle branch pacing beats RV pacing in heart block, and the trial is stopped early" },
-    { section: "Health & Medicine", headline: "Survodutide passes its cardiovascular safety test but shows no proven benefit" },
-    { section: "Health & Medicine", headline: "Oral GLP-1 orforglipron cuts sleep apnoea events by about 18 an hour" },
-    { section: "Health & Medicine", headline: "ANGPTL4 antibody MAR001 cuts triglycerides by up to 46% in phase 2b" },
-    { section: "Health & Medicine", headline: "Blinded trial finds AI-drafted echo reports as good as human drafts and nearly twice as fast to finalise" },
-    { section: "Economy & Markets", headline: "Brent plunges almost 6% to a 10-week low as Trump plays down new Iran strikes" },
-    { section: "Economy & Markets", headline: "Rand firms on cheaper oil as third-quarter jobless figures land today" },
-    { section: "Economy & Markets", headline: "Wall Street jumps more than 2% ahead of today's US inflation data" },
-    { section: "Economy & Markets", headline: "China's factory-gate inflation hits a four-and-a-half-year high as consumer prices cool" },
-    { section: "Technology & AI", headline: "Anthropic pushes ahead with a Nasdaq listing as early as next week despite the AI sell-off" },
-    { section: "Technology & AI", headline: "Nvidia shares fall more than 4% as the board's inquiry into Huang weighs" },
-    { section: "Technology & AI", headline: "Wall Street brokers call the AI rout overdone as AMD jumps on a Google deal" },
-    { section: "Technology & AI", headline: "White House signals it may let Congress tighten AI-chip curbs on China" },
-    { section: "Technology & AI", headline: "Pritzker urges the new Democratic Congress to pass federal AI safety rules" }
+    { section: "Wars & Conflicts", headline: "Abu Dhabi talks open with a prisoner-swap plan as Russia pounds Ukraine's grid" },
+    { section: "Wars & Conflicts", headline: "Rubio rules out more major combat against Iran as tanker attacks continue in Hormuz" },
+    { section: "Wars & Conflicts", headline: "Israeli strikes kill at least six in Gaza as winter floods swamp tent camps" },
+    { section: "Wars & Conflicts", headline: "New overnight strikes hit Sanaa fuel sites as Houthi-Saudi fighting escalates" },
+    { section: "World Politics", headline: "Eisenkot walks out of Likud talks as Israel's new Knesset is sworn in" },
+    { section: "World Politics", headline: "House Republicans shelve Massie's bid to impeach Hegseth by 211 votes to 204" },
+    { section: "World Politics", headline: "US judge lets Trump's $10bn defamation suit against the BBC go ahead" },
+    { section: "World Politics", headline: "Macron condemns attacks on teachers as student protests turn violent" },
+    { section: "World Politics", headline: "Mississippi's ballot deadline passes with Colom still about 2,500 votes ahead" },
+    { section: "South African Politics", headline: "Mashaba offers to drop his Joburg mayoral bid if Zille steps aside too" },
+    { section: "South African Politics", headline: "Matlala now admits paying Sibiya R550,000 and concedes he misled Parliament" },
+    { section: "South African Politics", headline: "Mbeki says Ramaphosa would be right to offer to quit, ahead of Thursday's NEC" },
+    { section: "South African Politics", headline: "ANC snubs today's 'Council of the Left' meeting as parties enter a 14-day scramble" },
+    { section: "South African Politics", headline: "Ramaphosa approves a 3.5% pay rise for ministers and MPs as unemployment rises" },
+    { section: "South African Politics", headline: "Zille refuses Malema's demand for an apology as his legal deadline falls today" },
+    { section: "Climate & Environment", headline: "Fossil CO2 emissions set to dip in 2026, but the energy crisis gets most of the credit" },
+    { section: "Climate & Environment", headline: "Türkiye pushes its '35 by 35' electrification goal as energy day exposes the fossil-fuel split" },
+    { section: "Climate & Environment", headline: "New coal-exit finance scheme names South Africa among its targets" },
+    { section: "Climate & Environment", headline: "Heatwave moves inland as SAWS warns of extremely high fire danger" },
+    { section: "Science", headline: "Vanishing chemical fingerprint dates the start of plate tectonics to about 2.5 billion years ago" },
+    { section: "Science", headline: "Telescope 'digital twin' pulls a hidden giant planet out of old Webb images" },
+    { section: "Health & Medicine", headline: "Motsoaledi's miners' compensation bill would bar lung-disease class actions" },
+    { section: "Health & Medicine", headline: "Kenya's Ebola contact monitoring ends today as DRC passes 10,000 cases" },
+    { section: "Health & Medicine", headline: "WHO publishes its third catalogue of TB drug-resistance mutations, with more data on pretomanid" },
+    { section: "Economy & Markets", headline: "Unemployment edges up to 33.7% despite 101,000 new jobs" },
+    { section: "Economy & Markets", headline: "Hot US inflation makes a December Fed hike a near-certainty" },
+    { section: "Economy & Markets", headline: "Oil keeps sliding as petrol heads for a December cut" },
+    { section: "Economy & Markets", headline: "Factory output falls 3.5% as fuel costs squeeze producers" },
+    { section: "Technology & AI", headline: "Anthropic sets an IPO price range valuing it at up to $1.4 trillion" },
+    { section: "Technology & AI", headline: "Nvidia hires a former prosecutor to investigate Huang as its shares fall again" },
+    { section: "Technology & AI", headline: "Google releases Gemini 4 Carbon, its most powerful model, to the public" },
+    { section: "Technology & AI", headline: "CoreWeave beats forecasts and raises its outlook despite debt worries" },
+    { section: "Technology & AI", headline: "OpenAI lets businesses claim profiles and run sales agents inside ChatGPT" }
   ]
 };
 /* ====================== EDITION DATA: END ====================== */
