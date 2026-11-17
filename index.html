@@ -217,76 +217,91 @@ body.in-topic .filter { display: block; max-width: 820px; margin: 14px auto 0; f
    previous EDITION's headlines into PREVIOUS. Everything below the
    END marker is the template and stays unchanged. */
 const EDITION = {
-  number: 12,
-  dateLong: "Monday, 16 November 2026",
-  compiled: "Compiled 03:51 SAST",
+  number: 13,
+  dateLong: "Tuesday, 17 November 2026",
+  compiled: "Compiled 03:56 SAST",
   lead: {
     section: "Wars & Conflicts",
-    kicker: "Yemen · Houthis",
-    headline: "Houthi forces push to within 60 km of Aden as Yemen's government digs in around its interim capital",
-    dek: "Military and government sources told AFP on Sunday that the Houthis have taken two districts of Lahj province and reached the Al-Kharaz camp. Government troops have pulled back from the Bab el-Mandeb area to reinforce the city.",
+    kicker: "Ukraine · Russia",
+    headline: "Ukraine launches its biggest drone barrage of the war, hitting the Crimean bridge and southern refineries",
+    dek: "Russia's defence ministry says it downed 1,336 Ukrainian drones over 16 regions overnight into Monday, about 600 of them aimed at Moscow. The figures cannot be independently verified.",
     body: [
-      "According to AFP, Houthi fighters have seized the Al-Maqatirah and Al-Madaribah districts and hold strategic positions across large parts of Lahj, the province that borders Aden. The internationally recognised government, backed by a Saudi-led coalition, said it had finished withdrawing forces from areas near the Bab el-Mandeb strait and redeployed them where 'circumstances require'. Officials said troops had begun building sandbag lines and digging tunnels around the city.",
-      "Fighting with local resistance groups, supported by coalition air strikes, has destroyed dozens of buildings along the Aden-Lahj road. The Houthis attacked Aden's presidential palace on 15 October, killing four people, according to government military sources, and failed in an earlier attempt to take the city in 2015. Separately, the Saudi-led coalition said on Sunday that it intercepted two Houthi ballistic missiles aimed at Riyadh, Reuters reported."
+      "Moscow's mayor, Sergei Sobyanin, said 191 drones were shot down on approach to the capital, and flights were restricted at Vnukovo, Sheremetyevo and several regional airports. Fires broke out at industrial sites in Azov, in Rostov region, and at the Ilsky refinery in Krasnodar; officials reported three people hurt in Rostov and six in Krasnodar. The Moscow-installed head of Crimea said the Kerch Strait bridge was hit. The Kremlin called the damage minor; road traffic was halted for repairs while trains kept running.",
+      "Volodymyr Zelensky claims the campaign has knocked out more than half of Russia's refining capacity, though two industry sources told Reuters the figure is nearer 30%. Ukraine's air force said Russia fired 158 drones overnight, and at least three people were killed in the Dnipro, Kherson and Zaporizhzhia regions on Monday.",
+      "The EU's foreign-policy chief, Kaja Kallas, accused Moscow of using maximalist demands to keep the war going. The Russian daily Vedomosti reported that Kremlin officials told ruling-party lawmakers to prepare for 'victory' and the return of troops, but it gave no timetable and there is no sign of a decision to end the war."
     ],
-    why: "Losing Aden would leave Yemen's recognised government without a capital and put the Houthis on both sides of the Bab el-Mandeb, a chokepoint for Red Sea shipping that already reroutes vessels around the Cape and feeds into freight and fuel costs in South Africa.",
+    why: "The escalation comes three days before Thursday's Trump-Xi-Putin meeting in Shenzhen, and sustained strikes on Russian refineries can tighten global diesel supply, a fuel South Africa largely imports.",
     sources: [
-      { name: "France 24 (AFP)", url: "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say" },
-      { name: "Times of Israel (live blog, Reuters)", url: "https://www.timesofisrael.com/liveblog-november-15-2026/" }
+      { name: "ABC News", url: "https://abcnews.com/International/ukraine-fires-1336-drones-russia-wars-largest-attacks/story?id=138171397" },
+      { name: "Fox News (via AOL)", url: "https://www.aol.co.uk/articles/ukraine-hits-putins-prized-bridge-181550000.html" },
+      { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war" }
     ]
   },
   numbers: [
-    { k: "Houthis from Aden", v: "60 km", n: "Government and military sources to AFP, Sunday" },
-    { k: "Brent crude", v: "$95.45", n: "Sunday evening, down 0.4% as the IEA now sees a Q4 surplus (Reuters)" },
-    { k: "Rand/dollar", v: "R16.92", n: "Friday close, near a seven-month low (Trading Economics)" },
-    { k: "Gaza deaths since ceasefire", v: "1,643", n: "Since 11 October 2025, per Gaza's Health Ministry (Al Jazeera)" },
-    { k: "Coalition deadline", v: "26 Nov", n: "For deals in more than 130 hung councils (Daily Friend)" }
+    { k: "Brent crude", v: "$92.44", n: "Monday settlement, down 3.6% on glut fears (Bloomberg)" },
+    { k: "Rand/dollar", v: "R16.99", n: "Monday morning, near R17 before CPI and the SARB (Reuters)" },
+    { k: "Drones claimed downed", v: "1,336", n: "Russian MoD figure for Ukraine's overnight attack, unverified" },
+    { k: "Ebola cases, DRC", v: "11,197", n: "Confirmed, with 5,471 deaths, to 11 November (ECDC)" },
+    { k: "Xi-Trump-Putin summit", v: "19 Nov", n: "Thursday in Shenzhen, on the APEC sidelines (AFP)" }
   ],
   sections: [
     {
       id: "conflicts", name: "Wars & Conflicts",
       stories: [
         {
-          kicker: "Iran war · Bahrain",
-          headline: "Iran claims a second drone attack on a US radar in Bahrain in three days",
-          dek: "The Revolutionary Guards said six drones targeted a US air-defence radar at Riffa air base early on Sunday. Bahrain sounded two shelter alerts and said its air defences stopped several Iranian attacks.",
+          kicker: "Yemen · Houthis",
+          headline: "Saudi Arabia replaces its Yemen war commander as the Houthis push along the coast towards Aden",
+          dek: "A royal decree on Monday handed command of the Saudi-led Joint Forces to the chief of staff, Lt Gen Fayyad al-Ruwaili. Reuters reports Houthi fighters have reached Khor Omaira, about 100 km west of Aden.",
           body: [
-            "The Guards called it retaliation for 'hostile US actions'. The US military had not commented on Sunday's claim by the time of reporting; on Friday, Central Command denied an earlier Iranian claim to have destroyed a US early-warning radar in Bahrain, saying it shot down two drones without damage or injuries. Bahrain called for full implementation of UN Security Council Resolution 2817, which condemned Iranian attacks in the region.",
-            "Iran also claims to have shot down US MQ-1 drones on Friday and Saturday, which has not been verified. President Trump said last week that the US does not need a deal with Iran, while Israeli Prime Minister Benjamin Netanyahu says Iran is trying to revive its nuclear programme."
+            "Five Yemeni military sources told Reuters the Houthis were about 25 km from government lines at Qawah, after Saudi-backed forces pulled back from the Bab el-Mandeb area on Sunday to concentrate on defending Aden and Lahj province. Security forces in Aden have added checkpoints and identity checks; residents say food and fuel are still available.",
+            "The outgoing commander, Lt Gen Fahad al-Salman, becomes an adviser to the defence minister. Saudi air defences intercepted two drones over the Makkah and Riyadh regions on Monday, The National reported. Government forces claim hundreds of strikes on Houthi positions, which cannot be verified."
           ],
-          why: "Renewed Iranian strikes on US assets in the Gulf raise the risk that the war restarts in full, with direct consequences for oil prices and South African fuel costs.",
+          why: "With Hormuz disrupted, the Bab el-Mandeb route matters more to world shipping; Houthi gains on the Gulf of Aden coast could push more vessels around the Cape.",
           sources: [
-            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know" },
-            { name: "CBS News", url: "https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/" },
-            { name: "Times of Israel (live blog)", url: "https://www.timesofisrael.com/liveblog-november-15-2026/" }
+            { name: "Reuters (via SRN News)", url: "https://srnnews.com/houthis-seize-ground-on-yemens-southern-coast-edge-closer-to-aden/" },
+            { name: "The National (UAE)", url: "https://www.thenationalnews.com/news/gulf/2026/11/16/saudi-arabia-replaces-joint-forces-commander-overseeing-fight-with-houthis/" },
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/16/houthis-edge-closer-to-aden-as-yemeni-forces-pull-out-of-bab-al-mandeb" }
           ]
         },
         {
-          kicker: "Gaza · Hamas",
-          headline: "Israel kills the commander of Hamas's Rafah Brigade, two months after his predecessor",
-          dek: "The IDF and Shin Bet said Samir Abu Younis was killed in an overnight drone strike in the al-Mawasi area of Khan Younis; Hamas confirmed his death.",
+          kicker: "Iran war · Hormuz",
+          headline: "Iran's Revolutionary Guards say six tankers caught fire after hitting mines in Hormuz in two days",
+          dek: "The IRGC said on Monday that two more tankers struck mines in the strait. Reuters could not verify the claims, and the ships have not been named.",
           body: [
-            "Israel says Abu Younis took over the brigade about two months ago, after Nael Abu Obeid was killed on 15 September, and accuses him of helping plan the 7 October 2023 attack and working to rebuild the brigade. Al Jazeera reports the strike hit a tent sheltering displaced people and wounded two others, who were taken to Nasser Medical Complex.",
-            "Gaza's Health Ministry says Israeli attacks killed 16 people over the previous 48 hours and at least 1,643 since the October 2025 ceasefire. Eleven people, including a nine-month-old, have now died from cold this winter, it says."
+            "Separately, the UK Maritime Trade Operations centre said an outbound vessel was hit by an unknown projectile, causing an engine-room fire with all crew accounted for; it is unclear whether this was one of the ships Iran described. Iran restricts transit through the strait and says it targets vessels that ignore its rules.",
+            "The US now has three carrier strike groups in the region after the USS Theodore Roosevelt arrived, according to a US official cited by Axios and Israel's Channel 12."
           ],
-          why: "Israel's campaign against Hamas's southern commanders continues despite the ceasefire, keeping the truce fragile as winter worsens conditions in the camps.",
+          why: "Mine strikes keep shipping insurance and freight costs high even as crude falls, and any escalation would quickly reach South Africa's fuel import bill.",
           sources: [
-            { name: "Jerusalem Post", url: "https://jpost.com/israel-news/defense-news/article-914911" },
-            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza" }
+            { name: "Jerusalem Post (Reuters)", url: "https://www.jpost.com/middle-east/article-915014" },
+            { name: "CBS News", url: "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/" },
+            { name: "Times of Israel (live blog)", url: "https://www.timesofisrael.com/liveblog-november-16-2026/" }
           ]
         },
         {
-          kicker: "Ukraine · Russia",
-          headline: "Ukraine strikes a Tatarstan refinery and an aircraft plant as Russia hits nine regions overnight",
-          dek: "Kyiv's General Staff said drones hit a petrochemical complex and refinery in Nizhnekamsk, an aircraft maker in Bryansk and the Akhtubinsk test airfield. Russia launched 132 drones at Ukraine overnight.",
+          kicker: "Sudan · RSF",
+          headline: "An RSF field commander defects as Sudan's army closes in on En Nahud",
+          dek: "Ahmed Hasab al-Rasoul, who led an RSF unit in Saraf Omra, North Darfur, said in a video on Sunday that he was joining the army.",
           body: [
-            "Local authorities in Nizhnekamsk confirmed damage to industrial facilities and a residential building, with three people hurt; Russia's defence ministry claimed it downed 533 Ukrainian drones, which could not be verified. Ukraine's air force said it intercepted 106 of the 132 Russian drones, and Odesa's governor said about 41,000 families briefly lost power.",
-            "Volodymyr Zelensky said Russia used more than 2,300 drones, 1,590 glide bombs and 15 missiles against Ukraine in the past week. The exchanges follow US-brokered talks in Abu Dhabi on 10-11 November that produced no breakthrough."
+            "He said the RSF had no national plan and accused foreign states of financing the war, naming the UAE, which has repeatedly denied arming the group. Other RSF officers have defected this year.",
+            "The army, which took Al-Khuwai in West Kordofan on Friday, is advancing on En Nahud, a gold-mining hub the RSF has held since May 2025. An ACLED analyst told The New Arab that losses and defections are weakening the RSF's structure."
           ],
-          why: "Neither side is easing the air war ahead of Thursday's Trump-Xi-Putin meeting, which Ukraine will not attend.",
+          why: "Momentum in Kordofan could decide whether the war behind the world's largest displacement crisis moves towards talks or a long de facto partition.",
           sources: [
-            { name: "RFE/RL", url: "https://www.rferl.org/a/ukraine-russia-war-drone-strikes-oil-refinery/33899022.html" },
-            { name: "Kyiv Independent", url: "https://kyivindependent.com/ukraine-war-latest-russia-launches-mass-attack-on-odesa-oblast-as-ukraine-strikes-airfield-drone-launch-site-in-russia/" }
+            { name: "The New Arab", url: "https://www.newarab.com/news/rsf-commander-defects-army-makes-ground-kordofan" },
+            { name: "Arab News", url: "https://www.arabnews.com/middle-east/rsf-field-commander-announces-defection-to-sudanese-army-3012187" }
+          ]
+        },
+        {
+          kicker: "Lebanon · Hezbollah",
+          headline: "Israel strikes an alleged Hezbollah arms shipment near the Syrian border",
+          dek: "The IDF said the air force hit weapons being moved from Syria to Hezbollah, and the operatives involved, in the Janta area overnight into Monday.",
+          body: [
+            "The military said the area had been used for many past transfers and accused Hezbollah of breaching understandings between the sides. No casualty figures were given."
+          ],
+          why: "Strikes deep inside Lebanon show the northern front is still active alongside the Iran war, keeping the risk of wider escalation alive.",
+          sources: [
+            { name: "Jerusalem Post", url: "http://www.jpost.com/israel-news/defense-news/article-915038" }
           ]
         }
       ]
@@ -295,30 +310,44 @@ const EDITION = {
       id: "politics", name: "World Politics",
       stories: [
         {
-          kicker: "Israel · Coalition",
-          headline: "First Likud-Yashar unity talks end without a deal as both sides claim the premiership",
-          dek: "Negotiators for Netanyahu's Likud and Gadi Eisenkot's Yashar met for 75 minutes in Herzliya on Sunday and called the talks businesslike. Neither leader will give up the top job.",
+          kicker: "US · China · Russia",
+          headline: "Beijing confirms Thursday's first Xi-Trump-Putin summit as Trump sets off for Asia",
+          dek: "China's foreign ministry said the three leaders will meet in Shenzhen on the APEC sidelines for 'in-depth exchanges' on world peace and strategic stability. Trump left Washington on Monday.",
           body: [
-            "Eisenkot holds President Isaac Herzog's mandate to form a government, with 28 days plus a possible 14-day extension. The bloc opposed to Netanyahu won 67 seats in the 27 October election, including 19 held by Arab parties, against 53 for Netanyahu's bloc. Eisenkot rules out serving under Netanyahu and excludes Itamar Ben Gvir's party; Likud wants Netanyahu to stay on and its whole bloc included.",
-            "Lapid, Lieberman and Golan say they will oppose any government in which Netanyahu serves. The Knesset is expected to vote on Tuesday to replace Speaker Amir Ohana of Likud with Yashar's Matan Kahana."
+            "Spokeswoman Mao Ning called the meeting ground-breaking. Trump has said Iran, nuclear arms control, trade and Ukraine will come up, although US officials told ABC News he does not plan to raise Ukraine in the three-way session itself. Washington wants China in an arms-control deal; Beijing says the US and Russia should cut their arsenals first.",
+            "Trump also said he 'may' meet Kim Jong Un in China, leaving it to Xi. ABC reports that logistics make that unlikely, and South Korea's foreign minister sees little chance of Kim attending."
           ],
-          why: "Who leads Israel will shape decisions on Iran, Gaza and Lebanon, the wars driving oil prices and regional risk.",
+          why: "Any great-power understanding on Iran or Ukraine would move oil and the markets that drive the rand, and Pretoria will watch how its BRICS partners deal with Washington.",
           sources: [
-            { name: "Ynetnews", url: "https://ynetnews.com/article/bjijg8wrfl" },
-            { name: "Jerusalem Post", url: "https://jpost.com/israel-election-2026/article-914935" }
+            { name: "AFP (via Philstar)", url: "https://www.philstar.com/world/2026/11/17/2570714/china-says-xi-trump-putin-discuss-world-peace" },
+            { name: "ABC News (live)", url: "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702" }
           ]
         },
         {
-          kicker: "Cape Verde · Election",
-          headline: "Cape Verde's President José Maria Neves wins re-election with about 64% of the vote",
-          dek: "Provisional results from the electoral commission gave Neves 63.8% in Sunday's vote, AFP reported, enough to avoid a run-off.",
+          kicker: "Israel · Knesset",
+          headline: "Knesset votes today on an Eisenkot ally for speaker after Smotrich's conditions are rebuffed",
+          dek: "Yashar's Matan Kahana is expected to replace Likud's Amir Ohana with Arab-party votes, after rejecting demands that would have barred Ra'am and Joint List MKs from deputy-speaker posts.",
           body: [
-            "Nearly 420,000 people were eligible to vote in the island nation, one of Africa's most stable democracies. The field included Joana Rosa Amado, the first woman to stand for the presidency."
+            "Bezalel Smotrich offered the pro-Netanyahu bloc's support if Kahana kept those parties out of the deputy posts and agreed to resign if a new government asked. Kahana called the demands 'anti-statesmanlike', noting that Arab citizens are 21% of the population; a committee has already proposed Ra'am's Walid Taha and the Joint List's Ahmad Tibi among nine temporary deputies.",
+            "The anti-Netanyahu bloc holds 67 seats, including 19 from Arab parties, against 53. Eisenkot has 28 days, plus a possible 14-day extension, to form a government, and the Times of Israel reports no progress in Yashar-Likud unity talks."
           ],
-          why: "A smooth vote reinforces Cape Verde's standing as a democratic outlier in a West African region marked by coups.",
+          why: "Control of the Knesset is the first test of whether Eisenkot can govern, with consequences for Israeli policy on Iran, Gaza and Lebanon.",
           sources: [
-            { name: "AFP via Yahoo News", url: "https://www.yahoo.com/news/videos/cape-verdes-president-jose-maria-225054824.html" },
-            { name: "Anadolu Agency", url: "https://aa.com.tr/en/africa/cape-verdes-president-leads-reelection-bid-with-nearly-64-of-vote/4126078" }
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/smotrich-vows-to-back-kahana-for-knesset-speaker-only-if-arab-mks-not-made-deputies/" },
+            { name: "Jerusalem Post", url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915057" }
+          ]
+        },
+        {
+          kicker: "US · Iran",
+          headline: "Vance says Trump will not let the Iran war become even a two-year commitment",
+          dek: "In a Fox News interview on Monday, the vice-president said Trump is 'not going to let this become a forever war', but gave no end date.",
+          body: [
+            "Vance defended the aim of destroying Iran's nuclear programme and criticised those who want an open-ended US presence. In Tehran, deputy foreign minister Kazem Gharibabadi said IAEA inspectors will not be allowed into the bombed sites at Natanz, Fordow and Isfahan until the war has 'permanently ended'."
+          ],
+          why: "Signals that Washington wants out of the war helped push oil lower on Monday, which eases pressure on South African fuel prices.",
+          sources: [
+            { name: "Iran International", url: "https://www.iranintl.com/en/202611166424" },
+            { name: "CBS News (AFP)", url: "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/" }
           ]
         }
       ]
@@ -327,59 +356,70 @@ const EDITION = {
       id: "sa-politics", name: "South African Politics",
       stories: [
         {
-          kicker: "ANC · DA · GNU",
-          headline: "ANC and DA open formal coalition talks as the ANC rules out a national stability pact",
-          dek: "The two parties met on Sunday, but Daily Maverick reports the ANC has ruled out a GNU-style national agreement with the DA for councils. The ANC is also weighing opposition benches where it polled poorly.",
+          kicker: "Coalitions · ANC",
+          headline: "ANC reports back on coalitions today as talk grows of a deal with ActionSA, MK and the EFF",
+          dek: "The ANC's negotiators have met MK, ActionSA, Bosa, the IFP and the DA as the deadline to constitute hung councils nears. A newsletter carried by Politicsweb says an ANC-ActionSA arrangement backed by MK and the EFF is now the likeliest outcome.",
           body: [
-            "An NEC member told Daily Maverick there was 'strong pushback' against the DA at last week's meeting, though another source said the stance is not a flat no. The ANC is considering sitting in opposition in councils where it won under 30%, and in metros where it won under 20%, and has discussed minority governments that would need budget pacts. The Sunday Times reports Cyril Ramaphosa was irritated that DA leader Geordin Hill-Lewis tried to approach him directly rather than through Luthuli House; secretary-general Fikile Mbalula leads the ANC's negotiating team.",
-            "The ANC is due to brief the media on Tuesday. DA federal council chair Ashor Sarupen has said the DA has not concluded a deal with any party. By one count reported by Daily Maverick, an ANC-DA combination would hold a majority in 158 of the country's 257 municipalities."
+            "EWN reports the NEC told its team to engage big and small parties, and that any agreement must put service delivery, accountability and anti-corruption first. The ANC and DA called Sunday's talks productive and agreed to meet again, but the DA is reportedly seen as a partner of last resort. The ANC is due to issue a statement on Tuesday.",
+            "The Common Sense newsletter says such a bloc, which could also draw in the Patriotic Alliance and the UDM, could end the national GNU with the DA and unsettle markets. Councils must sit within 14 days of results being declared; the IFP says it has met seven parties since 12 November."
           ],
-          why: "If the two largest parties cannot cooperate locally, pressure on the national GNU, and on the budget and reform agenda it underpins, will grow.",
+          why: "Who governs Johannesburg, Tshwane and Ekurhuleni will shape services and investor confidence, and the GNU itself hangs on how the ANC treats the DA in the councils.",
           sources: [
-            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-15-anc-rules-out-national-stability-pact-with-da/" },
-            { name: "Sunday Times", url: "https://www.sundaytimes.timeslive.co.za/politics/2026-11-15-im-tired-of-the-da-ramaphosa-vents-amid-coalition-tensions/" },
-            { name: "Daily Friend", url: "https://dailyfriend.co.za/2026/11/14/news-focus-anc-reluctant-to-work-with-da-in-hung-councils/" }
+            { name: "Politicsweb (The Common Sense)", url: "https://www.politicsweb.co.za/news/anc-heading-for-coalition-with-actionsa-mkp-and-eff-that-could-end-gnu-tcs" },
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/16/anc-broadens-search-for-coalition-parties-as-municipal-councils-deadline-looms" }
           ]
         },
         {
-          kicker: "Coalitions · Deadline",
-          headline: "Left-wing parties offer the ANC support on condition the DA and FF Plus are shut out",
-          dek: "Parties in the so-called Conference of the Left, which together won about 20% of the vote, say they will back the ANC only without the DA. Deals in more than 130 hung councils must be done by 26 November.",
+          kicker: "KwaZulu-Natal · MK",
+          headline: "ANC and MK agree in principle to work together in KwaZulu-Natal councils",
+          dek: "After weekend talks with Jacob Zuma, the former rivals have an understanding for the province, though the details are not final.",
           body: [
-            "The bloc includes the SACP, MK, ACT, AMM and EFF, according to the Daily Friend. Floyd Shivambu's Afrika Mayibuye has separately offered conditional support for ANC-led coalitions that exclude the DA. Within the ANC, Youth League secretary-general Tsakani Shiviti opposes any DA deal, while others argue cooperation is needed for stability.",
-            "The ANC won 30.75% nationally and the DA 24.65%. Over the past week the ANC has met the EFF, ActionSA, Bosa, MK, IFP, Rise Mzansi and others; the DA met MK on Saturday without announcing a deal, and the IFP says it has spoken to all the main parties."
+            "MK leads in 19 KZN councils, including eThekwini, while the ANC leads in three, Sowetan reports. The ANC's team met Zuma on Sunday and said the parties would meet again; the NEC has dropped a blanket approach in favour of deciding deals council by council. In Johannesburg the ANC met ActionSA, the IFP, the EFF and Bosa, while the DA, the leading party in the three Gauteng metros, has also held talks with MK."
           ],
-          why: "A left-leaning ANC bloc in the big councils would be a sharp policy turn from the GNU's market-friendly direction.",
+          why: "An ANC-MK pact would put Zuma's party in charge of Durban and its port, and test how far the ANC can go with MK while it governs nationally with the DA.",
           sources: [
-            { name: "Daily Friend", url: "https://dailyfriend.co.za/2026/11/14/news-focus-anc-reluctant-to-work-with-da-in-hung-councils/" },
-            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-15-anc-rules-out-national-stability-pact-with-da/" }
-          ]
-        },
-        {
-          kicker: "Gauteng metros · Labour",
-          headline: "Municipal workers fear a DA return could unpick wage deals in Johannesburg and Tshwane",
-          dek: "In Johannesburg the DA voted against an addendum to a R10.3bn wage agreement with Samwu; in Tshwane workers fear Cilliers Brink could reverse a backdated 3.5% increase worth more than R1bn.",
-          body: [
-            "The Tshwane payment covers at least 21,000 workers and stems from a 2021 wage agreement; Brink has reportedly warned it would hurt frontline services. A senior Samwu leader called the fears baseless because the agreements are legally binding.",
-            "ActionSA, which won wards in former ANC strongholds such as Tembisa, Soshanguve and Soweto, remains the kingmaker. Herman Mashaba called his meeting with Hill-Lewis 'frank and productive' but still wants Nasiphi Moya reinstated as Tshwane mayor; the DA declined to discuss details."
-          ],
-          why: "Metro wage bills compete directly with spending on clinics, water and electricity, so coalition choices here shape services that public hospitals depend on.",
-          sources: [
-            { name: "The National", url: "https://thenational.co.za/news/2026-11-15-coalition-talks-anc-eyes-move-to-block-da-in-gauteng-metros/" }
+            { name: "Sowetan", url: "https://www.sowetan.co.za/news/2026-11-16-anc-mk-party-move-towards-working-relationship-in-kzn/" }
           ]
         },
         {
           kicker: "Presidency · US",
-          headline: "Ramaphosa opens his California AI drive today amid US pressure over black-ownership rules",
-          dek: "He speaks at Semafor's Silicon Valley summit on Monday and is due to meet Google, Microsoft, Cisco and Palo Alto Networks, with eight ministers in tow.",
+          headline: "Ramaphosa says Musk's 'difficulty' with ownership policy is what keeps Starlink out",
+          dek: "In California, the president told Semafor and ABC's Jonathan Karl that every country sets entry rules for companies, and rejected Musk's 'apartheid 2.0' charge.",
           body: [
-            "South Africa wants a share of the roughly $650bn US firms are expected to spend on AI this year. US Ambassador L. Brent Bozell III says the rule requiring 30% black ownership for licences in sectors such as telecoms is holding back 'billions' in US investment; SpaceX has offered a $110m local investment and free rural school broadband as an alternative to equity transfers, and business group Sakeliga is challenging the rule in court.",
-            "Relations with Washington remain strained after the loss of PEPFAR funding and South Africa's removal from AGOA, and the Presidency has said Ramaphosa will not visit Washington on this trip."
+            "The rules require licensees in sectors such as telecoms to have 30% black ownership. Ramaphosa said Musk did not grasp apartheid's harm, had benefited from the education it gave him and should give back. He called his Oval Office meeting with Trump an 'ambush' and said the two have not spoken since.",
+            "Pitching South Africa as Africa's AI hub, he cited an electricity surplus, a plan for 14,000 km of new transmission lines and existing Microsoft, AWS and Google data centres, Business Day reported. He is due to meet OpenAI, Anthropic, Microsoft and Google. (Disclosure: this paper is compiled by Claude, which is made by Anthropic.)"
           ],
-          why: "How Pretoria answers the ownership question will decide whether US tech investment, including satellite broadband for rural clinics and schools, actually arrives.",
+          why: "The ownership standoff will decide whether satellite broadband, including for rural clinics and schools, and wider US tech investment actually arrive.",
           sources: [
-            { name: "Semafor via Yahoo News", url: "https://www.yahoo.com/news/us/articles/south-africa-ramaphosa-takes-ai-125550134.html" },
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/ramaphosa-heads-silicon-valley-position-sa-global-ai-race/" }
+            { name: "Semafor (via Yahoo News)", url: "https://www.yahoo.com/news/world/articles/elon-musk-policy-difficulty-prevents-210437048.html" },
+            { name: "The National", url: "https://thenational.co.za/news/2026-11-17-ramaphosa-hits-back-at-elon-musk-redress-is-not-apartheid-2-0/" },
+            { name: "Business Day", url: "https://www.businessday.co.za/news/2026-11-16-why-sa-should-be-africas-ai-hub-cyril-ramaphosa-tells-us/" }
+          ]
+        },
+        {
+          kicker: "Crime · Policing",
+          headline: "Seventeen killed in two mass shootings near Pretoria and Pietermaritzburg",
+          dek: "Nine people were found shot dead in a shack in Jeffsville, near Pretoria, and eight in a bullet-riddled vehicle in Sweetwaters, outside Pietermaritzburg, on Sunday.",
+          body: [
+            "Gauteng's police commissioner, Tommy Mthombeni, said the Jeffsville killings may be a revenge attack linked to the 2025 Saulsville shooting that killed 12, as one victim was a person of interest in that case. No arrests had been made by Monday, and police said it was too early to give a motive in Sweetwaters, where the victims were not yet identified. National commissioner Fannie Masemola has vowed justice."
+          ],
+          why: "Repeated mass shootings point to gaps in policing and illegal-firearm control, and add to the trauma load on public hospitals.",
+          sources: [
+            { name: "AP (via PBS NewsHour)", url: "https://www.pbs.org/newshour/world/at-least-17-people-killed-in-2-mass-shootings-on-the-same-day-in-south-africa" },
+            { name: "The Citizen", url: "https://www.citizen.co.za/news/in-case-you-missed-it-sixteen-november-2026/" }
+          ]
+        },
+        {
+          kicker: "Zuma · Courts",
+          headline: "Zuma asks the Presidency to shield his pension after losing his R29m legal-fees appeal",
+          dek: "His foundation will lodge an indemnity claim against the state after the Constitutional Court refused him leave to appeal on 12 November.",
+          body: [
+            "The courts have ordered Zuma to repay R28.96m in state-funded legal costs from his corruption cases, plus interest. The foundation wants a written undertaking that his pension will not be attached, and asks the Presidency and Treasury to name the officials who approved the payments. It says Zuma did not authorise the spending; the High Court set aside the funding decision in 2018 after a DA challenge."
+          ],
+          why: "The ruling closes Zuma's last appeal, and enforcing it against a former president who now leads MK will test the state just as his party bargains with the ANC.",
+          sources: [
+            { name: "The National", url: "https://thenational.co.za/news/2026-11-16-zuma-asks-presidency-to-protect-his-pension-from-r29m-legal-bill/" },
+            { name: "TimesLIVE", url: "https://www.timeslive.co.za/news/south-africa/2026-11-15-zuma-foundation-hits-back-after-concourt-dismisses-r29m-legal-fees-appeal/" }
           ]
         }
       ]
@@ -388,29 +428,42 @@ const EDITION = {
       id: "climate", name: "Climate & Environment",
       stories: [
         {
-          kicker: "COP31 · Final week",
-          headline: "Ministers arrive in Antalya as COP31 enters its decisive second week",
-          dek: "Ministerial talks on a draft text begin this week, with a deal due by Friday. Host Türkiye wants a global electrification target in the summit's political statement.",
+          kicker: "COP31 · Draft deal",
+          headline: "COP31's first draft keeps both 'transition away' and 'phase out' options for fossil fuels",
+          dek: "Negotiators in Antalya published an 18-page text on Monday that leaves open fossil-fuel wording, a 35% electrification target and adaptation finance. The deadline is Friday.",
           body: [
-            "The talks cover about 160 agenda items. The electrification initiative aims to lift electricity's share of global energy demand from about 20% to 35% by 2035; the EU wants it to specify 'clean' electrification, which could reopen the fight over fossil fuels. Australia's Chris Bowen, who leads the negotiations, said the first week made progress on several issues.",
-            "Switzerland's lead negotiator, Felix Wertli, told Keystone-SDA he expects 'tough and intense' talks now that political positions are on the table."
+            "Australia's Chris Bowen, who leads the talks with Türkiye, said some clauses had already been rejected and that a text of only agreed points would be very short. Türkiye's plan to lift electricity's share of energy use to 35% by 2035 is marked as contested.",
+            "A voluntary pledge from the hosts on sustainable AI has only nine signatories among nearly 200 countries; campaigners fear data-centre growth will add to emissions and strain water and power."
           ],
-          why: "Language on fossil fuels and adaptation finance will shape the pressure on, and support for, South Africa's coal-dependent energy transition.",
+          why: "The fossil-fuel wording and adaptation money will shape both the pressure on, and the support for, South Africa's coal-heavy power system.",
           sources: [
-            { name: "Hürriyet Daily News", url: "https://www.hurriyetdailynews.com/turkiye-eyes-ambitious-climate-outcome-as-cop31-enters-final-week-229417" },
-            { name: "Keystone-SDA via Bluewin", url: "https://www.bluewin.ch/en/news/switzerland-expects-a-tough-second-week-of-negotiations-at-cop31-li.3674161" }
+            { name: "Reuters (via WHBL)", url: "https://whbl.com/2026/11/16/first-draft-of-cop31-deal-signals-tough-negotiations-to-come/" }
           ]
         },
         {
-          kicker: "El Niño · Oceans",
-          headline: "NASA satellites show this year's El Niño building faster than the record 1997 event",
-          dek: "Sea-surface height data from Sentinel-6 show the 2026 event intensified much more abruptly than 1997-98; NOAA gives an 83% chance of strong to very strong conditions in January-March 2027.",
+          kicker: "Western Cape · Water",
+          headline: "Western Cape water allocations cut as dams drop below 80% ahead of El Niño",
+          dek: "Water minister Pemmy Majodina announced a 15% cut for irrigation and 7% for domestic and industrial users in the Western Cape Water Supply System.",
           body: [
-            "NASA compared altimetry snapshots from October 1997, 2015 and 2026 across a 35-year record. The agency stresses that each El Niño's regional effects differ and exact impacts are uncertain."
+            "The six-dam system was 72.5% full on 2 November, against 84.4% a year earlier and below its 80% operating threshold; Cape Town's dams stood at 71.5% on 9 November. The cuts total about 57 million cubic metres a year, roughly 11% of allocations.",
+            "The department says this is not a national bulk-water crisis but warns of mandatory restrictions from 2027 if users keep drawing full allocations, as a strong El Niño threatens more evaporation and less runoff. Majodina also said her department stopped Gauteng's Rand Water system from collapsing about a week before the 4 November elections."
           ],
-          why: "Strong El Niño summers usually bring drought and heat to southern Africa, with knock-on risks for maize harvests, water supply and heat-related illness.",
+          why: "Farmers face cuts heading into harvest, and Cape Town households and hospitals could see tighter municipal restrictions if summer turns hot and dry.",
           sources: [
-            { name: "NASA Earth Observatory via ScienceDaily", url: "https://www.sciencedaily.com/releases/2026/11/261114202227.htm" }
+            { name: "Business Day", url: "https://www.businessday.co.za/news/2026-11-16-western-cape-faces-water-restrictions-as-dam-levels-fall-and-el-nino-threatens-supply/" },
+            { name: "The Citizen", url: "https://www.citizen.co.za/news/in-case-you-missed-it-sixteen-november-2026/" }
+          ]
+        },
+        {
+          kicker: "Oceans · Satellites",
+          headline: "Sentinel-6B is ready to become the world's reference sea-level satellite",
+          dek: "NASA says the European-led satellite, launched a year ago, finished calibration on 30 October and becomes the benchmark for other altimetry missions in January.",
+          body: [
+            "Its predecessor, Sentinel-6 Michael Freilich, will move into an orbit about 30 seconds behind so the pair can produce sharper data, extending a sea-level record kept on the same ground track since the early 1990s. Both are tracking ocean changes during the developing strong El Niño."
+          ],
+          why: "Precise sea-level data underpin coastal planning, including for South Africa's ports and low-lying coastlines.",
+          sources: [
+            { name: "NASA", url: "https://science.nasa.gov/blogs/sentinel-6/2026/11/16/nasa-european-sea-level-satellite-prepped-for-new-role" }
           ]
         }
       ]
@@ -419,41 +472,40 @@ const EDITION = {
       id: "science", name: "Science",
       stories: [
         {
-          kicker: "Astronomy · MeerKAT",
-          headline: "South Africa's MeerKAT helps unmask a white dwarf pulsing radio waves every eight minutes",
-          dek: "Writing in Nature Astronomy, an ICRAR-led team shows the long-period radio transient GPM J0715-1141 is a white dwarf orbiting a Sun-like star.",
+          kicker: "Space · Voyager",
+          headline: "Voyager 1 becomes the first spacecraft one light-day from Earth tomorrow",
+          dek: "NASA says the 1977 probe passes about 25.9 billion km, the distance light travels in 24 hours, at 10:16 UTC (12:16 SAST) on Wednesday 18 November.",
           body: [
-            "The source was found by the Murchison Widefield Array in Western Australia, located precisely with MeerKAT in the Karoo and confirmed optically with the Keck Observatory. It lies more than 5,000 light-years away. About a dozen such long-period transients are known, and their cause has been a puzzle; this system strengthens the case that some are white dwarfs in binaries."
+            "It will have been flying for 49 years, two months and 11 days, at about 61,000 km/h, and a signal will take a full day each way. Most of its instruments have been switched off to save power. NASA has invited people to flash lights at the sky after sunset tonight; Voyager 2 should reach the same mark in 2035."
           ],
-          why: "It is another discovery that depended on MeerKAT, the precursor to the Square Kilometre Array being built in the Northern Cape.",
+          why: "It is a landmark for the longest-running deep-space mission, which is still sending back data from interstellar space.",
           sources: [
-            { name: "Nature Astronomy", url: "https://doi.org/10.1038/s41550-026-03016-z" },
-            { name: "ScienceDaily (ICRAR release)", url: "https://www.sciencedaily.com/releases/2026/11/261114202136.htm" }
+            { name: "NASA", url: "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/" },
+            { name: "EarthSky", url: "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/" }
           ]
         },
         {
-          kicker: "Solar system",
-          headline: "Astronomers flag a possible sixth dwarf planet beyond Pluto",
-          dek: "The object, provisionally named 2026 ED138, is estimated at 600-1,500 km across and lies about 46 times Earth's distance from the Sun.",
+          kicker: "Astronomy · Euclid",
+          headline: "ESA's Euclid dark-matter telescope spots its first comet",
+          dek: "Comet C/2026 S1 (Euclid), about 1.3 billion km away between the orbits of Jupiter and Saturn, was found in images taken from 16 to 24 September.",
           body: [
-            "It was identified by Matthew Holman of the Harvard-Smithsonian Center for Astrophysics and checked with Mario Jurić of the University of Washington. It is an unconfirmed candidate announced at a press briefing rather than in a peer-reviewed paper, and more observations are needed to pin down its size."
+            "University of Helsinki scientist Mikko Pöntinen noticed a moving streak across several frames and matched it in five image sets; a fuzzy coma showed it was active. Euclid was built to map dark matter, dark energy and distant galaxies, not to hunt comets."
           ],
-          why: "Large bodies in the outer solar system test models of how the planets formed and migrated.",
+          why: "Big survey telescopes increasingly double as solar-system watchers, and the same work helps clean comet and asteroid trails out of cosmology data.",
           sources: [
-            { name: "ScienceDaily (University of Washington release)", url: "https://www.sciencedaily.com/releases/2026/11/261112230447.htm" }
+            { name: "Space.com", url: "https://www.space.com/astronomy/comets/euclid-discovers-its-1st-comet-space-photo-of-the-day-for-nov-16-2026" }
           ]
         },
         {
-          kicker: "Planetary science",
-          headline: "Simulations suggest why Uranus and Neptune have lopsided magnetic fields",
-          dek: "A University of Texas-led study in Communications Physics finds interiors that grow steadily more conductive with depth can produce their steeply tilted fields.",
+          kicker: "Physics · Quantum",
+          headline: "Delft physicists flip the nuclear spin of a single atom with a microscope tip",
+          dek: "Writing in Nature Communications, a TU Delft team used a modified scanning tunnelling microscope to perform nuclear magnetic resonance on one atom.",
           body: [
-            "Uranus's magnetic axis is tilted about 59 degrees and Neptune's about 47, compared with Earth's 11. The models also predict the tilt could shift by tens of degrees within decades, which the team plans to test with James Webb images of the planets' auroras. These are model results, not observations."
+            "The nuclear spin flipped even when it was largely disentangled from the electron's spin, which the team did not expect and cannot yet explain. Because nuclear spins are well shielded from noise, controlling them could help build more stable quantum memory; this is an early laboratory result."
           ],
-          why: "Understanding ice-giant interiors matters for planning a future Uranus mission and for interpreting the many similar planets found around other stars.",
+          why: "It takes magnetic resonance, the physics behind MRI, down to the scale of a single atom.",
           sources: [
-            { name: "Communications Physics", url: "https://doi.org/10.1038/s42005-026-02841-y" },
-            { name: "ScienceDaily (UT Austin release)", url: "https://www.sciencedaily.com/releases/2026/11/261114202204.htm" }
+            { name: "ScienceDaily (TU Delft release)", url: "https://www.sciencedaily.com/releases/2026/11/261114202232.htm" }
           ]
         }
       ]
@@ -462,43 +514,53 @@ const EDITION = {
       id: "health", name: "Health & Medicine",
       stories: [
         {
-          kicker: "Cardiology · AI",
-          headline: "AI reading of routine ECGs outperforms ejection fraction at flagging sudden cardiac death risk",
-          dek: "In a Nature study trained on more than 440,000 Swedish ECGs linked to death records, the model identified a group with a 7% annual sudden-death rate, against 4.6% for patients flagged by conventional criteria.",
+          kicker: "Ebola · DRC",
+          headline: "Congo's Bundibugyo Ebola outbreak passes 11,000 confirmed cases with no licensed vaccine",
+          dek: "ECDC figures to 11 November show 11,197 confirmed cases and 5,471 deaths across eight provinces, six months into Congo's deadliest Ebola outbreak.",
           body: [
-            "The Berkeley-led team, including Ziad Obermeyer, validated the model on separate datasets from a San Diego hospital system and from Taipei. It also flagged many people that guideline criteria, which lean heavily on ejection fraction, would class as low risk.",
-            "This is a retrospective risk-prediction study; it has not been tested prospectively, and it does not show that acting on the flags, for example with ICDs, saves lives."
+            "Ituri accounts for 7,765 cases and 3,667 deaths, and 68 of 178 health zones are affected. Kenya's nine cases have been cleared, Uganda's outbreak was declared over in August, and Nigeria's single case was evacuated to Switzerland.",
+            "No vaccine or specific treatment is licensed for Bundibugyo virus. Frontline workers are receiving the Zaire-strain Ervebo vaccine under a research protocol to test cross-protection, and the TUMAINI phase 2/3 trial began in Bunia on 23 October; candidates from Oxford, Moderna and others are at early stages. The crude case-fatality ratio is close to 50%, though outcomes are pending for many."
           ],
-          why: "If confirmed prospectively, a cheap ECG could help target scarce defibrillator and cardiology resources, but it is not ready for clinical use.",
+          why: "Cases have been exported to Kenya and Nigeria, so a travel history and early isolation matter for any febrile patient arriving from eastern DRC.",
           sources: [
-            { name: "Nature", url: "https://doi.org/10.1038/s41586-026-10674-6" },
-            { name: "ScienceDaily (UC Berkeley release)", url: "https://www.sciencedaily.com/releases/2026/11/261112230456.htm" }
+            { name: "ECDC", url: "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13" },
+            { name: "WHO", url: "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-member-state-briefing-on-ebola-outbreak-in-the-democratic-republic-of-the-congo---11-november-2026" }
           ]
         },
         {
-          kicker: "Hantavirus · NICD",
-          headline: "Studies in Science confirm person-to-person Andes virus spread on the MV Hondius cruise",
-          dek: "Genomic and epidemiological work, with laboratory input from South Africa's NICD, shows the April outbreak, which caused 13 cases and three deaths, spread between passengers.",
+          kicker: "Antimicrobial resistance · WHO",
+          headline: "Most countries now have AMR plans, but only a fifth have funded and fully implemented them, WHO finds",
+          dek: "The 2026 TrACSS survey of 183 countries, released ahead of World AMR Awareness Week from tomorrow, counts 173 national plans, up from 79 in 2017.",
           body: [
-            "One patient fell ill about 60 days after departure from Ushuaia, after close contact with a case, beyond the 45-day window for infection acquired before boarding. The virus was a known Andes strain, not a new or more transmissible variant, and closely matches viruses from northern Patagonia, though exactly where the first couple was infected remains uncertain.",
-            "The NICD ran the laboratory investigations that helped identify the hantavirus; Institut Pasteur de Dakar also contributed sequencing."
+            "Only 36% of countries have a national reference laboratory able to test priority bacteria and fungi, against an 80% target for 2030; 63% have antimicrobial treatment guidelines, and just over half monitor antibiotic use and resistance. About one in six lab-confirmed bacterial infections worldwide was resistant in 2023."
           ],
-          why: "Andes virus is the only hantavirus known to spread between people, so travellers returning from Patagonia with fever and respiratory illness warrant early isolation and specialist testing.",
+          why: "Thin laboratory capacity drives empirical prescribing, so culture-guided therapy and stewardship remain the practical defence in South African wards.",
           sources: [
-            { name: "NICD", url: "https://www.nicd.ac.za/two-studies-reveal-how-andes-virus-spread-aboard-a-cruise-ship-and-trace-its-genetic-history-to-patagonia/" }
+            { name: "WHO", url: "https://www.who.int/news/item/16-11-2026-more-countries-have-antimicrobial-resistance-plans-but-patients-still-lack-testing-and-treatment" }
           ]
         },
         {
-          kicker: "Neurology · Imaging",
-          headline: "Alzheimer's may shrink the entorhinal cortex and amygdala years before the hippocampus",
-          dek: "A Johns Hopkins analysis of MRI and PET data from two cohorts finds these regions lose tissue earlier and proportionally more, up to a decade before memory symptoms.",
+          kicker: "Medico-legal · ConCourt",
+          headline: "The state asks the ConCourt to let it treat negligence victims instead of paying lump sums",
+          dek: "The Eastern Cape health department, backed by the national department and the other eight provinces, wants courts to allow future care to be provided in kind in public facilities.",
           body: [
-            "The tissue loss tracked abnormal tau on PET imaging and digital pathology. Published in NeuroImage: Reports, the work points to possible early imaging biomarkers but does not yet amount to a predictive clinical test."
+            "Where state facilities cannot provide the care, the state would pay for private treatment as it is needed. The Supreme Court of Appeal had overturned a high court order allowing this. Medico-legal claims against the state exceed R50bn, with nearly R20bn against the Eastern Cape; that province, Gauteng and Limpopo carry 74% of claims. The Law Reform Commission has separately proposed structured, periodic payouts for awards above R2m."
           ],
-          why: "Earlier biomarkers matter as disease-modifying antibodies work best before symptoms are established.",
+          why: "Medico-legal payouts eat into provincial health budgets, so the ruling could shift money back to services and change what injured patients receive.",
           sources: [
-            { name: "NeuroImage: Reports", url: "https://doi.org/10.1016/j.ynirp.2026.100392" },
-            { name: "ScienceDaily (Johns Hopkins release)", url: "https://www.sciencedaily.com/releases/2026/11/261114202130.htm" }
+            { name: "Sunday Times", url: "https://www.timeslive.co.za/news/business/2026-11-14-state-seeks-new-remedy-in-medical-negligence-claims/" }
+          ]
+        },
+        {
+          kicker: "Neglected diseases · WHO",
+          headline: "Eritrea eliminates trachoma as a public-health problem",
+          dek: "WHO validated Eritrea on Monday as the 34th country, and the 11th in its African Region, to eliminate the blinding eye disease.",
+          body: [
+            "About 92 million people still lived in trachoma-endemic areas in March 2026, in at least 29 countries. Eritrea is also the 23rd country in the African Region to eliminate at least one neglected tropical disease."
+          ],
+          why: "It shows the SAFE approach of surgery, antibiotics, face-washing and sanitation can succeed even in low-income settings.",
+          sources: [
+            { name: "WHO", url: "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone" }
           ]
         }
       ]
@@ -507,39 +569,51 @@ const EDITION = {
       id: "economy", name: "Economy & Markets",
       stories: [
         {
-          kicker: "Oil · Supply",
-          headline: "Oil slips towards $95 as the IEA forecasts a surplus despite Iran's weekend attacks",
-          dek: "Brent fell 0.4% to $95.45 a barrel in early trade on Sunday evening, Reuters reported, as Gulf exports through Hormuz improve.",
+          kicker: "Oil · Markets",
+          headline: "Oil slides 3.6% to about $92 as glut fears outweigh the Hormuz mine strikes",
+          dek: "Brent settled at $92.44 a barrel on Monday and US crude at $85.72, Bloomberg reported, as Gulf supply recovers.",
           body: [
-            "The IEA now expects a fourth-quarter surplus rather than a deficit, citing a faster recovery in Middle East exports, and plans to release 71 million barrels from emergency stocks by the end of February. OPEC+ pumped 41.23 million barrels a day in October, about 97% of pre-war levels. The reported Iranian attack on a US base in Bahrain and another tanker fire in the Strait kept a floor under prices."
+            "Saudi Arabia said its October output was among its highest in years, and Riyadh and Abu Dhabi cut official selling prices to win market share. The IEA said last week that supply has overtaken demand for the first time since the war began, and money managers have cut bullish Brent bets to a four-month low. Vance's remark that the Iran war will not become a two-year commitment added to the selling."
           ],
-          why: "Oil and the rand set South Africa's fuel price; a softer oil market helps offset the rand's slide ahead of December's adjustment.",
+          why: "If cheaper crude holds, it offsets the weaker rand in the formula that sets South Africa's December fuel prices.",
           sources: [
-            { name: "Reuters via Investing.com", url: "https://uk.investing.com/news/commodities-news/oil-prices-dip-as-markets-look-to-recovering-supplies-meast-tensions-4983435" }
+            { name: "Bloomberg (via Rigzone)", url: "https://www.rigzone.com/news/oil_retreats_as_traders_weigh_supply_glut-16-nov-2026-185096-article" }
           ]
         },
         {
-          kicker: "Japan · GDP",
-          headline: "Japan's economy unexpectedly shrinks in the third quarter as consumers cut back",
-          dek: "GDP fell at an annualised 0.1% in July-September against a forecast of 0.3% growth; private consumption dropped 0.3%.",
+          kicker: "Rand · SARB",
+          headline: "Rand tests R17 to the dollar before tomorrow's inflation data and Thursday's rate decision",
+          dek: "The rand traded near R16.99 early on Monday, about 0.3% weaker, as the dollar rose for a fifth session, Reuters reported.",
           body: [
-            "Net exports subtracted 0.6 percentage points as energy imports recovered, while capital spending rose 1.6% on AI and labour-saving investment. The Bank of Japan has raised rates in June and September, and many analysts still expect another hike as soon as December."
+            "Economists polled by Reuters expect October CPI, due on Wednesday, to rise to 5.1% year on year. The SARB raised rates at its previous meeting and announces its next decision on Thursday. The 2035 government bond yield rose to 8.545%."
           ],
-          why: "Rising rates across major economies keep pressure on emerging-market currencies such as the rand.",
+          why: "A firmer inflation print and a weak rand raise the odds of another hike, which would lift bond and home-loan repayments.",
           sources: [
-            { name: "Reuters via Investing.com", url: "https://www.investing.com/news/economy-news/japans-economy-unexpectedly-shrinks-in-julyseptember-as-consumption-falters-5028233" }
+            { name: "Reuters (via CNBC Africa)", url: "https://www.cnbcafrica.com/2026/south-african-rand-slips-as-stronger-dollar-weighs" }
           ]
         },
         {
-          kicker: "Week ahead",
-          headline: "Warsh speaks today at the start of a week packed with Nvidia, Anthropic and SA rate decisions",
-          dek: "Fed Chair Kevin Warsh speaks on Monday evening; Nvidia reports on Tuesday, SA October CPI is out on Wednesday, and the SARB decides on Thursday as Anthropic starts trading.",
+          kicker: "Federal Reserve",
+          headline: "Warsh hails AI's growth potential but warns of job losses and a market slump if the bets sour",
+          dek: "Opening a San Francisco Fed conference on Monday, the Fed chair gave no signal on interest rates, AP reported.",
           body: [
-            "US retail sales are due on Tuesday and Fed minutes on Wednesday, with markets expecting more tightening. The rand ended last week near R16.92 to the dollar, close to its weakest since April. (Disclosure: this paper is compiled by Claude, which is made by Anthropic.)"
+            "He said AI appears to be changing the speed of innovation and could sustain growth well above trend, but warned of widespread job losses and a sharp stock-market fall if returns on AI spending disappoint. He did not address AI's effect on inflation, which rose last month; several policymakers have backed further hikes, possibly in December. Vice-chair Philip Jefferson said a lasting productivity boost could raise the level of interest rates over time."
           ],
-          why: "Another Fed signal towards hikes would weigh on the rand just as the SARB weighs whether to follow September's increase.",
+          why: "Further Fed tightening would strengthen the dollar and narrow the SARB's room to manoeuvre.",
           sources: [
-            { name: "FXEmpire", url: "https://www.fxempire.com/forecasts/article/the-week-ahead-nvidia-earnings-anthropic-ipo-test-ai-trade-1644719" }
+            { name: "AP (via Fast Company)", url: "https://www.fastcompany.com/91643451/inflation-warsh-ai-federal-reserve?partner=rss" }
+          ]
+        },
+        {
+          kicker: "IPO · AI",
+          headline: "Anthropic's IPO, valuing it at up to $1.4 trillion, is due to start trading this week",
+          dek: "The Claude developer is offering 825 million shares at $70-$78 on Nasdaq under the ticker ANT, with trading expected around Thursday, TechCrunch reported.",
+          body: [
+            "The sale would raise $57.75bn-$64.35bn, and net proceeds including a separate $26bn private placement could reach about $94bn. Anthropic was valued at $965bn in a May funding round. (Disclosure: this paper is compiled by Claude, which is made by Anthropic.)"
+          ],
+          why: "Coming straight after Nvidia's results, the listing is a test of the AI trade that has driven global markets and emerging-market flows.",
+          sources: [
+            { name: "TechCrunch", url: "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/" }
           ]
         }
       ]
@@ -548,28 +622,29 @@ const EDITION = {
       id: "tech", name: "Technology & AI",
       stories: [
         {
-          kicker: "Privacy · Meta",
-          headline: "Italy fines Meta €805m over Facebook's access to Android photo galleries",
-          dek: "The data protection authority said a default-on feature suggesting content from users' galleries used photos and videos without proper consent.",
+          kicker: "Nvidia · Leadership",
+          headline: "Nvidia reports tonight under an interim chief as backers push for Jensen Huang's return",
+          dek: "Huang resigned last week while an independent board inquiry looks into his conduct. The FT reports he has discussed a comeback, but the board has not changed course.",
           body: [
-            "Regulators said Facebook bundled gallery access into one permission covering several purposes, and cited Meta's lack of cooperation. The fine, about 0.47% of global turnover, was imposed on Meta Platforms Ireland, which has challenged Italy's jurisdiction; Meta has 60 days to disable the feature and seek separate consent. Meta did not comment immediately."
+            "Interim chief executive Colette Kress, who remains CFO, presents third-quarter results at about 23:20 SAST, against August guidance of roughly $108bn in revenue. Reports allege relationships with a subordinate and with Alice Huang, a former executive at Singapore's Megaspeed described in reports as a suspected Chinese spy; Megaspeed says she holds no role there.",
+            "Elon Musk and Tim Sweeney back a 'Bring Jensen Back' letter, while Treasury Secretary Scott Bessent has called for a dramatic leadership shake-up. The board has approached Arm's Rene Haas as a possible successor, and the shares fell about 2% on Monday."
           ],
-          why: "It is among the largest privacy fines in Europe and a signal for regulators elsewhere, including South Africa's Information Regulator under POPIA.",
+          why: "Nvidia's chips underpin the AI build-out, so tonight's numbers and the leadership fight will move tech stocks and data-centre plans, including those South Africa is courting.",
           sources: [
-            { name: "ABC News (AP)", url: "https://abcnews.com/Technology/wireStory/meta-fined-887-million-italy-android-gallery-photos-138145127" }
+            { name: "Investing.com (FT, Reuters)", url: "https://www.investing.com/news/stock-market-news/jensen-huang-may-return-as-nvidia-chief-executive--report-5028097" },
+            { name: "Yahoo Finance", url: "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-decline-2-31-192734785.html" }
           ]
         },
         {
-          kicker: "Defence tech · Starshield",
-          headline: "Zelensky blames SpaceX Starshield speed limits for letting Russian drones through",
-          dek: "He says terminals capped at about 161 km/h stop Ukrainian interceptor drones from engaging Shaheds.",
+          kicker: "Space industry",
+          headline: "ULA's Vulcan fails for the first time, losing 40 Amazon Leo satellites",
+          dek: "The rocket malfunctioned about 10 minutes after launch from Cape Canaveral on Sunday, ULA's first outright mission failure since it was formed in 2006.",
           body: [
-            "Zelensky linked recent successful Russian strikes to the restrictions on Ukraine's use of the satellite service, which he called crucial for drone defence."
+            "Telemetry suggested the first stage burned longer than planned and the Centaur upper stage made unusual manoeuvres. The loss sets back Amazon's broadband constellation, which would have reached 436 of the more than 3,300 satellites it needs, while Blue Origin's New Glenn is still grounded after a May pad explosion."
           ],
-          why: "It shows how much modern air defence now depends on privately run satellite networks and their commercial terms of use.",
+          why: "Delays to Amazon's network leave SpaceX's Starlink, still unlicensed in South Africa, as the dominant satellite-internet option.",
           sources: [
-            { name: "RFE/RL", url: "https://www.rferl.org/a/ukraine-russia-war-drone-strikes-oil-refinery/33899022.html" },
-            { name: "Kyiv Independent", url: "https://kyivindependent.com/ukraine-war-latest-russia-launches-mass-attack-on-odesa-oblast-as-ukraine-strikes-airfield-drone-launch-site-in-russia/" }
+            { name: "Spaceflight Now", url: "https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/" }
           ]
         }
       ]
@@ -579,31 +654,31 @@ const EDITION = {
 
 /* Headlines from the previous edition (only one day is kept). */
 const PREVIOUS = {
-  dateLong: "Sunday, 15 November 2026 (Edition 11)",
+  dateLong: "Monday, 16 November 2026 (Edition 12)",
   items: [
-    { section: "South African Politics", headline: "ANC NEC turns on its own leadership and cools on the DA as metro coalition talks begin" },
-    { section: "Wars & Conflicts", headline: "Iran says three more tankers caught fire after hitting mines in the Strait of Hormuz" },
-    { section: "Wars & Conflicts", headline: "Sudan's army takes al-Khuwai in West Kordofan after breaking the RSF siege of al-Obeid" },
-    { section: "Wars & Conflicts", headline: "Israeli drone strike kills two in Jabaliya as the toll since the Gaza ceasefire passes 1,600" },
-    { section: "World Politics", headline: "Zelensky says US negotiators asked whether Ukraine would leave Donbas in exchange for NATO membership" },
-    { section: "World Politics", headline: "France sees a fifth straight Saturday of protests over living costs, schools and a police bill" },
-    { section: "South African Politics", headline: "ActionSA weighs rival metro deals with the ANC and the DA before Thursday's Johannesburg and Tshwane sittings" },
-    { section: "South African Politics", headline: "ANC split over whether to let MK lead eThekwini or seek a deal with the DA" },
-    { section: "South African Politics", headline: "Ramaphosa leaves today for a week in California to court AI investment" },
-    { section: "Climate & Environment", headline: "COP31 reaches its midpoint with UN climate chief warning negotiators to stop stalling" },
-    { section: "Climate & Environment", headline: "More than 7,000 march in Antalya to demand tougher fossil-fuel limits" },
-    { section: "Science", headline: "SpaceX catches a returning Starship upper stage with its launch tower for the first time" },
-    { section: "Science", headline: "Earth's own atmosphere supplied most of the charged particles in the May 2024 superstorm, study finds" },
-    { section: "Science", headline: "Physicists film electrons leaping forbidden energy gaps in graphene with light pulses" },
-    { section: "Health & Medicine", headline: "US measles deaths reach 10 this year as PAHO's revocation of elimination status sinks in" },
-    { section: "Health & Medicine", headline: "Danish cohort finds periconceptional GLP-1 exposure linked to preterm birth only in women with diabetes" },
-    { section: "Health & Medicine", headline: "Gauteng malaria cases up 38.6% this year, with deaths nearly tripled" },
-    { section: "Health & Medicine", headline: "Motsoaledi says diabetes has overtaken HIV/Aids as South Africa's leading killer" },
-    { section: "Health & Medicine", headline: "US colorectal cancer incidence rises for the first time in more than 20 years" },
-    { section: "Economy & Markets", headline: "Petrol is set to fall by up to about R1.82 a litre in December while diesel rises" },
-    { section: "Economy & Markets", headline: "October inflation on Wednesday and the SARB decision on Thursday headline a crowded week" },
-    { section: "Technology & AI", headline: "Ageing routers blamed as a five-hour FAA ground stop cancels more than 9,000 US flights" },
-    { section: "Technology & AI", headline: "Nvidia reports without Jensen Huang on Tuesday, a day before Anthropic prices its IPO" }
+    { section: "Wars & Conflicts", headline: "Houthi forces push to within 60 km of Aden as Yemen's government digs in around its interim capital" },
+    { section: "Wars & Conflicts", headline: "Iran claims a second drone attack on a US radar in Bahrain in three days" },
+    { section: "Wars & Conflicts", headline: "Israel kills the commander of Hamas's Rafah Brigade, two months after his predecessor" },
+    { section: "Wars & Conflicts", headline: "Ukraine strikes a Tatarstan refinery and an aircraft plant as Russia hits nine regions overnight" },
+    { section: "World Politics", headline: "First Likud-Yashar unity talks end without a deal as both sides claim the premiership" },
+    { section: "World Politics", headline: "Cape Verde's President José Maria Neves wins re-election with about 64% of the vote" },
+    { section: "South African Politics", headline: "ANC and DA open formal coalition talks as the ANC rules out a national stability pact" },
+    { section: "South African Politics", headline: "Left-wing parties offer the ANC support on condition the DA and FF Plus are shut out" },
+    { section: "South African Politics", headline: "Municipal workers fear a DA return could unpick wage deals in Johannesburg and Tshwane" },
+    { section: "South African Politics", headline: "Ramaphosa opens his California AI drive today amid US pressure over black-ownership rules" },
+    { section: "Climate & Environment", headline: "Ministers arrive in Antalya as COP31 enters its decisive second week" },
+    { section: "Climate & Environment", headline: "NASA satellites show this year's El Niño building faster than the record 1997 event" },
+    { section: "Science", headline: "South Africa's MeerKAT helps unmask a white dwarf pulsing radio waves every eight minutes" },
+    { section: "Science", headline: "Astronomers flag a possible sixth dwarf planet beyond Pluto" },
+    { section: "Science", headline: "Simulations suggest why Uranus and Neptune have lopsided magnetic fields" },
+    { section: "Health & Medicine", headline: "AI reading of routine ECGs outperforms ejection fraction at flagging sudden cardiac death risk" },
+    { section: "Health & Medicine", headline: "Studies in Science confirm person-to-person Andes virus spread on the MV Hondius cruise" },
+    { section: "Health & Medicine", headline: "Alzheimer's may shrink the entorhinal cortex and amygdala years before the hippocampus" },
+    { section: "Economy & Markets", headline: "Oil slips towards $95 as the IEA forecasts a surplus despite Iran's weekend attacks" },
+    { section: "Economy & Markets", headline: "Japan's economy unexpectedly shrinks in the third quarter as consumers cut back" },
+    { section: "Economy & Markets", headline: "Warsh speaks today at the start of a week packed with Nvidia, Anthropic and SA rate decisions" },
+    { section: "Technology & AI", headline: "Italy fines Meta €805m over Facebook's access to Android photo galleries" },
+    { section: "Technology & AI", headline: "Zelensky blames SpaceX Starshield speed limits for letting Russian drones through" }
   ]
 };
 /* ====================== EDITION DATA: END ====================== */
