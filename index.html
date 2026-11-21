@@ -217,32 +217,32 @@ body.in-topic .filter { display: block; max-width: 820px; margin: 14px auto 0; f
    previous EDITION's headlines into PREVIOUS. Everything below the
    END marker is the template and stays unchanged. */
 const EDITION = {
-  number: 16,
-  dateLong: "Friday, 20 November 2026",
-  compiled: "Compiled 03:53 SAST",
+  number: 17,
+  dateLong: "Saturday, 21 November 2026",
+  compiled: "Compiled 03:55 SAST",
   lead: {
-    section: "World Politics",
-    kicker: "APEC · Shenzhen",
-    headline: "Trump, Xi and Putin sign a vague 'declaration toward peace' that skips Ukraine and Iran",
-    dek: "The first three-way meeting of the US, Chinese and Russian leaders lasted about 90 minutes in Shenzhen on Thursday and ended in a four-point joint statement with no enforcement timeline.",
+    section: "Wars & Conflicts",
+    kicker: "Ukraine war · NATO",
+    headline: "Russian cruise missile crashes in Poland during a mass barrage on Ukraine, and Warsaw calls it deliberate",
+    dek: "A Kh-101 came down about 60 km inside Poland on Friday as Russia fired more than 400 drones and over 110 missiles at Ukraine, a day after Trump told Europe that a 'tired' Putin was ready to deal.",
     body: [
-      "The White House's 'Heads of State Declaration toward Peace' commits the three to strategic stability, repeats that a nuclear war 'cannot be won and must never be fought', pledges more refined petroleum output, and backs existing international institutions and UN reform. AP reports it also says state officials should be immune from prosecution and opposes what it calls 'jurisdiction abuse' by the International Criminal Court, which has a warrant out for Putin.",
-      "The text does not mention the war in Ukraine or the US-led war with Iran. Kremlin spokesman Dmitry Peskov said Ukraine was not the main topic, though Putin raised it in one-on-one talks with Trump and Xi; Trump said he and Xi agree Iran must fully reopen the Strait of Hormuz and must not get a nuclear weapon. Nuclear language stopped at a pledge of dialogue on reducing risks; China, with an estimated 620 warheads against more than 5,000 each for the US and Russia, regards arms-control talks as premature.",
-      "Analysts quoted by RFE/RL saw Putin, attending APEC for the first time since 2017, as the biggest winner. Xi called the talks 'positive, constructive and fruitful'. Kim Jong Un left APEC without meeting Trump."
+      "Prime Minister Donald Tusk said Poland was facing an 'intentional provocation'. The missile fell in the Lublin region roughly 60 km from the Ukrainian border and about 75 km from European military drills preparing for a possible post-war mission in Ukraine; no injuries or damage were immediately reported. Polish jets were scrambled and ground air defences activated. NATO Secretary-General Mark Rutte called it a 'grave violation' of Polish airspace and is expected in Poland this weekend. It is the second Kh-101 to land in the Lublin region since July.",
+      "In Ukraine, President Zelensky said Russia used more than 400 drones and over 110 missiles overnight. At least eight civilians were killed, six of them in Kyiv, and more than a dozen wounded. Strikes on the grid forced Ukraine's three working nuclear plants to cut output and caused emergency outages in 11 regions. Moscow said it hit military-linked sites, including missile and drone assembly plants. The barrage followed Putin's vow to answer Ukraine's strikes on the Kerch bridge.",
+      "Trump told Fox News that Putin had been landing drones and 'a couple of little missiles' in Poland 'by mistake'; it is not clear whether he was referring to Friday's incident. Russia has said any European troops deployed to Ukraine after a peace deal would be legitimate targets, and no date is set for the next round of US-mediated talks."
     ],
-    why: "A great-power understanding on oil supply and nuclear risk matters to commodity prices and the rand, while the attack on the ICC touches a court South Africa has defended and the Ukraine and Iran wars driving local fuel inflation remain unresolved.",
+    why: "A Russian missile on NATO soil tests the alliance just as Washington pushes a peace track, and any escalation feeds the energy and grain prices that shape South African inflation.",
     sources: [
-      { name: "AP (via PBS NewsHour)", url: "https://www.pbs.org/newshour/world/3-takeaways-from-trump-xi-and-putins-historic-summit" },
-      { name: "Fox News", url: "https://www.foxnews.com/world/trump-putin-xi-issue-4-point-declaration-historic-summit" },
-      { name: "RFE/RL", url: "https://www.rferl.org/a/trump-xi-putin-summit-four-key-takeaways/33902100.html" }
+      { name: "AP (via Spectrum News)", url: "https://spectrumlocalnews.com/us/snplus/international/2026/11/20/russian-missile-crash-poland-" },
+      { name: "Euronews", url: "https://www.euronews.com/2026/11/20/unidentified-object-falls-in-eastern-poland-amid-major-russian-attack-on-ukraine" },
+      { name: "Meduza", url: "https://meduza.io/en/news/2026/11/20/trump-says-putin-launched-a-couple-of-small-missiles-into-poland-by-accident-a-couple-of-little-missiles" }
     ]
   },
   numbers: [
-    { k: "SARB repo rate", v: "7.25%", n: "Held on Thursday in a 4-3 vote; three wanted a hike" },
-    { k: "Rand/dollar", v: "R17.31", n: "Thursday afternoon, near the year low of R17.36 (Reuters)" },
-    { k: "Brent crude", v: "~$92", n: "Thursday morning, steady after Wednesday's 1.3% fall (Reuters)" },
-    { k: "Dow Jones", v: "49,097", n: "Down 1,101 points (2.2%); S&P 500 down six days running" },
-    { k: "Anthropic (ANT)", v: "$97.17", n: "First-day close, up 17.1% on the $83 IPO price" }
+    { k: "S&P 500", v: "6,910", n: "Down 3.7% on Friday and 8.6% on the week; now in correction (AP)" },
+    { k: "Rand/dollar", v: "R17.56", n: "Friday morning, near its weakest in a year (Reuters)" },
+    { k: "Brent crude", v: "$92.57", n: "Up 0.6% on Friday on Hormuz tensions (AP)" },
+    { k: "Russian barrage", v: "510+", n: "Over 400 drones and 110+ missiles fired at Ukraine overnight, per Zelensky" },
+    { k: "95 petrol (Dec)", v: "-R2.90/l", n: "Projected inland cut from 2 December (mid-month CEF data)" }
   ],
   sections: [
     {
@@ -250,54 +250,57 @@ const EDITION = {
       stories: [
         {
           kicker: "Iran war · Hormuz",
-          headline: "Iran turns anti-ship cruise missiles on Gulf tankers as Trump says he is in no rush to strike",
-          dek: "A US official told the Jerusalem Post that UKMTO has been logging several Iranian attacks on vessels a day; Iran's Revolutionary Guard claims two more tankers hit mines.",
+          headline: "Tanker set ablaze off Oman as Trump signals he may hold off on new Iran strikes until 2027",
+          dek: "UKMTO said an outbound tanker was hit by an unknown projectile 8 nautical miles north of Khasab on Friday; Iran's Revolutionary Guards said it struck a mine.",
           body: [
-            "The official called the cruise missiles 'far more lethal than drones'. Even so, a record 28 million barrels of oil passed through the strait on Wednesday. A Jordanian officer from the ADNOC tanker struck on Tuesday was still missing after 40 hours, and the IEA called the crisis the largest threat to energy security in history; the Pentagon puts the war's cost above $48bn.",
-            "Israeli and US officials say a renewed strike on Iran is under consideration, with Netanyahu reportedly pushing for a four-to-seven-day campaign, but Trump told Israel's Channel 12 he is 'not rushing' and could wait until the new year. He has also said there are indications Iran is looking at chemical or biological weapons; officials disagree on how strong that intelligence is. Iran says it will not give the IAEA unlimited cooperation while under attack."
+            "No casualties or pollution were reported. Trump told Israel's Channel 12 he was 'not rushing' a decision on Iran and could wait until the new year, though sources say the US and Israel are weighing a new assault as Iran moves military and nuclear sites underground. Israeli opposition figure Avigdor Liberman said there was no security case for striking now. Iran's foreign ministry rejected Trump's claim, made without evidence, that it may be pursuing chemical or biological weapons.",
+            "In Washington, the Senate on Thursday rejected a House-passed war powers resolution by 48 to 51, the first vote on the war since the midterms; Republicans Susan Collins, Lisa Murkowski and Rand Paul voted for it and Democrat John Fetterman against. Months of indirect US-Iran talks have not produced a ceasefire to reopen the strait."
           ],
-          why: "Every new tanker strike adds to freight and insurance costs that flow into South African fuel prices, the main driver of October's 5.2% inflation.",
+          why: "Each strike near Hormuz keeps tanker insurance high, even as Brent's retreat points to a big South African petrol price cut in December.",
           sources: [
-            { name: "Jerusalem Post", url: "https://www.jpost.com/middle-east/iran-news/article-915531" },
-            { name: "CBS News", url: "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/" }
-          ]
-        },
-        {
-          kicker: "Ukraine · Crimea",
-          headline: "Russia launches a mass missile attack on Ukraine after a third strike on the Kerch bridge",
-          dek: "Explosions shook Kyiv early on Friday after Putin promised retaliation 'far more painful' than Ukraine's hits on the bridge; Ukraine confirmed Neptune missiles struck it on Thursday and rail traffic was halted.",
-          body: [
-            "Ukraine's defence ministry said the bridge was hit near its arch and railway tracks; Russia's transport ministry reported no casualties and suspended trains while damage is assessed. Missile maker Fire Point said more than 16 strikes using Flamingo and Neptune missiles were involved. Rail traffic had resumed a day after Tuesday's strike collapsed a road section, and occupation authorities are starting a ferry service.",
-            "A Russian drone attack on Kyiv on Thursday killed one man and damaged St Volodymyr's Cathedral and two European embassies, including the Dutch. The scale of Friday's overnight barrage, which involved strategic bombers according to monitoring channels, was not yet clear at the time of compiling."
-          ],
-          why: "The escalation undercuts the Shenzhen talk of peace and keeps pressure on energy and grain markets South Africa depends on.",
-          sources: [
-            { name: "Kyiv Independent", url: "https://kyivindependent.com/ukrainian-forces-once-more-hit-russias-crimean-bridge-days-after-devastating-strike/" },
-            { name: "Kyiv Independent", url: "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/" }
+            { name: "Reuters (via Yahoo News)", url: "https://www.yahoo.com/news/world/articles/tanker-catches-fire-projectile-strike-170458570.html" },
+            { name: "CBS News", url: "https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog-november-20-2026/" }
           ]
         },
         {
           kicker: "Gaza · Ceasefire",
-          headline: "Israel says its tank raid into central Gaza is over and the main road has reopened",
-          dek: "The IDF said it ended an operation against a suspected Hamas tunnel beyond the 'Yellow Line', accusing Hamas of regrouping and rearming.",
+          headline: "Board of Peace warns the Gaza truce could collapse and threatens to hand the 'keys' to the UN",
+          dek: "Its first annual report to the UN Security Council says the gap between what was agreed and what is happening on the ground is now the main risk to the process.",
           body: [
-            "Hamas accused Israel of trying to derail the October 2025 US-brokered truce, and its government media office said about 6,000 people fled the area on Wednesday. Gaza health authorities say at least 1,600 Palestinians have been killed since the ceasefire began; Israel says five of its soldiers have died in that time. The US-backed body overseeing the truce has accused both sides of failing their commitments."
+            "The board said continued Israeli strikes and Hamas military activity have stalled the road map, and that Israel has not let the interim technocratic administration start work, delaying the international stabilisation force meant to oversee Israeli withdrawal, Hamas disarmament and reconstruction. It warned civilians face another winter in tents and rubble.",
+            "On Friday a board official said it would hand Gaza's keys to the UN if Israeli 'intransigence' continued, the Times of Israel reported."
           ],
-          why: "The raid's end lowers the immediate risk of a return to full war in the conflict at the heart of South Africa's ICJ case.",
+          why: "A breakdown would revive the war at the centre of South Africa's ICJ genocide case against Israel.",
           sources: [
-            { name: "Reuters (via CP24)", url: "https://www.cp24.com/news/world/2026/11/19/israel-says-it-concludes-gaza-tank-raid/" }
+            { name: "AP (via KSL)", url: "https://www.ksl.com/article/51646481/board-of-peace-warning-of-gaza-ceasefire-collapse-without-immediate-action" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog-november-20-2026/" }
+          ]
+        },
+        {
+          kicker: "Horn of Africa",
+          headline: "Ethiopia and Eritrea mass troops along their border, raising fears of a new war",
+          dek: "Conflict monitors say the two armies are within striking distance and traded drone and artillery fire near Badme last week, Reuters reports.",
+          body: [
+            "ACLED says Ethiopian drones hit likely Eritrean positions near Badme on 12 November and Eritrean artillery replied, followed by a clash on the Ethiopian side the next day. Reuters could not confirm the skirmishes, and a source close to a pro-Ethiopian Tigrayan force disputes them. Ethiopia says Eritrean troops entered Tigray in October to back rebels, which Asmara denies.",
+            "The International Crisis Group warns the fighting could draw the two states into direct conflict. Their 1998-2000 border war killed tens of thousands."
+          ],
+          why: "A new Horn of Africa war would add to instability along the Red Sea route and test the African Union's crisis diplomacy.",
+          sources: [
+            { name: "Reuters (via TimesLIVE)", url: "https://www.timeslive.co.za/news/africa/2026-11-18-ethiopia-and-eritrea-amass-forces-along-border-heightening-war-fears-sources-say/" }
           ]
         },
         {
           kicker: "Yemen · Saudi Arabia",
-          headline: "Houthi strike damages a tower in Riyadh's financial district",
-          dek: "Saudi authorities said no one was hurt when the Public Investment Fund tower was hit; the kingdom condemned the attack.",
+          headline: "Saudi-led coalition tells civilians to leave Hodeidah port as the Houthis threaten Jeddah",
+          dek: "Friday's warning suggested airstrikes on Yemen's main Red Sea port could be imminent.",
           body: [
-            "The Houthis, in turn, said a Saudi strike on a lodging house in Al-Mukha, in Taiz, killed or wounded at least 19 people, a figure Saudi officials have not confirmed. Saudi officials reportedly expect their renewed Yemen campaign to run into 2027."
+            "Houthi authorities said Saudi forces killed 19 people in an attack on a civilian boat, a figure not independently verified, and threatened Saudi Red Sea ports including Jeddah. Saudi forces said they intercepted a ballistic missile and two drones aimed at the south of the kingdom. Yemen's civil war reignited in July."
           ],
-          why: "A Red Sea war reaching the Saudi capital keeps ships diverting around the Cape and insurance costs high.",
+          why: "Fighting around Hodeidah keeps Red Sea shipping diverted round the Cape, raising freight costs.",
           sources: [
-            { name: "CBS News", url: "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/" }
+            { name: "CBS News", url: "https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog-november-20-2026/" }
           ]
         }
       ]
@@ -306,42 +309,45 @@ const EDITION = {
       id: "politics", name: "World Politics",
       stories: [
         {
-          kicker: "ICJ · Myanmar",
-          headline: "World Court finds Myanmar committed genocide against the Rohingya, a first against any state",
-          dek: "By nine votes to six, the International Court of Justice ruled on Thursday that Myanmar's 2017 campaign in Rakhine State was genocide and that it failed to prevent and punish it.",
+          kicker: "Europe · Brexit",
+          headline: "Britain and the EU seal a post-Brexit reset on food trade, youth mobility and carbon levies",
+          dek: "Prime Minister Andy Burnham agreed the package with Ursula von der Leyen and António Costa at a Brussels summit on Friday, a decade after the referendum.",
           body: [
-            "The court rejected Myanmar's argument that it was fighting an insurgency, finding genocidal intent the only reasonable inference from killings, sexual violence, attacks on children and the razing of villages. It ordered Myanmar to stop such acts, prosecute those responsible, guarantee non-repetition and allow safe return; compensation will be set later and Myanmar must report within two years. The ruling is final but the court has no enforcement powers.",
-            "Vice-President Julia Sebutinde and five others dissented, arguing the majority lowered the court's standard of proof. A Policy Exchange report cited by the Jewish Chronicle warned that loosening the intent test could create legal risk for other states, and The Gambia's counsel Philippe Sands called South Africa's case against Israel the 'elephant in the room'."
+            "The deal eases checks on animal and plant products, which London values at £5.1bn a year; lets up to 100,000 young people from each side live and work in the other for up to three years, double what the UK first wanted; and links emissions trading so each side's goods, such as steel, are exempt from the other's carbon border levy. On student fees the UK has offered 'significantly reduced' rather than home rates.",
+            "Each side must still complete its own legal process, and talks continue in some areas. Burnham called it a good day for Britain; Nigel Farage called him naive."
           ],
-          why: "How the court treated intent will be read closely for South Africa's own genocide case against Israel.",
+          why: "Closer UK-EU alignment on food rules matters to South African fruit and wine exporters that sell into both markets.",
           sources: [
-            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/19/what-the-icj-ruling-means-for-the-rohingya" },
-            { name: "Jewish Chronicle", url: "https://www.thejc.com/news/world/icj-myanmar-liable-rohingya-genocide-israel-ozbhx6ex" }
-          ]
-        },
-        {
-          kicker: "Israel · Coalition",
-          headline: "Eisenkot's bloc pledges unity after Bennett's three-hour Netanyahu meeting",
-          dek: "Eisenkot holds President Herzog's mandate to form a government, with 28 days and a possible 14-day extension.",
-          body: [
-            "Likud won 27 seats, Eisenkot's Yashar 21 and Bennett's party 12; Netanyahu's bloc has 53 of 120 and Eisenkot's 48, leaving the Joint List and Ra'am's 19 seats potentially decisive. Bennett's camp says he will not sit in a Netanyahu-led government, and the Jerusalem Post reports he has floated a rotation arrangement, though its terms have not been published. A deadlock could force another election."
-          ],
-          why: "Who governs Israel will shape Gaza, Iran policy and relations with South Africa.",
-          sources: [
-            { name: "Jerusalem Post", url: "https://www.jpost.com/israel-election-2026/2026-11-19/live-updates-915392" }
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal" },
+            { name: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/11/20/eu-and-britain-to-agree-steps-towards-relations-reset" }
           ]
         },
         {
           kicker: "Ukraine · Diplomacy",
-          headline: "Zelensky meets Trump's envoys and 40-plus allies in Berlin as Trump dials in from China",
-          dek: "The Coalition of the Willing meeting with Steve Witkoff and Jared Kushner focused on air defence, energy support and security guarantees.",
+          headline: "European leaders push back on Trump's claim that a 'tired' Putin is ready to deal",
+          dek: "Germany's Friedrich Merz dismissed the Shenzhen summit as a photo opportunity, and Poland's Donald Tusk said Trump's faith in Putin's goodwill seemed unshakable despite the facts.",
           body: [
-            "Witkoff said Trump told the meeting he had discussed a peaceful end to the war with Xi and Putin. The coalition urged Russia to accept a winter energy truce and a Black Sea food-export truce; Putin, after the bridge strikes, said Russia 'will not negotiate'. No outcome had been announced."
+            "Trump made the claim when he joined Thursday's Berlin meeting of Ukraine's allies by phone, the Washington Post reported, also complaining that Europe was spending 'billions and billions' on the war; US officials denied he urged Europe to stop funding Kyiv. Merz said a Yalta-style carve-up would not bring peace.",
+            "Putin has ruled out a limited energy and Black Sea truce after the Kerch bridge strikes, repeated his demand that Ukraine withdraw from the rest of Donetsk and rejected European troops in any post-war arrangement."
           ],
-          why: "Western coordination on Ukraine runs in parallel with, and partly against, the Shenzhen great-power track.",
+          why: "A transatlantic split over Ukraine reshapes the order South Africa is trying to navigate through its non-aligned stance and BRICS.",
           sources: [
-            { name: "Kyiv Independent", url: "https://kyivindependent.com/zelensky-arrives-in-berlin-for-talks-with-european-officials-trumps-envoys/" },
-            { name: "AP (via PBS NewsHour)", url: "https://www.pbs.org/newshour/world/3-takeaways-from-trump-xi-and-putins-historic-summit" }
+            { name: "Hromadske", url: "https://hromadske.ua/en/amp/war/274685-trump-says-putin-is-ready-for-ukraine-peace-deal-as-russian-leader-vows-retaliation-repeats-demands" },
+            { name: "AP (via Spectrum News)", url: "https://spectrumlocalnews.com/us/snplus/international/2026/11/20/russian-missile-crash-poland-" }
+          ]
+        },
+        {
+          kicker: "Israel · Coalition",
+          headline: "Eisenkot sets out three routes to power, including a minority government backed by Arab parties",
+          dek: "Facing a 6 December deadline, he says talks with the ultra-Orthodox parties are serious and the Likud track gets one more chance, while Netanyahu again demands a unity government.",
+          body: [
+            "The options are a government backed by the Haredi parties, a unity government with Likud, or a 'national emergency government' relying on Arab-led parties' votes without Arab ministers. Talks with Likud reportedly stalled over Netanyahu's demand to be sole prime minister and to include Otzma Yehudit.",
+            "Avigdor Liberman calls the Haredi route the only practical option and says he will vote against a minority government; Naftali Bennett also opposes relying on Arab parties. Eisenkot can ask for a 14-day extension."
+          ],
+          why: "Who governs Israel will decide policy on Gaza and Iran and the tone of its strained ties with South Africa.",
+          sources: [
+            { name: "Jewish Telegraphic Agency", url: "https://www.jta.org/2026/11/20/israel/citing-urgency-eisenkot-outlines-3-paths-to-government-signaling-openness-to-arab-party-backing" },
+            { name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog-november-20-2026/" }
           ]
         }
       ]
@@ -351,67 +357,53 @@ const EDITION = {
       stories: [
         {
           kicker: "Coalitions · Gauteng",
-          headline: "ANC, ActionSA, EFF and MK move to formalise a metro pact, with MK predicting a deal by Friday afternoon",
-          dek: "The four parties held their first joint meeting and agreed to set up teams to build a common framework, but say the mayoral split is not final.",
+          headline: "DA-ActionSA talks collapse as Mashaba calls the DA's offer 'an insult' and leans toward the ANC",
+          dek: "ActionSA rejected the DA's counter-proposal after Thursday night's meeting and gave it until 8pm on Friday to improve its offer for Gauteng's three metros.",
           body: [
-            "The emerging plan would give ActionSA the Johannesburg and Tshwane mayoralties, the ANC Ekurhuleni and MK eThekwini, though KwaZulu-Natal ANC leaders strongly resist handing MK the Durban metro. The parties want public, written agreements covering the five-year term. ActionSA's Michael Beaumont and MK's Dali Mpofu both said much work remains; MK spokesman Sifiso Mahlangu predicted 'the formation of a government' by Friday afternoon.",
-            "Politicsweb, carrying The Common Sense's analysis, notes that such an arrangement could strain or end the ANC's national unity government with the DA."
+            "Herman Mashaba said the ANC's proposal was more satisfactory. In a letter dated 18 November, ANC secretary-general Fikile Mbalula accepted ActionSA's bid for the Johannesburg and Tshwane mayoralties, but the Sunday Times reports the ANC wants the speaker's chair and the finance portfolio wherever it governs with ActionSA, plus Johannesburg's deputy mayoralty and key service portfolios and the Ekurhuleni mayoralty. Sticking points remain, including ActionSA's call for municipal illegal-immigration units, which the ANC rejects.",
+            "The ANC (64), ActionSA (42), EFF (17) and MK (15) together hold 138 of Johannesburg's 270 seats, two more than a majority. Business Day says the coalition uncertainty and its risk to the national unity government helped push the rand to its weakest close in a year. The outcome of ActionSA's deadline was not known at the time of compiling."
           ],
-          why: "A pact shutting the DA out of every Gauteng metro would test the GNU and has already weighed on the rand.",
+          why: "Being shut out of all three Gauteng metros despite topping the polls would strain the DA's place in the GNU and is already weighing on markets.",
           sources: [
-            { name: "TimesLIVE", url: "https://www.timeslive.co.za/politics/2026-11-19-coalition-parties-move-to-formalise-deal-but-mayoral-agreement-remains-elusive/" },
-            { name: "EWN", url: "https://www.ewn.co.za/2026/11/19/mk-party-believes-gauteng-coalition-talks-will-be-finalised-by-friday" },
-            { name: "Politicsweb", url: "https://www.politicsweb.co.za/news/anc-heading-for-coalition-with-actionsa-mkp-and-eff-that-could-end-gnu-tcs" }
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/20/da-s-offer-is-not-a-proposal-but-an-insult-actionsa-after-coalition-talks-fail" },
+            { name: "Sunday Times (TimesLIVE)", url: "https://www.sundaytimes.timeslive.co.za/politics/2026-11-20-anc-wants-purse-strings-speakers-as-price-for-backing-actionsa-mayors/" },
+            { name: "Business Day", url: "https://www.businessday.co.za/markets/2026-11-20-coalition-jitters-add-to-rand-and-jse-pain-as-global-pressure-mounts/" }
           ]
         },
         {
-          kicker: "DA · FF Plus",
-          headline: "FF Plus fails to broker a DA-ActionSA deal as Tshwane delays its first council sitting",
-          dek: "Corné Mulder held one-on-one talks with both parties to ease tension between Helen Zille and Herman Mashaba, without success.",
+          kicker: "Parliament · US relations",
+          headline: "MPs across parties reject US pressure to drop South Africa's transformation policies",
+          dek: "A National Assembly mini-plenary on Friday debated how to defend sovereignty after Washington gave notice of South Africa's removal from AGOA.",
           body: [
-            "Mashaba wants Zille replaced as Johannesburg candidate and Cilliers Brink to make way for ActionSA's Nasiphi Moya in Tshwane, offering support for a DA mayor in Ekurhuleni in return. The FF Plus says it will not join any arrangement that brings the ANC back. Tshwane's inaugural sitting has moved from 19 to 26 November at the DA's request, and Minister Velenkosini Hlabisa wants all councils seated by 27 November."
+            "ANC MP Andisiwe Kumbaca said transformation is not an act of hostility toward anyone, and the DA's Ryan Smith said his party rejects any form of diplomatic coercion against South Africa's right to set its own laws. MPs urged government not to change redress policies to satisfy a foreign government, and some parties accused the US of using tariffs to punish developing countries."
           ],
-          why: "The DA's last route to the Gauteng metros now hinges on a week of talks.",
+          why: "Losing AGOA's duty-free access hits exporters such as carmakers and citrus growers, so the stand-off carries real economic costs.",
           sources: [
-            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-20-ff-plus-fails-to-broker-da-actionsa-coalition-as-gauteng-talks-stall/" },
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/south-africa/elections/how-metro-councils-coalition-deadlines/" }
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/20/mps-reject-diplomatic-coercion-by-the-us-over-sas-transformation-policies" }
           ]
         },
         {
-          kicker: "Councils",
-          headline: "Cape Town re-elects Hill-Lewis as mayor as other metros race the 27 November deadline",
-          dek: "The DA leader kept the mayoralty at the city's first sitting on Thursday; Mangaung sits on Monday and eThekwini, Buffalo City and Nelson Mandela Bay on Tuesday.",
+          kicker: "KwaZulu-Natal",
+          headline: "ANC and MK prepare weekend talks on sharing power in eThekwini and other hung KZN councils",
+          dek: "MK won about 38% in eThekwini, the DA about 25% and the ANC about 16%, so no government can be formed there without MK.",
           body: [
-            "In Nelson Mandela Bay the DA holds 53 of the 61 seats it needs and smaller parties, including the UDM, will decide the outcome. The Citizen reports seven municipalities are close to breaching the legal timeframe for first sittings."
+            "EWN reports that 34 KwaZulu-Natal municipalities produced no outright winner and that mayors are due to be elected by councils next week. The talks are awkward for the ANC, since MK's rise is one of the main reasons for its decline in the province."
           ],
-          why: "Next week's sittings will show how far the new coalition map shifts power away from the DA.",
+          why: "An ANC-MK deal in Durban would extend the realignment under way in Gauteng to the country's third-largest city.",
           sources: [
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/south-africa/elections/how-metro-councils-coalition-deadlines/" }
+            { name: "EWN", url: "https://ewn.co.za/coalition-talks-mbalula-instructs-anc-kzn-leadership-to-meet-with-mk-party" }
           ]
         },
         {
-          kicker: "Madlanga commission",
-          headline: "Madlanga inquiry hears of JMPD interference, an R1.5m theft and a bribery confession made 'out of fear'",
-          dek: "Witnesses accused former Johannesburg metro police chief Phineas Manyama of telling officers to abandon a chase and to release drug-bust suspects and seized cocaine.",
+          kicker: "Eastern Cape",
+          headline: "Nelson Mandela Bay and Buffalo City postpone first council sittings as coalition talks drag on",
+          dek: "Several hung Eastern Cape councils delayed their inaugural meetings after Cogta urged them not to rush.",
           body: [
-            "Testimony also implicated two JMPD officers and a Hawks official in an operation that led to the theft of R1.5m, and a senior JMPD officer told the commission she confessed to a bribery plot because she was afraid. These are untested allegations. The acting police minister has confirmed he will appear in December."
+            "Nelson Mandela Bay put off its sitting to allow more talks with the DA, which is expected to form a coalition with smaller parties. Buffalo City, where Princess Faku was expected to be renominated as mayor, also postponed, as did Ndlambe, Mnquma and Mbhashe. No new dates were given."
           ],
-          why: "The inquiry is the main test of claims that organised crime has penetrated the criminal justice system.",
+          why: "Every week without a functioning council delays budgets and service decisions in metros with fragile finances.",
           sources: [
-            { name: "EWN", url: "https://www.ewn.co.za/2026/11/19/madlanga-commission-resumes-with-new-witness" },
-            { name: "TimesLIVE", url: "https://www.timeslive.co.za/news/south-africa/2026-11-19-watch-live-madlanga-commission-continues/" }
-          ]
-        },
-        {
-          kicker: "Water · Parliament",
-          headline: "Mashatile promises consequences for officials who fail to deliver water",
-          dek: "The deputy president told the National Assembly that 67 national intervention projects aim to speed up clean water, likening the effort to the fight against load-shedding.",
-          body: [
-            "He said municipalities remain responsible for supply, with national government coordinating infrastructure backlogs, and that many problems long predate today's councillors. MK's Visvin Reddy asked why no mayor has yet been held to account."
-          ],
-          why: "With Johannesburg and Cape Town both under restrictions, water is becoming the next big service-delivery test.",
-          sources: [
-            { name: "EWN", url: "https://www.ewn.co.za/2026/11/19/sa-water-crisis-mashatile-sees-light-at-end-of-the-tunnel" }
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/20/ec-municipalities-postpone-plans-to-hold-inaugural-council-meetings" }
           ]
         }
       ]
@@ -421,26 +413,29 @@ const EDITION = {
       stories: [
         {
           kicker: "COP31 · Antalya",
-          headline: "COP31's revised draft drops every mention of fossil fuels on the summit's last scheduled day",
-          dek: "A slimmed-down text published on Thursday removed both earlier references to curbing fossil fuels, angering campaigners ahead of Friday's deadline.",
+          headline: "COP31 runs into overtime, deadlocked over a draft that no longer mentions fossil fuels",
+          dek: "Nearly 200 countries missed Friday's deadline; a third draft is expected on Saturday after Saudi Arabia and other producers forced the words out.",
           body: [
-            "It still accepts that warming could overshoot 1.5°C, calls for 'deep, rapid and sustained' emission cuts and encourages carbon-removal technology. Australia, which shares the presidency with Turkey, said Monday's broad draft was always meant to be narrowed. Talks among nearly 200 countries often run more than a day past deadline, and further revisions are expected."
+            "Australia's opening draft called for a faster transition away from fossil fuels, but Thursday's text dropped every reference along with a $120bn-a-year adaptation target, saying only that adaptation finance should triple. The EU warned the meeting risked becoming a 'fossil summit', and Panama has threatened to formally object unless the final text adds climate finance, an oil production cap and an admission that goals are being missed.",
+            "The draft's centrepiece would lift electricity to 35% of final energy use by 2035 without requiring renewables, so fossil-fired power could count. An adviser to African negotiators said disappointment was widespread. The US is absent for a second year, and next year's summit is in Addis Ababa."
           ],
-          why: "Weaker fossil-fuel language eases pressure on coal-dependent economies like South Africa but also weakens the case for transition finance.",
+          why: "Weak fossil-fuel language gives coal-heavy South Africa breathing room but undercuts its push for adaptation and transition finance.",
           sources: [
-            { name: "Reuters (via Yahoo News)", url: "https://www.yahoo.com/news/science/articles/cop31-negotiators-publish-revised-deal-121302138.html" }
+            { name: "AP (via Pittsburgh Post-Gazette)", url: "https://www.post-gazette.com/nation-world/un-climate-fossil-fuels-turkey-MSBSM6HTBDW2TFMBR5T43CCN6E/" },
+            { name: "AFP/Reuters (via Yahoo News)", url: "https://www.yahoo.com/news/science/articles/fossil-fuel-talks-deadlock-pushes-230641602.html" },
+            { name: "CNN (via Yahoo News)", url: "https://www.yahoo.com/news/science/articles/two-words-could-derail-world-080015603.html" }
           ]
         },
         {
-          kicker: "Antarctica · Science",
-          headline: "Antarctic ice cliffs collapse faster than modelled but then stabilise, a study of 15,000 cliffs finds",
-          dek: "Writing in Science, MIT and Woods Hole researchers found cliff height alone does not predict runaway collapse.",
+          kicker: "COP31 · Host",
+          headline: "Host Turkey leaves COP31 with more than $26bn in deals, led by a $15bn Chinese renewables pact",
+          dek: "The agreements, including $5.1bn from development banks, contrast with the stalled global negotiations.",
           body: [
-            "Using ICESat-2 data from 2019-2023, they found collapsing cliffs retreated quickly but briefly; thick piles of broken ice, deeper water and undersea ridges all helped steady them, and tall cliffs thinned into shorter, more stable ones. The authors say seabed shape and thinning rates must be built into sea-level projections."
+            "Al-Monitor reports the preliminary China deal covers renewable energy, alongside accords with Saudi Arabia and Canada whose values were not disclosed. Turkish officials did not comment."
           ],
-          why: "Better ice-sheet models refine sea-level forecasts for coastal cities including Cape Town and Durban.",
+          why: "Hosts increasingly use COPs to land bilateral investment, a model South Africa has pursued through its Just Energy Transition partnership.",
           sources: [
-            { name: "ScienceDaily (MIT/WHOI)", url: "https://www.sciencedaily.com/releases/2026/11/261117033925.htm" }
+            { name: "Al-Monitor", url: "https://www.al-monitor.com/originals/2026/11/cop31-delivers-deals-host-turkey-climate-diplomacy-stalls" }
           ]
         }
       ]
@@ -449,39 +444,30 @@ const EDITION = {
       id: "science", name: "Science",
       stories: [
         {
-          kicker: "Astronomy · Nature",
-          headline: "Astronomers catch a star spiralling inside a giant companion for the first time",
-          dek: "Long-term monitoring of a giant star in the Andromeda galaxy revealed a companion's decaying orbit within its envelope, reported in Nature.",
+          kicker: "Mathematics · AI",
+          headline: "Anthropic mathematician claims he and Claude proved the Riemann hypothesis; checks have only begun",
+          dek: "Levent Alpöge released the claimed proof on Friday as a vast Lean archive rather than a conventional paper, and it has not been independently verified.",
           body: [
-            "The 'common-envelope' phase is predicted to be common and to shape how many binary stars end, but had never been seen directly. The finding gives theorists a real system against which to test models."
+            "The 1859 conjecture on the distribution of prime numbers is mathematics' most famous open problem; Alpöge says the work also covers the generalised hypothesis. The archive runs to about 175,000 files. Early checks found its main theorem statements compile against Lean's standard maths library, but compiling alone does not show the code proves the intended statement, and mathematicians must still examine its definitions and assumptions.",
+            "Oxford's James Maynard, a Fields medallist, said it would be a historic milestone if it fully checks out and that he suspects it will prove correct, but checking will take time. Clay Institute prize rules require peer-reviewed publication and two years of scrutiny. (Disclosure: this paper is compiled by Claude, made by Anthropic.)"
           ],
-          why: "It opens a window on how many close binaries, including some that become gravitational-wave sources, are formed.",
+          why: "If confirmed, it would mark AI moving from assisting with mathematics to helping settle its hardest questions.",
           sources: [
-            { name: "Nature (News & Views)", url: "https://www.nature.com/articles/d41586-026-03273-y" }
+            { name: "Interesting Engineering", url: "https://interestingengineering.com/ai-robotics/anthropic-167-year-old-riemann-hypothesis-claude" },
+            { name: "IBM Think", url: "https://www.ibm.com/think/news/anthropic-claude-riemann-hypothesis-math-proof" }
           ]
         },
         {
-          kicker: "Palaeontology",
-          headline: "A 309-million-year-old fossil from Illinois is named a new species",
-          dek: "Field Museum researchers say a specimen long labelled Amphibamus is a distinct animal, Jeanerpeton mazonensis, with a salamander-like shape and stocky frog-like body.",
+          kicker: "Geology · Nature",
+          headline: "3.95-billion-year-old rocks in China hint that crust was dragged into the mantle in Earth's infancy",
+          dek: "Zircons from Hebei's Shimen Complex, the second-oldest confirmed rocks on Earth, suggest surface rock that had touched water was pulled about 50 km down.",
           body: [
-            "Preserved scales, belly ribs and eye impressions suggest some traits of modern frogs and salamanders were already present in the Carboniferous. The paper is in the Journal of Vertebrate Paleontology."
+            "The team, led by Hangqiang Xie of the Chinese Academy of Geological Sciences, analysed hafnium and oxygen isotopes in three samples. They caution this does not prove modern plate tectonics was under way and suggest mantle upwelling or an impact could explain it. Only Canada's Acasta Gneiss, at about 4.03 billion years, is older."
           ],
-          why: "It adds detail to the murky origins of today's amphibians.",
+          why: "It adds evidence to the debate over when the processes that built continents began.",
           sources: [
-            { name: "ScienceDaily (Field Museum)", url: "https://www.sciencedaily.com/releases/2026/11/261117033928.htm" }
-          ]
-        },
-        {
-          kicker: "Archaeology",
-          headline: "The source of Stonehenge's six-tonne Altar Stone remains unknown after candidate sites are ruled out",
-          dek: "A study in the Journal of the Geological Society excluded several suspected areas; northeastern Scotland's Orcadian Basin is still the leading candidate.",
-          body: [
-            "Earlier work overturned the long-held view that the stone came from west Wales, but no exact geological match has yet been found."
-          ],
-          why: "Pinning down the source would show how far Neolithic Britons moved a six-tonne slab.",
-          sources: [
-            { name: "ScienceDaily (Aberystwyth University)", url: "https://www.sciencedaily.com/releases/2026/11/261117033914.htm" }
+            { name: "IFLScience", url: "https://www.iflscience.com/some-of-earths-oldest-rock-has-been-found-in-china-dating-back-395-billion-years-85213" },
+            { name: "Interesting Engineering", url: "https://interestingengineering.com/science/3-95-gya-rocks-china-reveal-earths-tectonics" }
           ]
         }
       ]
@@ -490,65 +476,52 @@ const EDITION = {
       id: "health", name: "Health & Medicine",
       stories: [
         {
-          kicker: "Medicines · South Africa",
-          headline: "Motsoaledi tells doctors to prescribe alternatives as public-sector medicine availability falls to 83.4%",
-          dek: "The health minister says circulars listing substitutes are going to provinces, and hospitals may buy outside contracts when suppliers cannot deliver.",
+          kicker: "Medicines · Western Cape",
+          headline: "Cape Town clinics stretched as about 50 critical public-sector medicines run short",
+          dek: "Patients needing epilepsy, psychiatric, TB and contraceptive drugs are returning repeatedly without supplies, and the province says its two-to-three-month buffer is gone.",
           body: [
-            "He insisted ARV stock is sufficient for the 6.1 million people on treatment, with provinces required to hold three months' supply, and blamed local shortages on logistics. Suppliers have blocked accounts in the Eastern Cape, Northern Cape and North West over unpaid invoices; those provinces have until the end of the week to pay. Talks on local production of active pharmaceutical ingredients are under way.",
-            "Separately, a leave-to-appeal hearing on the set-aside R15bn first-line ARV tender is due on Friday."
+            "Daily Maverick reports the Vrygrond Community Care Clinic is 25% busier than normal and Retreat CHC handles about 750 visits a day; some chronic patients have gone up to three months without medicine. Cancer drugs, anaesthetics, and rabies and oral polio vaccines are among items being sourced through section 21 authorisations.",
+            "The Western Cape health department blames manufacturing and regulatory problems, supplier constraints, port and customs backlogs and testing delays, and says patients are not turned away. MEC Mireille Wenger first raised stock-outs in June and has written to Health Minister Aaron Motsoaledi and Transport Minister Barbara Creecy."
           ],
-          why: "Expect substitutions across psychiatric and chronic lists; check the department's circular before switching stable patients.",
+          why: "Plan for substitutions and missed doses, especially in epilepsy and psychiatry, where interruptions risk breakthrough seizures and relapse.",
           sources: [
-            { name: "TimesLIVE", url: "https://www.timeslive.co.za/news/south-africa/2026-11-19-motsoaledi-urges-doctors-to-prescribe-alternative-medicines-amid-widespread-shortages/" },
-            { name: "The Citizen", url: "https://www.citizen.co.za/news/motsoaledi-slammed-over-arv-tender-as-medicine-availability-falls-to-83-4/" }
+            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-19-desperate-wait-for-cape-towns-neglected-patients-as-sa-drug-shortage-worsens/" }
           ]
         },
         {
-          kicker: "Neurology · Approval",
-          headline: "FDA approves cemdisiran, a three-monthly siRNA against C5, for AChR-positive myasthenia gravis",
-          dek: "Regeneron's Livsayis is the first siRNA for generalised MG, given subcutaneously every 12 weeks to silence hepatic C5 production.",
+          kicker: "Neurology · JAMA",
+          headline: "Nicotinamide riboside fails in early Parkinson's and did worse than placebo, NOPARK trial finds",
+          dek: "In the Norwegian phase 3 trial, the NAD+ precursor was associated with greater MDS-UPDRS worsening after a year.",
           body: [
-            "In the phase 3 NIMBLE trial, MG-ADL improved by 4.5 points versus 2.2 with placebo at week 24 (p=0.0005), and 76.6% versus 44.1% achieved at least a 3-point improvement; QMG improved by 4.2 versus 1.5. Adding the antibody pozelimab gave no extra benefit. Figures are from the company-reported trial."
+            "410 patients at 11 centres were randomised to 500 mg twice daily or placebo for 52 weeks. MDS-UPDRS I-III scores worsened by 2.45 points on treatment and improved by 0.27 on placebo (adjusted difference 2.72; 95% CI 0.47 to 4.98; p=0.02). The authors conclude the findings do not support it as a disease-modifying therapy."
           ],
-          why: "Infrequent dosing could ease complement inhibition for MG, though local registration and cost are distant hurdles.",
+          why: "Patients taking NAD+ supplements for neuroprotection can be told the best trial evidence points the other way.",
           sources: [
-            { name: "AJMC", url: "https://www.ajmc.com/view/fda-approves-first-sirna-therapy-for-achr-positive-myasthenia-gravis" }
+            { name: "JAMA", url: "https://jamanetwork.com/journals/jama/fullarticle/2855023" }
           ]
         },
         {
-          kicker: "Rare disease · Approval",
-          headline: "First drug approved for the neurological symptoms of type 3 Gaucher disease",
-          dek: "The FDA cleared Sanofi's oral glucosylceramide synthase inhibitor venglustat (Infilbray) for patients weighing at least 15 kg.",
+          kicker: "Cardiology · JAMA",
+          headline: "Primary-prevention ICDs show no significant benefit in mid-range LVEF with scar, CMR GUIDE finds",
+          dek: "Among 353 patients with LVEF 36-50% and myocardial scar on cardiac MRI, an ICD did not significantly reduce sudden death or major ventricular arrhythmia compared with a loop recorder.",
           body: [
-            "Approval rested on a 52-week study of 43 patients aged 12 and over, previously on enzyme replacement, who improved on a combined ataxia and cognition measure. The label warns of serious psychiatric risks including suicidal thoughts, with animal data on lens opacity and fetal effects."
+            "The open-label trial ran at 18 sites in Australia, Germany and the UK with a median follow-up of 6.3 years. The composite outcome occurred in 7.8% of the ICD group and 9.2% of the loop-recorder group (HR 0.76; 95% CI 0.37 to 1.58)."
           ],
-          why: "Enzyme replacement does not reach the brain, so a CNS-penetrant oral option fills a real gap.",
+          why: "It argues against extending ICDs to mid-range ejection fractions on scar alone, which matters where devices are scarce and costly.",
           sources: [
-            { name: "Fox (with Reuters)", url: "https://www.fox32chicago.com/news/us-approves-drug-rare-neurological-disorder" }
+            { name: "JAMA", url: "https://jamanetwork.com/journals/jama/fullarticle/2853395" }
           ]
         },
         {
-          kicker: "Ageing · Nature Medicine",
-          headline: "Each generation is reaching old age with better memory, a 219,000-person study finds",
-          dek: "Being born ten years later was linked to a 10% higher word-recall score at 60 and a gentler decline thereafter.",
+          kicker: "Paediatrics · Approval",
+          headline: "FDA approves weekly somapacitan for growth failure in Turner syndrome",
+          dek: "Novo Nordisk's Sogroya is the first long-acting growth hormone cleared for girls with Turner syndrome aged 2.5 and older.",
           body: [
-            "The University of Oslo-led analysis tracked adults born 1910-1964 over three decades; each later birth decade made stable memory 64% more likely, and stable memory tracked with less hippocampal shrinkage in an imaging subset. The authors suggest education, lifestyle and health gains but cannot prove cause."
+            "In the REAL8 Turner cohort, 105 girls aged 2.5-10 were randomised 2:1 to weekly somapacitan 0.24 mg/kg or daily somatropin 0.05 mg/kg for 52 weeks. Annualised height velocity was 8.9 cm/year versus 9.7 cm/year, a difference of -0.8 cm/year. Adult height data are lacking, and the daily comparator dose was below the US maximum labelled dose."
           ],
-          why: "It supports evidence that dementia risk is partly modifiable across a population.",
+          why: "Weekly dosing could ease the burden of daily injections, though local registration and cost remain hurdles.",
           sources: [
-            { name: "Nature", url: "https://www.nature.com/articles/d41586-026-03783-9" }
-          ]
-        },
-        {
-          kicker: "Oncology · Genetics",
-          headline: "Inherited CDK12 mutations linked to aggressive prostate cancer",
-          dek: "In Cancer Discovery, researchers found germline CDK12 variants in five unrelated men among more than 4,500 with aggressive disease, all metastatic by 44-62.",
-          body: [
-            "The variants occur in about one in 1,000 such patients; the authors want CDK12 added to hereditary prostate panels, which existing tests can already do. Hints of an ovarian cancer link are preliminary."
-          ],
-          why: "A small change to germline panels could flag at-risk relatives for earlier screening.",
-          sources: [
-            { name: "ScienceDaily (UBC)", url: "https://www.sciencedaily.com/releases/2026/11/261117033911.htm" }
+            { name: "Contemporary Pediatrics", url: "https://www.contemporarypediatrics.com/view/fda-approves-once-weekly-somapacitan-for-children-with-turner-syndrome" }
           ]
         }
       ]
@@ -557,53 +530,54 @@ const EDITION = {
       id: "economy", name: "Economy & Markets",
       stories: [
         {
-          kicker: "SARB · Rates",
-          headline: "Reserve Bank holds the repo rate at 7.25% in a 4-3 split, with three members wanting a hike",
-          dek: "Governor Lesetja Kganyago said the bank decided to 'pause for now' but would not hesitate to raise rates if risks materialise.",
-          body: [
-            "Inflation hit 5.2% in October, its highest in about two and a half years, driven by fuel. The MPC expects inflation above 5% into early 2027 and growth rising to about 2%, and its model implies lower rates next year, though the 3% target is not reached until the third quarter of 2028. It tested a scenario with oil near $130 and flagged El Niño risks to food prices."
-          ],
-          why: "Bond and car repayments stay unchanged for now, but the close vote keeps a 2027 hike on the table.",
-          sources: [
-            { name: "Reuters (via CNBC Africa)", url: "https://www.cnbcafrica.com/2026/south-africa-central-bank-maintains-policy-rate-in-close-call" },
-            { name: "Daily Maverick", url: "https://www.dailymaverick.co.za/article/2026-11-19-sa-reserve-bank-holds-rates-steady-at-year-end-but-inflation-spectre-lingers/" }
-          ]
-        },
-        {
           kicker: "Wall Street",
-          headline: "Dow sheds 1,101 points as Anthropic's debut fails to lift AI stocks",
-          dek: "The S&P 500 fell 2% to 7,175.83 for a sixth straight loss, the Dow 2.2% to 49,097.06 and the Nasdaq 2.3%.",
+          headline: "S&P 500 and Dow fall into correction as chip stocks crash and the Nasdaq erases its 2026 gains",
+          dek: "On Friday the S&P 500 fell 3.7% to 6,910.39, the Nasdaq 5.3% to 22,617.73 and the Dow 1.9% to 48,147.33; the S&P lost 8.6% on the week.",
           body: [
-            "Selling spread across nearly every sector on doubts about AI returns, high interest rates and the fallout from Jensen Huang's resignation at Nvidia, which fell 3.3%. AMD dropped 7.7%. Markets price a near-certain Fed hike in December, Reuters reports; the 10-year Treasury yield eased to 5.04%."
+            "The Philadelphia semiconductor index dropped 10.7%, with Nvidia down 13.8%, Micron 13.9%, AMD 13.3% and Broadcom 12.1%, AP reports. Investors are questioning AI valuations and spending, midterm results favoured candidates who want slower data-centre building, and Nvidia is still reeling from Jensen Huang's exit. The S&P 500 is more than 10% below its 6 October record after seven straight losses.",
+            "Japan's Nikkei and South Korea's Kospi had each fallen more than 5%. The 10-year Treasury yield eased to 4.93%, and most stocks outside tech rose."
           ],
-          why: "A global risk-off mood tends to hit emerging-market currencies such as the rand.",
+          why: "Global risk aversion hits emerging-market assets such as the rand and JSE, and dents savings with offshore exposure.",
           sources: [
-            { name: "AP (via WSVN)", url: "https://wsvn.com/news/us-world/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-the-dow-drops-1100-points/" },
-            { name: "Reuters (via Investing.com)", url: "https://investing.com/news/stock-market-news/wall-street-ends-sharply-lower-asanthropics-debut-fails-to-revive-ai-fervor-5040108" }
+            { name: "AP (via Springfield News-Sun)", url: "https://www.springfieldnewssun.com/nation-world/s-p-500-sinks-3-7-and-nasdaq-composite-goes-negative-for-the-year-as/article_c781a44f-74d5-5580-8393-7d4ff3a6a170.html" },
+            { name: "CBS News", url: "https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/" }
           ]
         },
         {
-          kicker: "Rand",
-          headline: "Rand hovers near its weakest level this year at about R17.31 after the rate hold",
-          dek: "The currency was on track for a second weekly loss of more than 2%, against a year low of R17.36.",
+          kicker: "Rand · JSE",
+          headline: "Rand slides to about R17.56, its weakest in a year, as coalition jitters meet a strong dollar",
+          dek: "The currency extended Thursday's 1% fall to its worst close since November 2025 and is down about 4.4% this month.",
           body: [
-            "Reuters cites a firmer dollar, softer precious metals and uncertainty over coalition talks that may sideline the DA in Johannesburg. The JSE Top-40 slipped 0.4% and the 2035 bond yield fell 7 basis points to 8.64%."
+            "Reuters cites uncertainty over coalition talks that may sideline the DA in Johannesburg, a dollar near a 19-month high and the Reserve Bank's 4-3 rate split. Business Day says the JSE all share closed 0.33% lower at 106,216 on Thursday, its lowest since September 2025 and 17.3% below its February record, while gold is about 30% below late-February levels. The 2035 bond yield held at about 8.64%."
           ],
-          why: "A weaker rand raises the cost of fuel and imported medicines.",
+          why: "A weaker rand trims December's expected petrol cut and raises the cost of imported medicines and equipment.",
           sources: [
-            { name: "Reuters (via CNBC Africa)", url: "https://www.cnbcafrica.com/2026/rand-near-one-year-low-as-south-african-central-bank-holds-rates" }
+            { name: "Reuters (via CNBC Africa)", url: "https://www.cnbcafrica.com/2026/south-african-rand-near-one-year-low-with-coalition-talks-in-focus" },
+            { name: "Business Day", url: "https://www.businessday.co.za/markets/2026-11-20-coalition-jitters-add-to-rand-and-jse-pain-as-global-pressure-mounts/" }
           ]
         },
         {
-          kicker: "Oil",
-          headline: "Brent steadies near $92 as Hormuz attacks offset fears of a supply glut",
-          dek: "Brent was about $92.19 on Thursday morning after Wednesday's 1.3% fall, with traders weighing tanker strikes against a surplus outlook.",
+          kicker: "Fuel prices",
+          headline: "Mid-month data point to a cut of about R2.90 a litre in 95 petrol in December",
+          dek: "Central Energy Fund projections show inland 95 falling from R30.24 to about R27.34, 93 down about R2.65, 500ppm diesel up 28c and 50ppm diesel down 12c.",
           body: [
-            "US crude stocks rose 3.4 million barrels against an expected 58,000, and expectations of higher US rates weigh on demand forecasts; Ukrainian drone strikes have cut Russian refinery runs by 45% since late October, Reuters reports."
+            "The cut reflects Brent's fall from about $118 at the end of October to about $92, partly offset by the weaker rand. The figures cover 30 October to 16 November and exclude slate levy changes; final adjustments take effect on 2 December. A reversal of fuel tax relief in January will add 50c a litre to petrol and R1.50 to diesel."
           ],
-          why: "Brent well below October's peak supports the expected December petrol price cut.",
+          why: "Cheaper petrol should ease inflation from October's 5.2%, though this week's rand slide could shave the cut.",
           sources: [
-            { name: "Reuters (via Yahoo Finance)", url: "https://finance.yahoo.com/news/oil-prices-steady-supply-surplus-024608326.html" }
+            { name: "Business Day", url: "https://www.businessday.co.za/news/2026-11-17-heres-what-you-could-pay-for-petrol-and-diesel-in-december/" }
+          ]
+        },
+        {
+          kicker: "Consumer law",
+          headline: "Tribunal rules that automatic 10% restaurant service charges break consumer law",
+          dek: "The National Consumer Tribunal found that the operator of TriBeCa Standard breached the Consumer Protection Act by adding the charge to bills.",
+          body: [
+            "The National Consumer Commission's investigation found about 200 such charges were processed daily. Tips must be voluntary, and the commission plans nationwide inspections in the coming months."
+          ],
+          why: "Diners can decline automatic service charges; tipping stays at their discretion.",
+          sources: [
+            { name: "EWN", url: "https://www.ewn.co.za/2026/11/20/tribunal-rules-restaurant-s-automatic-10-service-charge-violates-consumer-protection-act" }
           ]
         }
       ]
@@ -612,54 +586,52 @@ const EDITION = {
       id: "tech", name: "Technology & AI",
       stories: [
         {
-          kicker: "Anthropic · IPO",
-          headline: "Anthropic closes its first day of trading up 17% at $97.17 after the largest IPO on record",
-          dek: "Shares in ANT opened at $111.50 on the Nasdaq against an $83 offer price and briefly topped $115 before the wider sell-off pulled them back.",
+          kicker: "Anthropic · Shares",
+          headline: "Anthropic shares lose 8.5% on their second day but stay above the $83 IPO price",
+          dek: "ANT closed at $88.91 on Friday, about 23% below Thursday's brief peak of $115.10, as the AI sell-off deepened.",
           body: [
-            "The company raised about $81.3bn from 980 million shares, beating SpaceX's $75bn listing in June, plus $26bn in a private placement; the IPO price implied a fully diluted value of about $1.5 trillion. Reuters says its market value briefly passed $2 trillion. (Disclosure: this paper is compiled by Claude, made by Anthropic.)"
+            "CBS notes the slide from the peak is steeper than Facebook's early fall after its 2012 listing. (Disclosure: this paper is compiled by Claude, made by Anthropic.)"
           ],
-          why: "The debut is a bellwether for AI valuations that drive global markets and emerging-market flows.",
+          why: "The record listing has become a real-time gauge of investor faith in AI, which is now moving global markets.",
           sources: [
-            { name: "AP (via WSVN)", url: "https://wsvn.com/news/us-world/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-the-dow-drops-1100-points/" },
-            { name: "Fox Business", url: "https://www.foxbusiness.com/markets/anthropic-begins-trading-nasdaq-record-breaking-ipo" },
-            { name: "Reuters (via Investing.com)", url: "https://investing.com/news/stock-market-news/wall-street-ends-sharply-lower-asanthropics-debut-fails-to-revive-ai-fervor-5040108" }
+            { name: "AP (via Springfield News-Sun)", url: "https://www.springfieldnewssun.com/nation-world/s-p-500-sinks-3-7-and-nasdaq-composite-goes-negative-for-the-year-as/article_c781a44f-74d5-5580-8393-7d4ff3a6a170.html" },
+            { name: "CBS News", url: "https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/" }
           ]
         },
         {
-          kicker: "AI agents · Law",
-          headline: "Arizona opens a criminal investigation into OpenAI and others over 'rogue AI agents' in banks",
-          dek: "Attorney General Kris Mayes said her office is examining whether state law is being broken, but did not name the banks or other companies.",
+          kicker: "Cybersecurity · EU",
+          headline: "European Commission confirms an AI-generated cyber campaign disrupted its systems",
+          dek: "Spokesman Thomas Regnier said attackers misused a publicly available AI tool; several applications were taken offline and most are back.",
           body: [
-            "A criminal investigation does not necessarily lead to charges, and OpenAI did not immediately respond. Meanwhile Citi, PNC, JPMorgan and Bank of America have changed terms so customers who give AI agents account access are liable for what those agents, or hackers using them, do."
+            "The intrusion was detected on 22 October and disclosed after Politico reported it. Politico says CERT-EU saw attackers using ARTEX, an AI penetration-testing framework, which the Commission has not confirmed. Regnier said there is so far no evidence of a breach of staff data as a whole and no known ransom demand, and he declined to attribute the attack."
           ],
-          why: "It is an early sign of how regulators and banks will apportion blame when autonomous AI handles money.",
+          why: "It is one of the first confirmed cases of AI tooling turned on a major government, a warning for under-resourced public systems including South Africa's.",
           sources: [
-            { name: "Reuters (via The Star)", url: "https://www.thestar.com.my/tech/tech-news/2026/11/19/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents" },
-            { name: "TechCrunch", url: "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/" }
+            { name: "Help Net Security", url: "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/" }
           ]
         },
         {
-          kicker: "South Africa · AI",
-          headline: "Ramaphosa offers ageing power-station sites to Silicon Valley for AI data centres",
-          dek: "In San Jose he pitched sites with existing grid and transport links, and called for a single coordinated investment offer.",
+          kicker: "AI agents · Privacy",
+          headline: "Meta's Muse agent showed staff other people's private data, a Reuters investigation finds",
+          dek: "Employees reported seeing strangers' childcare requests, product orders and bank balances in the AI agent's replies.",
           body: [
-            "No sites have been named and the Presidency says no technical details, such as water and power needs, have been worked out; Eskom's coal stations are the obvious candidates. US tech giants are expected to spend close to $670bn on AI infrastructure this year."
+            "One employee asking about the weather and tides was shown bank balances; another got a reminder about a Signal message from her sister without having granted access to other apps. Meta said staff test versions with features that are not yet public and that testing helps it add safeguards. Muse launched in September and has more than 10 million downloads."
           ],
-          why: "Turning retiring coal plants into data centres could bring investment to Mpumalanga, if power and water can be found.",
+          why: "As agents gain access to accounts and messages, data leakage becomes a POPIA question for South African users.",
           sources: [
-            { name: "TechCentral", url: "https://techcentral.co.za/ramaphosa-power-stations-ai-data-centres/288563/" }
+            { name: "TechCrunch (citing Reuters)", url: "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/" }
           ]
         },
         {
-          kicker: "AI models",
-          headline: "Google launches Gemini 4 Neon, aimed at coding and long multi-step tasks",
-          dek: "The model has a 1-million-token context window and is priced at $3 per million input tokens and $15 per million output tokens.",
+          kicker: "Apple · AI",
+          headline: "Apple is building an agent that can operate a computer, Bloomberg reports",
+          dek: "A job listing describes an assistant that browses, works across apps, runs commands and writes code; Apple has considered launching as early as late 2027.",
           body: [
-            "Google says it ranks first on several coding and enterprise agent benchmarks and third on the Artificial Analysis Intelligence Index; these are the company's own claims. Access for cyber-defence uses is restricted to a vetted programme."
+            "Development is at an early stage. Bloomberg also reports macOS 27.3 will warn users against giving third-party agents full computer access. Apple did not respond to requests for comment."
           ],
-          why: "The race among frontier labs keeps pushing down the price of capable AI for local developers.",
+          why: "Apple's entry would bring computer-use agents to a mass consumer base already courted by Anthropic, OpenAI and Meta.",
           sources: [
-            { name: "Google", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" }
+            { name: "TechCrunch (citing Bloomberg)", url: "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/" }
           ]
         }
       ]
@@ -669,44 +641,39 @@ const EDITION = {
 
 /* Headlines from the previous edition (only one day is kept). */
 const PREVIOUS = {
-  dateLong: "Thursday, 19 November 2026 (Edition 15)",
+  dateLong: "Friday, 20 November 2026 (Edition 16)",
   items: [
-    { section: "World Politics", headline: "Trump meets Xi and Putin in Shenzhen for the first three-way summit, with nuclear arms and two wars on the table" },
-    { section: "Wars & Conflicts", headline: "Iran widens its Gulf attacks to a US-used air base in Kuwait after the US strike on Qeshm" },
-    { section: "Wars & Conflicts", headline: "Israeli tanks push into Hamas-held central Gaza in the first ground raid since the ceasefire" },
-    { section: "Wars & Conflicts", headline: "Kerch bridge hit for a third time in three days as Russia pounds Kyiv's bridges and power grid" },
-    { section: "Wars & Conflicts", headline: "Sudan's army closes on the RSF-held city of En Nahud as the UN tallies a drone-driven death toll" },
-    { section: "Wars & Conflicts", headline: "Houthis fire cruise missiles and drones at Riyadh as Saudi-led jets hit 60 targets in Yemen" },
-    { section: "World Politics", headline: "House Democrats nominate Hakeem Jeffries, putting him on course to be the first Black speaker" },
-    { section: "World Politics", headline: "Hegseth makes a surprise visit to Caracas and announces a renewed US-Venezuela military partnership" },
-    { section: "World Politics", headline: "Bennett's first meeting with Netanyahu in five years rattles the Eisenkot bloc" },
-    { section: "World Politics", headline: "Brussels proposes a further €45bn loan for Ukraine in 2027, funded by joint EU borrowing" },
-    { section: "World Politics", headline: "Bukele says Salvadoran troops destroyed a top Haitian gang leader's mansion" },
-    { section: "South African Politics", headline: "ActionSA nears a deal with the ANC for Gauteng's metros as Mashaba demands the DA drop Zille and Brink" },
-    { section: "South African Politics", headline: "Hill-Lewis refuses to drop Zille and says the DA will go into opposition if it must" },
-    { section: "South African Politics", headline: "Dirco calls in Nigeria's new high commissioner over his public attacks on the Presidency" },
-    { section: "South African Politics", headline: "SACP sets its sights on 2029 after a 2.3% debut on its own ballot" },
-    { section: "South African Politics", headline: "Parliament weighs a new extradition law to replace a statute more than 60 years old" },
-    { section: "South African Politics", headline: "MPs refuse to hear Cachalia's adviser brief them on the police 'reset'" },
-    { section: "Climate & Environment", headline: "COP31 waits on a new deal text with a day left to settle fossil fuels and adaptation money" },
-    { section: "Climate & Environment", headline: "NASA says this year's El Niño could outgrow the record 1997-98 event" },
-    { section: "Climate & Environment", headline: "Johannesburg bans garden watering under Level 2 restrictions from Saturday" },
-    { section: "Science", headline: "Mantle upwelling may explain the billion years missing from Earth's rock record" },
-    { section: "Science", headline: "A new test supports hints that the universe's oldest light has been twisted" },
-    { section: "Science", headline: "Voyager 1 passes the one light-day mark, 25.9 billion km from Earth" },
-    { section: "Health & Medicine", headline: "WHO says Congo's Ebola cases doubled in three months as two Bundibugyo vaccines join trials" },
-    { section: "Health & Medicine", headline: "Motsoaledi admits psychiatric medicine stock-outs, blaming Durban port delays, Hormuz and failed inspections" },
-    { section: "Health & Medicine", headline: "MPs grill Motsoaledi over the R15bn ARV tender the High Court set aside" },
-    { section: "Health & Medicine", headline: "UNEP and WHO warn that hormone-disrupting chemicals reach babies before birth" },
-    { section: "Health & Medicine", headline: "FDA approves secukinumab for polymyalgia rheumatica that fails steroids" },
-    { section: "Economy & Markets", headline: "Inflation jumps to 5.2% on fuel as the Reserve Bank decides on rates today" },
-    { section: "Economy & Markets", headline: "Rand slides to an eight-month low near R17.15 and the JSE's Top-40 falls almost 3%" },
-    { section: "Economy & Markets", headline: "Oil falls to about $92 as US stockpiles swell despite renewed Gulf attacks" },
-    { section: "Economy & Markets", headline: "Dow drops 561 points as Nvidia slides for a fifth day, while the Nasdaq gains before Anthropic's debut" },
-    { section: "Economy & Markets", headline: "Deutsche Bank leak points to a Russian money-laundering network running through Hungary" },
-    { section: "Technology & AI", headline: "Anthropic prices its IPO at $83 a share, above its range, before today's Nasdaq debut" },
-    { section: "Technology & AI", headline: "Nvidia says it has stopped shipping its US-licensed AI chips to China" },
-    { section: "Technology & AI", headline: "OpenAI releases GPT-6.2 Astra and Sol, flagging a first on AI self-improvement risk" }
+    { section: "World Politics", headline: "Trump, Xi and Putin sign a vague 'declaration toward peace' that skips Ukraine and Iran" },
+    { section: "Wars & Conflicts", headline: "Iran turns anti-ship cruise missiles on Gulf tankers as Trump says he is in no rush to strike" },
+    { section: "Wars & Conflicts", headline: "Russia launches a mass missile attack on Ukraine after a third strike on the Kerch bridge" },
+    { section: "Wars & Conflicts", headline: "Israel says its tank raid into central Gaza is over and the main road has reopened" },
+    { section: "Wars & Conflicts", headline: "Houthi strike damages a tower in Riyadh's financial district" },
+    { section: "World Politics", headline: "World Court finds Myanmar committed genocide against the Rohingya, a first against any state" },
+    { section: "World Politics", headline: "Eisenkot's bloc pledges unity after Bennett's three-hour Netanyahu meeting" },
+    { section: "World Politics", headline: "Zelensky meets Trump's envoys and 40-plus allies in Berlin as Trump dials in from China" },
+    { section: "South African Politics", headline: "ANC, ActionSA, EFF and MK move to formalise a metro pact, with MK predicting a deal by Friday afternoon" },
+    { section: "South African Politics", headline: "FF Plus fails to broker a DA-ActionSA deal as Tshwane delays its first council sitting" },
+    { section: "South African Politics", headline: "Cape Town re-elects Hill-Lewis as mayor as other metros race the 27 November deadline" },
+    { section: "South African Politics", headline: "Madlanga inquiry hears of JMPD interference, an R1.5m theft and a bribery confession made 'out of fear'" },
+    { section: "South African Politics", headline: "Mashatile promises consequences for officials who fail to deliver water" },
+    { section: "Climate & Environment", headline: "COP31's revised draft drops every mention of fossil fuels on the summit's last scheduled day" },
+    { section: "Climate & Environment", headline: "Antarctic ice cliffs collapse faster than modelled but then stabilise, a study of 15,000 cliffs finds" },
+    { section: "Science", headline: "Astronomers catch a star spiralling inside a giant companion for the first time" },
+    { section: "Science", headline: "A 309-million-year-old fossil from Illinois is named a new species" },
+    { section: "Science", headline: "The source of Stonehenge's six-tonne Altar Stone remains unknown after candidate sites are ruled out" },
+    { section: "Health & Medicine", headline: "Motsoaledi tells doctors to prescribe alternatives as public-sector medicine availability falls to 83.4%" },
+    { section: "Health & Medicine", headline: "FDA approves cemdisiran, a three-monthly siRNA against C5, for AChR-positive myasthenia gravis" },
+    { section: "Health & Medicine", headline: "First drug approved for the neurological symptoms of type 3 Gaucher disease" },
+    { section: "Health & Medicine", headline: "Each generation is reaching old age with better memory, a 219,000-person study finds" },
+    { section: "Health & Medicine", headline: "Inherited CDK12 mutations linked to aggressive prostate cancer" },
+    { section: "Economy & Markets", headline: "Reserve Bank holds the repo rate at 7.25% in a 4-3 split, with three members wanting a hike" },
+    { section: "Economy & Markets", headline: "Dow sheds 1,101 points as Anthropic's debut fails to lift AI stocks" },
+    { section: "Economy & Markets", headline: "Rand hovers near its weakest level this year at about R17.31 after the rate hold" },
+    { section: "Economy & Markets", headline: "Brent steadies near $92 as Hormuz attacks offset fears of a supply glut" },
+    { section: "Technology & AI", headline: "Anthropic closes its first day of trading up 17% at $97.17 after the largest IPO on record" },
+    { section: "Technology & AI", headline: "Arizona opens a criminal investigation into OpenAI and others over 'rogue AI agents' in banks" },
+    { section: "Technology & AI", headline: "Ramaphosa offers ageing power-station sites to Silicon Valley for AI data centres" },
+    { section: "Technology & AI", headline: "Google launches Gemini 4 Neon, aimed at coding and long multi-step tasks" }
   ]
 };
 /* ====================== EDITION DATA: END ====================== */
